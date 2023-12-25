@@ -1,0 +1,79 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Dec 25 23:43:16 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_test_bluex_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of cpu_test_bluex_0_0 (xilinx.com:user:bluex:1.0 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Dec 25 23:41:12 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_test_bluex_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cpu_test_bluex_0_0 (xilinx.com:user:bluex:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Dec 25 23:36:09 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_test_bluex_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of cpu_test_bluex_0_0 (xilinx.com:user:bluex:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Dec 25 23:35:38 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_test_bluex_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cpu_test_bluex_0_0 (xilinx.com:user:bluex:1.0) from (Rev. 2) to (Rev. 3)
+
