@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-2
 
@@ -136,6 +137,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/constrs_1/new/cpu_test.xdc
+set_property used_in_implementation false [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/constrs_1/new/cpu_test.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

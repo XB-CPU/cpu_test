@@ -1,0 +1,68 @@
+23:01:46 DEBUG : Logs will be stored at 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/IDE.log'.
+23:01:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\vitis\temp_xsdb_launch_script.tcl
+23:01:49 INFO  : Registering command handlers for Vitis TCF services
+23:01:49 INFO  : Platform repository initialization has completed.
+23:01:52 INFO  : XSCT server has started successfully.
+23:01:52 INFO  : Successfully done setting XSCT server connection channel  
+23:01:52 INFO  : plnx-install-location is set to ''
+23:01:52 INFO  : Successfully done setting workspace for the tool. 
+23:01:52 INFO  : Successfully done query RDI_DATADIR 
+23:02:34 INFO  : Result from executing command 'getProjects': cpu_test_wrapper
+23:02:34 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+23:02:34 WARN  : An unexpected exception occurred in the module 'platform project logging'
+23:02:34 INFO  : Platform 'cpu_test_wrapper' is added to custom repositories.
+23:02:42 INFO  : Platform 'cpu_test_wrapper' is added to custom repositories.
+23:03:33 INFO  : Result from executing command 'getProjects': cpu_test_wrapper
+23:03:33 INFO  : Result from executing command 'getPlatforms': cpu_test_wrapper|E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm;xilinx_zcu102_base_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|E:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+23:03:34 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:03:56 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:04:08 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:04:37 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:04:53 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:05:00 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:05:35 INFO  : Checking for BSP changes to sync application flags for project 'cpu'...
+23:06:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:26 INFO  : Jtag cable 'Digilent JTAG-SMT2 C305A167ABCD' is selected.
+23:06:26 INFO  : 'jtag frequency' command is executed.
+23:06:26 INFO  : Context for 'APU' is selected.
+23:06:26 INFO  : System reset is completed.
+23:06:29 INFO  : 'after 3000' command is executed.
+23:06:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305A167ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305A167ABCD-23727093-0"}' command is executed.
+23:06:32 INFO  : Device configured successfully with "E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit"
+23:06:32 INFO  : Context for 'APU' is selected.
+23:06:32 INFO  : Hardware design and registers information is loaded from 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/hw/cpu_test_wrapper.xsa'.
+23:06:32 INFO  : 'configparams force-mem-access 1' command is executed.
+23:06:32 INFO  : Context for 'APU' is selected.
+23:06:32 INFO  : Sourcing of 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/psinit/ps7_init.tcl' is done.
+23:06:32 INFO  : 'ps7_init' command is executed.
+23:06:32 INFO  : 'ps7_post_config' command is executed.
+23:06:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:33 INFO  : The application 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/Debug/cpu.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:33 INFO  : 'configparams force-mem-access 0' command is executed.
+23:06:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305A167ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305A167ABCD-23727093-0"}
+fpga -file E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/hw/cpu_test_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/Debug/cpu.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:06:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:33 INFO  : 'con' command is executed.
+23:06:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:06:33 INFO  : Disconnected from the channel tcfchan#2.
