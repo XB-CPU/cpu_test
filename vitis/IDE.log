@@ -66,3 +66,5 @@ con
 ----------------End of Script----------------
 
 23:06:33 INFO  : Disconnected from the channel tcfchan#2.
+23:15:55 DEBUG : Logs will be stored at 'D:/MyWorks/Programs/Verilog/vivado/cpu_test/vitis/IDE.log'.
+23:17:11 DEBUG : Logs will be stored at 'D:/MyWorks/Programs/Verilog/vivado/cpu_test/vitis/IDE.log'.

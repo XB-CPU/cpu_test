@@ -13,8 +13,12 @@
 #include "sleep.h"
 #include "ReadReg/pl_bram_rd.h"
 #include "xbram.h"
-//#include "xdevcfg.h" //包含操作 SD 卡过程中的状态变量
-//#include "ff.h"
+#include "axi_ip_design.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+#include "xstatus.h"
+#include "xscutimer.h"
+#include "machine_code.h"
 
 #include "LCD_SHOW/LCD_show.h"
 
@@ -35,6 +39,14 @@
 #define START_ADDR          0  //RAM起始地址 范围:0~1023
 #define BRAM_DATA_BYTE      4  //BRAM数据字节个数
 
+#define COUNTER_MAX (0xffffffffU)
+
+XScuGic scu_obj;
+XScuGic* scu = &scu_obj;
+XScuTimer scut_obj;
+XScuTimer* scut = &scut_obj;
+XScuGic_Config *scucfg;
+
 //全局变量
 XAxiVdma     vdma;
 DisplayCtrl  dispCtrl;
@@ -44,9 +56,15 @@ VideoMode    vd_mode;
 unsigned int const frame_buffer_addr = (XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x1000000);
 unsigned int lcd_id=0;        //LCD ID
 uint32_t RegData[32]={0};
+u32 tim_cnt1 = 0, tim_cnt2 = 0;
+u8 int_tim = 0;
+u32 timer_update_time = 0;
 
 void load_sd_bmp1(u8 *frame);
 void rd_bram();
+static void CPU_done_handler(void* data);
+static void counter_update_handler(void* data);
+static void ScuTimer_cfg(void);
 int main(void)
 {
 	uint16_t i;
@@ -90,11 +108,48 @@ int main(void)
 	usleep(1000*500);
 	LCD_clear(WHITE);
 	LCD_update();
-//	for(i=0;i<32;i++){
-//		sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-//		LCD_show_str(0+(i%3)*240,i/3*40,str,BLACK);
-//	}
 	usleep(1000*500);
+
+	s32 Status = XST_SUCCESS;
+	u8 p, t;
+    print("Hello World\n\r");
+    scucfg = XScuGic_LookupConfig(XPAR_SCUGIC_0_DEVICE_ID);
+    if (scucfg == NULL)
+    {
+    	print("Error XScuGic_LookupConfig");
+    	return 0;
+    }
+    Status = XScuGic_CfgInitialize(scu, scucfg, scucfg->CpuBaseAddress);
+	if(Status != XST_SUCCESS)
+	{
+		printf("Error XScuGic_CfgInitialize, s:%ld", Status);
+		return 0;
+	}
+	ScuTimer_cfg();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, scu);
+	Xil_ExceptionEnable();
+	Status = XScuGic_Connect(scu, 61, (Xil_ExceptionHandler)CPU_done_handler, (void*)0);
+	if(Status != XST_SUCCESS)
+	{
+		printf("Error XScuGic_Connect, s:%ld", Status);
+		return 0;
+	}
+	Status = XScuGic_Connect(scu, XPAR_SCUTIMER_INTR, (Xil_ExceptionHandler)counter_update_handler, (void*)0);
+	if(Status != XST_SUCCESS)
+	{
+		printf("Error XScuGic_Connect, s:%ld", Status);
+		return 0;
+	}
+	XScuGic_SetPriorityTriggerType(scu, 61, 160, 3);
+	XScuGic_GetPriorityTriggerType(scu, 61, &p, &t);
+	printf("priority:%d, trigger:%d\n", p, t);
+	XScuTimer_Start(scut);
+	XScuGic_Enable(scu, 61);
+	XScuTimer_EnableInterrupt(scut);
+    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 1);
+    tim_cnt1 = XScuTimer_GetCounterValue(scut);
+    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, 65530);
+
 	LCD_clear(RED);
 	LCD_clear(BLUE);
 	LCD_update();
@@ -105,7 +160,10 @@ int main(void)
 		LCD_show_str(0+(i%3)*240,i/3*40,str,BLACK);
 	}
 	LCD_update();
-//	load_sd_bmp((u8*)frame_buffer_addr);
+	while(1)
+    {
+    	// wait for interrupt
+    }
     return 0;
 }
 
@@ -118,46 +176,40 @@ void rd_bram()
     	RegData[cnt] = XBram_ReadReg(XPAR_BRAM_0_BASEADDR,i) ;
     }
 }
-//从SD卡中读取BMP图片
-//void load_sd_bmp1(u8 *frame)
-//{
-//    static  FATFS fatfs;
-//    FIL     fil;
-//    u8      bmp_head[54];
-//    UINT    *bmp_width,*bmp_height,*bmp_size;
-//    UINT    br;
-//    int     i;
-//
-//    //挂载文件系统
-//    f_mount(&fatfs,"",1);
-//
-//    //打开文件
-//    f_open(&fil,"lty.bmp",FA_READ);
-//
-//    //移动文件读写指针到文件开头
-//    f_lseek(&fil,0);
-//
-//    //读取BMP文件头
-//    f_read(&fil,bmp_head,54,&br);
-//    xil_printf("lty.bmp head: \n\r");
-//    for(i=0;i<54;i++)
-//        xil_printf(" %x",bmp_head[i]);
-//
-//    //打印BMP图片分辨率和大小
-//    bmp_width  = (UINT *)(bmp_head + 0x12);
-//    bmp_height = (UINT *)(bmp_head + 0x16);
-//    bmp_size   = (UINT *)(bmp_head + 0x22);
-//    xil_printf("\r\n width = %d, height = %d, size = %d bytes \n\r",
-//            *bmp_width,*bmp_height,*bmp_size);
-//
-//    //读出图片，写入DDR
-//    for(i=*bmp_height-1;i>=0;i--){
-//        f_read(&fil,frame+i*(*bmp_width)*3,(*bmp_width)*3,&br);
-//    }
-//
-//    //关闭文件
-//    f_close(&fil);
-//
-//    Xil_DCacheFlush();     //刷新Cache，数据更新至DDR3中
-//    xil_printf("show bmp\n\r");
-//}
+
+static void ScuTimer_cfg(void)
+{
+	s32 Status = XST_SUCCESS;
+	XScuTimer_Config* scut_cfg = XScuTimer_LookupConfig(XPAR_XSCUTIMER_0_DEVICE_ID);
+	if (scut_cfg == NULL)
+	{
+		print("XScuTimer_LookupConfig NULL\n");
+		return;
+	}
+
+	Status = XScuTimer_CfgInitialize(scut, scut_cfg, scut_cfg->BaseAddr);
+	if (Status != XST_SUCCESS)
+	{
+		printf("Error XScuTimer_CfgInitialize, s:%ld", Status);
+		return;
+	}
+	XScuTimer_LoadTimer(scut, COUNTER_MAX);
+	XScuTimer_EnableAutoReload(scut);
+}
+
+static void CPU_done_handler(void* data)
+{
+	++int_tim;
+	if (int_tim == 1){
+	tim_cnt2 = XScuTimer_GetCounterValue(scut);
+	u64 period = tim_cnt1 - tim_cnt2 + (u64)timer_update_time * COUNTER_MAX;
+	printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
+	XScuGic_Disable(scu, 61);
+	XScuTimer_DisableInterrupt(scut);
+	}
+}
+
+static void counter_update_handler(void* data)
+{
+	++timer_update_time;
+}
