@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 25 22:58:25 2023
+# Process ID: 4584
+# Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13060 E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.xpr
+# Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vivado.log
+# Journal file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test\vivado.jou
+# Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:bluex:1.0 bluex_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins bluex_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins bluex_0/MEN_BRAM_PORT]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins bluex_0/REG_BRAM_PORT]
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "Auto" }  [get_bd_intf_pins bluex_0/ROM_BRAM_PORT]
+endgroup
+disconnect_bd_net /Net [get_bd_pins bluex_0/clk]
+connect_bd_net [get_bd_pins bluex_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins bluex_0/rst_n]
+startgroup
+connect_bd_net [get_bd_pins PS_to_CPU_controller_0/enable_CPU] [get_bd_pins bluex_0/enable_CPU]
+endgroup
+delete_bd_objs [get_bd_intf_nets bluex_0_MEN_BRAM_PORT]
+delete_bd_objs [get_bd_intf_nets bluex_0_ROM_BRAM_PORT]
+connect_bd_intf_net [get_bd_intf_pins bluex_0/MEN_BRAM_PORT] [get_bd_intf_pins blk_mem_gen_2/BRAM_PORTA]
+startgroup
+set_property CONFIG.use_bram_block {Stand_Alone} [get_bd_cells blk_mem_gen_2]
+endgroup
+delete_bd_objs [get_bd_intf_nets bluex_0_REG_BRAM_PORT]
+connect_bd_intf_net [get_bd_intf_pins bluex_0/REG_BRAM_PORT] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+set_property name reg2ram [get_bd_cells blk_mem_gen_0]
+set_property name mem [get_bd_cells blk_mem_gen_2]
+connect_bd_net [get_bd_pins bluex_0/current_addr] [get_bd_pins blk_mem_gen_1/addrb]
+connect_bd_net [get_bd_pins bluex_0/isc] [get_bd_pins blk_mem_gen_1/doutb]
+startgroup
+set_property CONFIG.EN_SAFETY_CKT {false} [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property name rom [get_bd_cells blk_mem_gen_1]
+validate_bd_design
+ipx::open_ipxact_file E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_repo/bluex/component.xml
+startgroup
+set_property CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} [get_bd_cells processing_system7_0]
+endgroup
+validate_bd_design
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2] [get_bd_intf_ports gpio_rtl_0]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO2] [get_bd_intf_ports gpio_rtl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO2] [get_bd_intf_pins bluex_0/GPIO_r2r_control]
+validate_bd_design
+generate_target all [get_files  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd]
+catch { config_ip_cache -export [get_ips -all cpu_test_axi_vdma_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_v_tc_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_v_axi4s_vid_out_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_rgb2lcd_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_clk_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_xbar_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_axi_bram_ctrl_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_PS_to_CPU_controller_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_axi_bram_ctrl_1_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_blk_mem_gen_1_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_blk_mem_gen_2_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_6] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_2] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_3] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_4] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_5] }
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_7] }
+catch { config_ip_cache -export [get_ips -all cpu_test_bluex_0_0] }
+export_ip_user_files -of_objects [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd] -directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files/sim_scripts -ip_user_files_dir E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files -ipstatic_source_dir E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/modelsim} {questa=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/questa} {riviera=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/riviera} {activehdl=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd] -top
+add_files -norecurse e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/hdl/cpu_test_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 14
+wait_on_run synth_1

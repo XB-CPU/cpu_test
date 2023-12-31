@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Mon Dec 25 23:43:47 2023
+//Date        : Sun Dec 31 17:52:42 2023
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test.bd
 //Design      : cpu_test
@@ -91,12 +91,9 @@ module cpu_test
   wire axi_bram_ctrl_1_BRAM_PORTA_EN;
   wire axi_bram_ctrl_1_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_1_BRAM_PORTA_WE;
-  wire axi_gpio_0_GPIO2_TRI_I;
-  wire [0:0]axi_gpio_0_GPIO2_TRI_O;
-  wire [0:0]axi_gpio_0_GPIO2_TRI_T;
-  wire [2:0]axi_gpio_0_GPIO_TRI_I;
-  wire [2:0]axi_gpio_0_GPIO_TRI_O;
-  wire [2:0]axi_gpio_0_GPIO_TRI_T;
+  wire axi_gpio_0_GPIO_TRI_I;
+  wire [0:0]axi_gpio_0_GPIO_TRI_O;
+  wire [0:0]axi_gpio_0_GPIO_TRI_T;
   wire [31:0]axi_mem_intercon_M00_AXI_ARADDR;
   wire [1:0]axi_mem_intercon_M00_AXI_ARBURST;
   wire [3:0]axi_mem_intercon_M00_AXI_ARCACHE;
@@ -481,10 +478,7 @@ module cpu_test
         .s_axi_wstrb(ps7_0_axi_periph_M06_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M06_AXI_WVALID));
   cpu_test_axi_gpio_0_0 axi_gpio_0
-       (.gpio2_io_i(axi_gpio_0_GPIO2_TRI_I),
-        .gpio2_io_o(axi_gpio_0_GPIO2_TRI_O),
-        .gpio2_io_t(axi_gpio_0_GPIO2_TRI_T),
-        .gpio_io_i(axi_gpio_0_GPIO_TRI_I),
+       (.gpio_io_i(axi_gpio_0_GPIO_TRI_I),
         .gpio_io_o(axi_gpio_0_GPIO_TRI_O),
         .gpio_io_t(axi_gpio_0_GPIO_TRI_T),
         .s_axi_aclk(Net),
@@ -595,9 +589,9 @@ module cpu_test
         .ram_wr_data(bluex_0_ram_wr_data),
         .read_mem_out_inw(bluex_0_MEN_BRAM_PORT_DOUT),
         .rst_n(proc_sys_reset_0_peripheral_aresetn),
-        .wr_en_i(axi_gpio_0_GPIO2_TRI_O),
-        .wr_en_o(axi_gpio_0_GPIO2_TRI_I),
-        .wr_en_t(axi_gpio_0_GPIO2_TRI_T),
+        .wr_en_i(axi_gpio_0_GPIO_TRI_O),
+        .wr_en_o(axi_gpio_0_GPIO_TRI_I),
+        .wr_en_t(axi_gpio_0_GPIO_TRI_T),
         .write_mem_addr(bluex_0_MEN_BRAM_PORT_ADDR),
         .write_mem_clk(bluex_0_MEN_BRAM_PORT_CLK),
         .write_mem_data(bluex_0_MEN_BRAM_PORT_DIN),
@@ -985,9 +979,6 @@ module cpu_test
        (.lcd_bl(rgb2lcd_0_lcd_bl),
         .lcd_de(rgb2lcd_0_lcd_DE),
         .lcd_hs(rgb2lcd_0_lcd_HS),
-        .lcd_id_i(axi_gpio_0_GPIO_TRI_O),
-        .lcd_id_o(axi_gpio_0_GPIO_TRI_I),
-        .lcd_id_t(axi_gpio_0_GPIO_TRI_T),
         .lcd_pclk(rgb2lcd_0_lcd_CLK),
         .lcd_rgb_i(rgb2lcd_0_lcd_rgb_TRI_I),
         .lcd_rgb_o(rgb2lcd_0_lcd_rgb_TRI_O),

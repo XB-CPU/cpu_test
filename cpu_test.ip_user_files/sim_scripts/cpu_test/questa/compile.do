@@ -27,10 +27,10 @@ vlib questa_lib/msim/generic_baseblocks_v2_1_1
 vlib questa_lib/msim/axi_register_slice_v2_1_29
 vlib questa_lib/msim/axi_data_fifo_v2_1_28
 vlib questa_lib/msim/axi_crossbar_v2_1_30
+vlib questa_lib/msim/axi_protocol_converter_v2_1_29
 vlib questa_lib/msim/proc_sys_reset_v5_0_14
 vlib questa_lib/msim/axi_bram_ctrl_v4_1_9
 vlib questa_lib/msim/util_vector_logic_v2_0_3
-vlib questa_lib/msim/axi_protocol_converter_v2_1_29
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xpm questa_lib/msim/xpm
@@ -58,10 +58,10 @@ vmap generic_baseblocks_v2_1_1 questa_lib/msim/generic_baseblocks_v2_1_1
 vmap axi_register_slice_v2_1_29 questa_lib/msim/axi_register_slice_v2_1_29
 vmap axi_data_fifo_v2_1_28 questa_lib/msim/axi_data_fifo_v2_1_28
 vmap axi_crossbar_v2_1_30 questa_lib/msim/axi_crossbar_v2_1_30
+vmap axi_protocol_converter_v2_1_29 questa_lib/msim/axi_protocol_converter_v2_1_29
 vmap proc_sys_reset_v5_0_14 questa_lib/msim/proc_sys_reset_v5_0_14
 vmap axi_bram_ctrl_v4_1_9 questa_lib/msim/axi_bram_ctrl_v4_1_9
 vmap util_vector_logic_v2_0_3 questa_lib/msim/util_vector_logic_v2_0_3
-vmap axi_protocol_converter_v2_1_29 questa_lib/msim/axi_protocol_converter_v2_1_29
 
 vlog -work xilinx_vip  -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -153,7 +153,7 @@ vlog -work v_axi4s_vid_out_v4_0_17  -incr -mfcu  "+incdir+../../../../cpu_test.g
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_v_axi4s_vid_out_0_0/sim/cpu_test_v_axi4s_vid_out_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/f810/src/rgb2lcd.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/031e/src/rgb2lcd.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rgb2lcd_0_0/sim/cpu_test_rgb2lcd_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_clk_wiz_0_0/cpu_test_clk_wiz_0_0_mmcm_pll_drp.v" \
 
@@ -199,11 +199,26 @@ vlog -work axi_crossbar_v2_1_30  -incr -mfcu  "+incdir+../../../../cpu_test.gen/
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xbar_0/sim/cpu_test_xbar_0.v" \
 
+vlog -work axi_protocol_converter_v2_1_29  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/a63f/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/sim/cpu_test_auto_pc_6.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/sim/cpu_test_auto_pc_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/sim/cpu_test_auto_pc_1.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/sim/cpu_test_auto_pc_2.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/sim/cpu_test_auto_pc_3.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/sim/cpu_test_auto_pc_4.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/sim/cpu_test_auto_pc_5.v" \
+
 vcom -work proc_sys_reset_v5_0_14  -93  \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/408c/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib  -93  \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rst_ps7_0_100M_0/sim/cpu_test_rst_ps7_0_100M_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/sim/cpu_test_auto_pc_7.v" \
 
 vcom -work axi_bram_ctrl_v4_1_9  -93  \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/5ed7/hdl/axi_bram_ctrl_v4_1_rfs.vhd" \
@@ -252,19 +267,6 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/source
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/sim/bluex_wrapper_mem_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/sim/bluex.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_0_0/sim/cpu_test_bluex_0_0.v" \
-
-vlog -work axi_protocol_converter_v2_1_29  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/a63f/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
-
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" "+incdir+../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/1ae9/src" "+incdir+E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/sim/cpu_test_auto_pc_6.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/sim/cpu_test_auto_pc_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/sim/cpu_test_auto_pc_1.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/sim/cpu_test_auto_pc_2.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/sim/cpu_test_auto_pc_3.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/sim/cpu_test_auto_pc_4.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/sim/cpu_test_auto_pc_5.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/sim/cpu_test_auto_pc_7.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v" \
 
 vlog -work xil_defaultlib \

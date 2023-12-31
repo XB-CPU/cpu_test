@@ -1,6 +1,51 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Dec 31 17:51:37 2023
+| Host         : xyh running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cpu_test_rgb2lcd_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of cpu_test_rgb2lcd_0_0 (www.alientek.com:user:rgb2lcd:1.0) from (Rev. 3) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'cpu_test_rgb2lcd_0_0'.
+
+
+-Upgrade has removed interface 'lcd_id'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'cpu_test_rgb2lcd_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'lcd_id_i'
+
+-Upgrade has removed port 'lcd_id_o'
+
+-Upgrade has removed port 'lcd_id_t'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 | Date         : Mon Dec 25 23:43:16 2023
 | Host         : xyh running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

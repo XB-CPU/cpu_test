@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Mon Dec 25 23:45:16 2023
+// Date        : Sun Dec 31 17:53:27 2023
 // Host        : xyh running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rgb2lcd_0_0/cpu_test_rgb2lcd_0_0_stub.v
@@ -16,9 +16,8 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "rgb2lcd,Vivado 2023.2" *)
 module cpu_test_rgb2lcd_0_0(rgb_data, rgb_vde, rgb_hsync, rgb_vsync, 
-  pixel_clk, lcd_pclk, lcd_rst, lcd_hs, lcd_vs, lcd_de, lcd_bl, lcd_id_i, lcd_id_t, lcd_id_o, 
-  lcd_rgb_i, lcd_rgb_o, lcd_rgb_t)
-/* synthesis syn_black_box black_box_pad_pin="rgb_data[23:0],rgb_vde,rgb_hsync,rgb_vsync,pixel_clk,lcd_pclk,lcd_rst,lcd_hs,lcd_vs,lcd_de,lcd_bl,lcd_id_i[2:0],lcd_id_t[2:0],lcd_id_o[2:0],lcd_rgb_i[23:0],lcd_rgb_o[23:0],lcd_rgb_t[23:0]" */;
+  pixel_clk, lcd_pclk, lcd_rst, lcd_hs, lcd_vs, lcd_de, lcd_bl, lcd_rgb_i, lcd_rgb_o, lcd_rgb_t)
+/* synthesis syn_black_box black_box_pad_pin="rgb_data[23:0],rgb_vde,rgb_hsync,rgb_vsync,pixel_clk,lcd_pclk,lcd_rst,lcd_hs,lcd_vs,lcd_de,lcd_bl,lcd_rgb_i[23:0],lcd_rgb_o[23:0],lcd_rgb_t[23:0]" */;
   input [23:0]rgb_data;
   input rgb_vde;
   input rgb_hsync;
@@ -30,9 +29,6 @@ module cpu_test_rgb2lcd_0_0(rgb_data, rgb_vde, rgb_hsync, rgb_vsync,
   output lcd_vs;
   output lcd_de;
   output lcd_bl;
-  input [2:0]lcd_id_i;
-  input [2:0]lcd_id_t;
-  output [2:0]lcd_id_o;
   input [23:0]lcd_rgb_i;
   output [23:0]lcd_rgb_o;
   output [23:0]lcd_rgb_t;

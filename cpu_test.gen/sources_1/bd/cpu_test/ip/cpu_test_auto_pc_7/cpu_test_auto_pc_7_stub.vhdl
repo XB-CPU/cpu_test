@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Dec 25 23:45:27 2023
+-- Date        : Mon Dec 25 23:45:26 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top cpu_test_auto_pc_7 -prefix
+--               cpu_test_auto_pc_7_ cpu_test_auto_pc_7_stub.vhdl
 -- Design      : cpu_test_auto_pc_7
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2

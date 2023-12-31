@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.runs\cpu_test_xbar_0_synth_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: 没有权限

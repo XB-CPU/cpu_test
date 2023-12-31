@@ -48,7 +48,7 @@
 
 
 // IP VLNV: www.alientek.com:user:rgb2lcd:1.0
-// IP Revision: 3
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -66,9 +66,6 @@ module cpu_test_rgb2lcd_0_0 (
   lcd_vs,
   lcd_de,
   lcd_bl,
-  lcd_id_i,
-  lcd_id_t,
-  lcd_id_o,
   lcd_rgb_i,
   lcd_rgb_o,
   lcd_rgb_t
@@ -97,12 +94,6 @@ output wire lcd_vs;
 (* X_INTERFACE_INFO = "xilinx.com:user:lcd:1.0 lcd DE" *)
 output wire lcd_de;
 output wire lcd_bl;
-(* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 lcd_id TRI_O" *)
-input wire [2 : 0] lcd_id_i;
-(* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 lcd_id TRI_T" *)
-input wire [2 : 0] lcd_id_t;
-(* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 lcd_id TRI_I" *)
-output wire [2 : 0] lcd_id_o;
 (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 lcd_rgb TRI_I" *)
 input wire [23 : 0] lcd_rgb_i;
 (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 lcd_rgb TRI_O" *)
@@ -124,9 +115,6 @@ output wire [23 : 0] lcd_rgb_t;
     .lcd_vs(lcd_vs),
     .lcd_de(lcd_de),
     .lcd_bl(lcd_bl),
-    .lcd_id_i(lcd_id_i),
-    .lcd_id_t(lcd_id_t),
-    .lcd_id_o(lcd_id_o),
     .lcd_rgb_i(lcd_rgb_i),
     .lcd_rgb_o(lcd_rgb_o),
     .lcd_rgb_t(lcd_rgb_t)

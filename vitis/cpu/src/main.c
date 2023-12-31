@@ -29,15 +29,7 @@
 #define DISP_VTC_ID        XPAR_VTC_0_DEVICE_ID       //VTC器件ID
 #define AXI_GPIO_0_ID      XPAR_AXI_GPIO_0_DEVICE_ID  //PL端  AXI GPIO 0(lcd_id)器件ID
 #define AXI_GPIO_0_CHANEL  1                          //使用AXI GPIO(lcd_id)通道1
-#define AXI_GPIO_0_CHANEL_MEM  2                          //使用AXI GPIO(MEM)通道2
 
-//#define PL_BRAM_BASE        XPAR_PL_BRAM_RD_0_S00_AXI_BASEADDR   //PL_RAM_RD基地址
-#define PL_BRAM_START       PL_BRAM_RD_S00_AXI_SLV_REG0_OFFSET   //RAM读开始寄存器地址
-#define PL_BRAM_START_ADDR  PL_BRAM_RD_S00_AXI_SLV_REG1_OFFSET   //RAM起始寄存器地址
-#define PL_BRAM_LEN         PL_BRAM_RD_S00_AXI_SLV_REG2_OFFSET   //PL读RAM的深度
-
-#define START_ADDR          0  //RAM起始地址 范围:0~1023
-#define BRAM_DATA_BYTE      4  //BRAM数据字节个数
 
 #define COUNTER_MAX (0xffffffffU)
 
@@ -54,40 +46,23 @@ XGpio        axi_gpio_inst;   //PL端 AXI GPIO 驱动实例
 VideoMode    vd_mode;
 //frame buffer的起始地址
 unsigned int const frame_buffer_addr = (XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x1000000);
-unsigned int lcd_id=0;        //LCD ID
-uint32_t RegData[32]={0};
 u32 tim_cnt1 = 0, tim_cnt2 = 0;
 u8 int_tim = 0;
 u32 timer_update_time = 0;
 
-void load_sd_bmp1(u8 *frame);
-void rd_bram();
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
 static void ScuTimer_cfg(void);
 int main(void)
 {
-	uint16_t i;
-	char *str;
 	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
-	XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x07); //设置AXI GPIO为输入
-	lcd_id = LTDC_PanelID_Read(&axi_gpio_inst,AXI_GPIO_0_CHANEL);  //获取LCD的ID
-	XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置AXI GPIO为输出
-	xil_printf("LCD ID: %x\r\n",lcd_id);
 
 	//PL写使能
-	XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL_MEM,0x00); //设置PL写通道为输出
-	XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL_MEM,0x01);//PL写通道输出1
+	XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
+	XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
 
-	//根据获取的LCD的ID号来进行video参数的选择
-	switch(lcd_id){
-		case 0x4342 : vd_mode = VMODE_480x272; break;  //4.3寸屏,480*272分辨率
-		case 0x4384 : vd_mode = VMODE_800x480; break;  //4.3寸屏,800*480分辨率
-		case 0x7084 : vd_mode = VMODE_800x480; break;  //7寸屏,800*480分辨率
-		case 0x7016 : vd_mode = VMODE_1024x600; break; //7寸屏,1024*600分辨率
-		case 0x1018 : vd_mode = VMODE_1280x800; break; //10.1寸屏,1280*800分辨率
-		default : vd_mode = VMODE_800x480; break;
-	}
+	//屏幕选择
+	vd_mode = VMODE_800x480;  //7寸屏,800*480分辨率
 
 	//配置VDMA
 	run_vdma_frame_buffer(&vdma, VDMA_ID, vd_mode.width, vd_mode.height,
@@ -102,13 +77,6 @@ int main(void)
 	DisplayStart(&dispCtrl);
 	//LCD初始化
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
-	//写彩条
-	usleep(1000*500);
-	rd_bram();
-	usleep(1000*500);
-	LCD_clear(WHITE);
-	LCD_update();
-	usleep(1000*500);
 
 	s32 Status = XST_SUCCESS;
 	u8 p, t;
@@ -150,16 +118,15 @@ int main(void)
     tim_cnt1 = XScuTimer_GetCounterValue(scut);
     DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, 65530);
 
+	usleep(1000*100);
+
+
+	LCD_rd_reg();
+	LCD_load_sd_bmp("lty.bmp");
 	LCD_clear(RED);
-	LCD_clear(BLUE);
+	LCD_show_reg(PURPLE);
 	LCD_update();
-	usleep(1000*500);
-//	load_sd_bmp();
-	for(i=0;i<32;i++){
-		sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-		LCD_show_str(0+(i%3)*240,i/3*40,str,BLACK);
-	}
-	LCD_update();
+
 	while(1)
     {
     	// wait for interrupt
@@ -168,14 +135,6 @@ int main(void)
 }
 
 
-void rd_bram()
-{
-    int i=0,cnt=0;
-    //循环从BRAM中读出数据
-    for(i = BRAM_DATA_BYTE*START_ADDR,cnt=0; i < BRAM_DATA_BYTE*(START_ADDR + 32*4) ;i += BRAM_DATA_BYTE,cnt++){
-    	RegData[cnt] = XBram_ReadReg(XPAR_BRAM_0_BASEADDR,i) ;
-    }
-}
 
 static void ScuTimer_cfg(void)
 {

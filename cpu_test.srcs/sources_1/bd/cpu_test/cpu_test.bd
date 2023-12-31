@@ -7,8 +7,7 @@
       "name": "cpu_test",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.2",
-      "validated": "true"
+      "tool_version": "2023.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -280,17 +279,7 @@
     "ports": {
       "lcd_rst": {
         "type": "rst",
-        "direction": "O",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
+        "direction": "O"
       },
       "lcd_bl": {
         "direction": "O"
@@ -789,7 +778,7 @@
       },
       "rgb2lcd_0": {
         "vlnv": "www.alientek.com:user:rgb2lcd:1.0",
-        "ip_revision": "3",
+        "ip_revision": "6",
         "xci_name": "cpu_test_rgb2lcd_0_0",
         "xci_path": "ip\\cpu_test_rgb2lcd_0_0\\cpu_test_rgb2lcd_0_0.xci",
         "inst_hier_path": "rgb2lcd_0"
@@ -843,17 +832,11 @@
         "xci_path": "ip\\cpu_test_axi_gpio_0_0\\cpu_test_axi_gpio_0_0.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
-          "C_ALL_OUTPUTS_2": {
-            "value": "0"
-          },
-          "C_GPIO2_WIDTH": {
-            "value": "1"
-          },
           "C_GPIO_WIDTH": {
-            "value": "3"
+            "value": "1"
           },
           "C_IS_DUAL": {
-            "value": "1"
+            "value": "0"
           }
         }
       },
@@ -2745,12 +2728,6 @@
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "axi_gpio_0/GPIO",
-          "rgb2lcd_0/lcd_id"
-        ]
-      },
-      "axi_gpio_0_GPIO2": {
-        "interface_ports": [
-          "axi_gpio_0/GPIO2",
           "bluex_0/GPIO_r2r_control"
         ]
       },
@@ -2961,8 +2938,8 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "v_tc_0/clk",
-          "rgb2lcd_0/pixel_clk",
-          "v_axi4s_vid_out_0/vid_io_out_clk"
+          "v_axi4s_vid_out_0/vid_io_out_clk",
+          "rgb2lcd_0/pixel_clk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Dec 25 23:45:16 2023
+-- Date        : Sun Dec 31 17:53:27 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rgb2lcd_0_0/cpu_test_rgb2lcd_0_0_stub.vhdl
@@ -26,9 +26,6 @@ entity cpu_test_rgb2lcd_0_0 is
     lcd_vs : out STD_LOGIC;
     lcd_de : out STD_LOGIC;
     lcd_bl : out STD_LOGIC;
-    lcd_id_i : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    lcd_id_t : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    lcd_id_o : out STD_LOGIC_VECTOR ( 2 downto 0 );
     lcd_rgb_i : in STD_LOGIC_VECTOR ( 23 downto 0 );
     lcd_rgb_o : out STD_LOGIC_VECTOR ( 23 downto 0 );
     lcd_rgb_t : out STD_LOGIC_VECTOR ( 23 downto 0 )
@@ -40,7 +37,7 @@ architecture stub of cpu_test_rgb2lcd_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "rgb_data[23:0],rgb_vde,rgb_hsync,rgb_vsync,pixel_clk,lcd_pclk,lcd_rst,lcd_hs,lcd_vs,lcd_de,lcd_bl,lcd_id_i[2:0],lcd_id_t[2:0],lcd_id_o[2:0],lcd_rgb_i[23:0],lcd_rgb_o[23:0],lcd_rgb_t[23:0]";
+attribute black_box_pad_pin of stub : architecture is "rgb_data[23:0],rgb_vde,rgb_hsync,rgb_vsync,pixel_clk,lcd_pclk,lcd_rst,lcd_hs,lcd_vs,lcd_de,lcd_bl,lcd_rgb_i[23:0],lcd_rgb_o[23:0],lcd_rgb_t[23:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "rgb2lcd,Vivado 2023.2";
 begin
