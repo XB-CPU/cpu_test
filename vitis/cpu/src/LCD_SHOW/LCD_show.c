@@ -164,7 +164,7 @@ void LCD_show_reg(u32 color)
 
 	for(i=0;i<REG_DEPTH;i++){
 		sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-		LCD_show_str(0+(i%3)*240+20,i/3*40+40,str,color);
+		LCD_show_str(0+(i%3)*240+20,i/3*36+36,str,color);
 	}
 }
 

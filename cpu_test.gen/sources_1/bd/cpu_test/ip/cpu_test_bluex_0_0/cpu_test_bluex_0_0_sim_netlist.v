@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Mon Dec 25 23:45:36 2023
+// Date        : Mon Dec 25 23:45:35 2023
 // Host        : xyh running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_0_0/cpu_test_bluex_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top cpu_test_bluex_0_0 -prefix
+//               cpu_test_bluex_0_0_ cpu_test_bluex_0_0_sim_netlist.v
 // Design      : cpu_test_bluex_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,115 +13,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "cpu_test_bluex_0_0,bluex,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "IPI" *) 
-(* X_CORE_INFO = "bluex,Vivado 2023.2" *) 
-(* NotValidForBitStream *)
-module cpu_test_bluex_0_0
-   (clk,
-    current_addr,
-    enable_CPU,
-    isc,
-    ram_addr,
-    ram_clk,
-    ram_en,
-    ram_rd_data,
-    ram_rst,
-    ram_we,
-    ram_wr_data,
-    read_mem_out_inw,
-    rst_n,
-    wr_en_i,
-    wr_en_o,
-    wr_en_t,
-    write_mem_addr,
-    write_mem_clk,
-    write_mem_data,
-    write_mem_en,
-    write_mem_rst,
-    write_mem_we);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_BRAM_PORT ADDR" *) output [15:0]current_addr;
-  input [0:0]enable_CPU;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_BRAM_PORT DOUT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ROM_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) input [31:0]isc;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT ADDR" *) output [31:0]ram_addr;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RAM_CLK CLK, xilinx.com:interface:bram:1.0 REG_BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RAM_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output ram_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT EN" *) output ram_en;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT DOUT" *) input [31:0]ram_rd_data;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RAM_RST RST, xilinx.com:interface:bram:1.0 REG_BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RAM_RST, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) output ram_rst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT WE" *) output [3:0]ram_we;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT DIN" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME REG_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) output [31:0]ram_wr_data;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT DOUT" *) input [31:0]read_mem_out_inw;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RST_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst_n;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_O" *) input wr_en_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_I" *) output wr_en_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_T" *) input wr_en_t;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT ADDR" *) output [15:0]write_mem_addr;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.WRITE_MEM_CLK CLK, xilinx.com:interface:bram:1.0 MEN_BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.WRITE_MEM_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output write_mem_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT DIN" *) output [31:0]write_mem_data;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT EN" *) output write_mem_en;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.WRITE_MEM_RST RST, xilinx.com:interface:bram:1.0 MEN_BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.WRITE_MEM_RST, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) output write_mem_rst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT WE" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MEN_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) output write_mem_we;
-
-  wire \<const0> ;
-  wire \<const1> ;
-  wire clk;
-  wire [15:0]current_addr;
-  wire [0:0]enable_CPU;
-  wire [31:0]isc;
-  wire [31:2]\^ram_addr ;
-  wire ram_clk;
-  wire ram_en;
-  wire ram_rst;
-  wire [3:0]ram_we;
-  wire [31:0]ram_wr_data;
-  wire [31:0]read_mem_out_inw;
-  wire rst_n;
-  wire wr_en_i;
-  wire [15:0]write_mem_addr;
-  wire write_mem_clk;
-  wire [31:0]write_mem_data;
-  wire write_mem_rst;
-  wire write_mem_we;
-  wire NLW_inst_wr_en_o_UNCONNECTED;
-  wire NLW_inst_write_mem_en_UNCONNECTED;
-  wire [1:0]NLW_inst_ram_addr_UNCONNECTED;
-
-  assign ram_addr[31:2] = \^ram_addr [31:2];
-  assign ram_addr[1] = \<const0> ;
-  assign ram_addr[0] = \<const0> ;
-  assign wr_en_o = \<const0> ;
-  assign write_mem_en = \<const1> ;
-  GND GND
-       (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
-  (* HW_HANDOFF = "bluex.hwdef" *) 
-  cpu_test_bluex_0_0_bluex inst
-       (.clk(clk),
-        .current_addr(current_addr),
-        .enable_CPU(enable_CPU),
-        .isc(isc),
-        .ram_addr({\^ram_addr ,NLW_inst_ram_addr_UNCONNECTED[1:0]}),
-        .ram_clk(ram_clk),
-        .ram_en(ram_en),
-        .ram_rd_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ram_rst(ram_rst),
-        .ram_we(ram_we),
-        .ram_wr_data(ram_wr_data),
-        .read_mem_out_inw(read_mem_out_inw),
-        .rst_n(rst_n),
-        .wr_en_i(wr_en_i),
-        .wr_en_o(NLW_inst_wr_en_o_UNCONNECTED),
-        .wr_en_t(1'b0),
-        .write_mem_addr(write_mem_addr),
-        .write_mem_clk(write_mem_clk),
-        .write_mem_data(write_mem_data),
-        .write_mem_en(NLW_inst_write_mem_en_UNCONNECTED),
-        .write_mem_rst(write_mem_rst),
-        .write_mem_we(write_mem_we));
-endmodule
-
-(* ORIG_REF_NAME = "PC" *) 
 module cpu_test_bluex_0_0_PC
    (current_addr,
     D,
@@ -309,7 +200,6 @@ module cpu_test_bluex_0_0_PC
         .O(D[0]));
 endmodule
 
-(* ORIG_REF_NAME = "alu_ex" *) 
 module cpu_test_bluex_0_0_alu_ex
    (E,
     real_rst,
@@ -7827,7 +7717,7 @@ module cpu_test_bluex_0_0_alu_ex
         .Q(\write_reg_addr_out_reg[4]_0 [4]));
 endmodule
 
-(* HW_HANDOFF = "bluex.hwdef" *) (* ORIG_REF_NAME = "bluex" *) 
+(* HW_HANDOFF = "bluex.hwdef" *) 
 module cpu_test_bluex_0_0_bluex
    (clk,
     current_addr,
@@ -8142,7 +8032,6 @@ module cpu_test_bluex_0_0_bluex
         .\write_reg_addr_reg[4]_0 (write_reg_addr_out));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_PC_0_0" *) 
 module cpu_test_bluex_0_0_bluex_PC_0_0
    (current_addr,
     D,
@@ -8185,7 +8074,6 @@ module cpu_test_bluex_0_0_bluex_PC_0_0
         .\current_addr_reg[7]_0 (\current_addr_reg[7] ));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_alu_ex_0_0" *) 
 module cpu_test_bluex_0_0_bluex_alu_ex_0_0
    (branch_isc_flag_reg,
     real_rst,
@@ -8340,7 +8228,6 @@ module cpu_test_bluex_0_0_bluex_alu_ex_0_0
         .\write_reg_addr_out_reg[4]_1 (\write_reg_addr_out_reg[4]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_demux_id_0_0" *) 
 module cpu_test_bluex_0_0_bluex_demux_id_0_0
    (\rd_reg[4] ,
     \rs_reg[0] ,
@@ -8467,7 +8354,6 @@ module cpu_test_bluex_0_0_bluex_demux_id_0_0
         .\rt_reg[4]_1 (\rt_reg[4]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_reg_heap_id_0_0" *) 
 module cpu_test_bluex_0_0_bluex_reg_heap_id_0_0
    (rst_n_0,
     ram_addr,
@@ -8550,7 +8436,6 @@ module cpu_test_bluex_0_0_bluex_reg_heap_id_0_0
         .wr_en_i(wr_en_i));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_reg_wb_0_0" *) 
 module cpu_test_bluex_0_0_bluex_reg_wb_0_0
    (reg_wb_0_reg_write,
     D,
@@ -8601,8 +8486,7 @@ module cpu_test_bluex_0_0_bluex_reg_wb_0_0
         .\write_reg_addr_reg[4]_1 (\write_reg_addr_reg[4]_0 ));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_0_0,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "bluex_util_vector_logic_0_0" *) 
-(* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_0_0,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
 module cpu_test_bluex_0_0_bluex_util_vector_logic_0_0
    (Op1,
     Res);
@@ -8619,8 +8503,7 @@ module cpu_test_bluex_0_0_bluex_util_vector_logic_0_0
         .O(Res));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_0_1,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "bluex_util_vector_logic_0_1" *) 
-(* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_0_1,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
 module cpu_test_bluex_0_0_bluex_util_vector_logic_0_1
    (Op1,
     Res);
@@ -8637,8 +8520,7 @@ module cpu_test_bluex_0_0_bluex_util_vector_logic_0_1
         .O(Res));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_1_0,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "bluex_util_vector_logic_1_0" *) 
-(* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "bluex_util_vector_logic_1_0,util_vector_logic_v2_0_3_util_vector_logic,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2" *) 
 module cpu_test_bluex_0_0_bluex_util_vector_logic_1_0
    (Op1,
     Op2,
@@ -8659,7 +8541,6 @@ module cpu_test_bluex_0_0_bluex_util_vector_logic_1_0
         .O(Res));
 endmodule
 
-(* ORIG_REF_NAME = "bluex_wrapper_mem_0_0" *) 
 module cpu_test_bluex_0_0_bluex_wrapper_mem_0_0
    (memory_to_reg_reg,
     wrapper_mem_0_reg_write,
@@ -8746,7 +8627,114 @@ module cpu_test_bluex_0_0_bluex_wrapper_mem_0_0
         .\write_reg_addr_reg[4]_1 (\write_reg_addr_reg[4]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "demux_id" *) 
+(* CHECK_LICENSE_TYPE = "cpu_test_bluex_0_0,bluex,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "IPI" *) 
+(* X_CORE_INFO = "bluex,Vivado 2023.2" *) 
+(* NotValidForBitStream *)
+module cpu_test_bluex_0_0
+   (clk,
+    current_addr,
+    enable_CPU,
+    isc,
+    ram_addr,
+    ram_clk,
+    ram_en,
+    ram_rd_data,
+    ram_rst,
+    ram_we,
+    ram_wr_data,
+    read_mem_out_inw,
+    rst_n,
+    wr_en_i,
+    wr_en_o,
+    wr_en_t,
+    write_mem_addr,
+    write_mem_clk,
+    write_mem_data,
+    write_mem_en,
+    write_mem_rst,
+    write_mem_we);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_BRAM_PORT ADDR" *) output [15:0]current_addr;
+  input [0:0]enable_CPU;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_BRAM_PORT DOUT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ROM_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) input [31:0]isc;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT ADDR" *) output [31:0]ram_addr;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RAM_CLK CLK, xilinx.com:interface:bram:1.0 REG_BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RAM_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output ram_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT EN" *) output ram_en;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT DOUT" *) input [31:0]ram_rd_data;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RAM_RST RST, xilinx.com:interface:bram:1.0 REG_BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RAM_RST, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) output ram_rst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT WE" *) output [3:0]ram_we;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 REG_BRAM_PORT DIN" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME REG_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) output [31:0]ram_wr_data;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT DOUT" *) input [31:0]read_mem_out_inw;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RST_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_O" *) input wr_en_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_I" *) output wr_en_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_r2r_control TRI_T" *) input wr_en_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT ADDR" *) output [15:0]write_mem_addr;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.WRITE_MEM_CLK CLK, xilinx.com:interface:bram:1.0 MEN_BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.WRITE_MEM_CLK, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output write_mem_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT DIN" *) output [31:0]write_mem_data;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT EN" *) output write_mem_en;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.WRITE_MEM_RST RST, xilinx.com:interface:bram:1.0 MEN_BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.WRITE_MEM_RST, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) output write_mem_rst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 MEN_BRAM_PORT WE" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MEN_BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *) output write_mem_we;
+
+  wire \<const0> ;
+  wire \<const1> ;
+  wire clk;
+  wire [15:0]current_addr;
+  wire [0:0]enable_CPU;
+  wire [31:0]isc;
+  wire [31:2]\^ram_addr ;
+  wire ram_clk;
+  wire ram_en;
+  wire ram_rst;
+  wire [3:0]ram_we;
+  wire [31:0]ram_wr_data;
+  wire [31:0]read_mem_out_inw;
+  wire rst_n;
+  wire wr_en_i;
+  wire [15:0]write_mem_addr;
+  wire write_mem_clk;
+  wire [31:0]write_mem_data;
+  wire write_mem_rst;
+  wire write_mem_we;
+  wire NLW_inst_wr_en_o_UNCONNECTED;
+  wire NLW_inst_write_mem_en_UNCONNECTED;
+  wire [1:0]NLW_inst_ram_addr_UNCONNECTED;
+
+  assign ram_addr[31:2] = \^ram_addr [31:2];
+  assign ram_addr[1] = \<const0> ;
+  assign ram_addr[0] = \<const0> ;
+  assign wr_en_o = \<const0> ;
+  assign write_mem_en = \<const1> ;
+  GND GND
+       (.G(\<const0> ));
+  VCC VCC
+       (.P(\<const1> ));
+  (* HW_HANDOFF = "bluex.hwdef" *) 
+  cpu_test_bluex_0_0_bluex inst
+       (.clk(clk),
+        .current_addr(current_addr),
+        .enable_CPU(enable_CPU),
+        .isc(isc),
+        .ram_addr({\^ram_addr ,NLW_inst_ram_addr_UNCONNECTED[1:0]}),
+        .ram_clk(ram_clk),
+        .ram_en(ram_en),
+        .ram_rd_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .ram_rst(ram_rst),
+        .ram_we(ram_we),
+        .ram_wr_data(ram_wr_data),
+        .read_mem_out_inw(read_mem_out_inw),
+        .rst_n(rst_n),
+        .wr_en_i(wr_en_i),
+        .wr_en_o(NLW_inst_wr_en_o_UNCONNECTED),
+        .wr_en_t(1'b0),
+        .write_mem_addr(write_mem_addr),
+        .write_mem_clk(write_mem_clk),
+        .write_mem_data(write_mem_data),
+        .write_mem_en(NLW_inst_write_mem_en_UNCONNECTED),
+        .write_mem_rst(write_mem_rst),
+        .write_mem_we(write_mem_we));
+endmodule
+
 module cpu_test_bluex_0_0_demux_id
    (\rd_reg[4]_0 ,
     \rs_reg[0]_0 ,
@@ -9421,7 +9409,6 @@ module cpu_test_bluex_0_0_demux_id
         .O(\write_reg_addr_out[4]_i_2_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "reg_heap_id" *) 
 module cpu_test_bluex_0_0_reg_heap_id
    (rst_n_0,
     ram_addr,
@@ -30330,7 +30317,6 @@ module cpu_test_bluex_0_0_reg_heap_id
         .O(rst_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "reg_wb" *) 
 module cpu_test_bluex_0_0_reg_wb
    (reg_wb_0_reg_write,
     D,
@@ -31022,7 +31008,6 @@ module cpu_test_bluex_0_0_reg_wb
         .Q(\write_reg_addr_reg[4]_0 [4]));
 endmodule
 
-(* ORIG_REF_NAME = "wrapper_mem" *) 
 module cpu_test_bluex_0_0_wrapper_mem
    (memory_to_reg_reg_0,
     wrapper_mem_0_reg_write,

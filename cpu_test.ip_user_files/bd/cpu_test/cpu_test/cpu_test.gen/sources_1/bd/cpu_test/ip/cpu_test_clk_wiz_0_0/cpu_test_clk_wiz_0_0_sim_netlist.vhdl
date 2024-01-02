@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Mon Dec 25 23:13:13 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_clk_wiz_0_0/cpu_test_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_clk_wiz_0_0 -prefix
+--               cpu_test_clk_wiz_0_0_ cpu_test_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : cpu_test_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,7 +15,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_address_decoder is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder is
   port (
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]_0\ : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 29 downto 0 );
@@ -141,9 +141,9 @@ entity cpu_test_clk_wiz_0_0_address_decoder is
     load_enable_reg_d_reg : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end cpu_test_clk_wiz_0_0_address_decoder;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_address_decoder is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder is
   signal Bus_RNW_reg : STD_LOGIC;
   signal Bus_RNW_reg_i_1_n_0 : STD_LOGIC;
   signal \^gen_bkend_ce_registers[2].ce_out_i_reg[2]_0\ : STD_LOGIC;
@@ -1790,7 +1790,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_clk_wiz is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz is
   port (
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
     mmcm_adv_inst_0 : out STD_LOGIC;
@@ -1810,9 +1810,9 @@ entity cpu_test_clk_wiz_0_0_clk_wiz is
     DI : in STD_LOGIC_VECTOR ( 15 downto 0 );
     DADDR : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-end cpu_test_clk_wiz_0_0_clk_wiz;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_clk_wiz is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz is
   signal clk_in1_cpu_test_clk_wiz_0_0 : STD_LOGIC;
   signal clk_out1_cpu_test_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_buf_cpu_test_clk_wiz_0_0 : STD_LOGIC;
@@ -1970,7 +1970,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_mmcm_drp is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp is
   port (
     D : out STD_LOGIC_VECTOR ( 0 to 0 );
     DI : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -1999,9 +1999,9 @@ entity cpu_test_clk_wiz_0_0_mmcm_drp is
     SRDY_reg_0 : in STD_LOGIC;
     \ram_addr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end cpu_test_clk_wiz_0_0_mmcm_drp;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_mmcm_drp is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp is
   signal \DADDR[6]_i_1_n_0\ : STD_LOGIC;
   signal \DADDR[6]_i_2_n_0\ : STD_LOGIC;
   signal \^di\ : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -14766,7 +14766,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_soft_reset is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset is
   port (
     sw_rst_cond_d1 : out STD_LOGIC;
     wrack : out STD_LOGIC;
@@ -14776,9 +14776,9 @@ entity cpu_test_clk_wiz_0_0_soft_reset is
     s_axi_aclk : in STD_LOGIC;
     reset_trig0 : in STD_LOGIC
   );
-end cpu_test_clk_wiz_0_0_soft_reset;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_soft_reset is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset is
   signal FF_WRACK_i_1_n_0 : STD_LOGIC;
   signal \RESET_FLOPS[10].RST_FLOPS_i_1_n_0\ : STD_LOGIC;
   signal \RESET_FLOPS[11].RST_FLOPS_i_1_n_0\ : STD_LOGIC;
@@ -15274,7 +15274,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_clk_wiz_drp is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp is
   port (
     IP2Bus_WrAck : out STD_LOGIC;
     ip2bus_rdack_int1 : out STD_LOGIC;
@@ -15371,9 +15371,9 @@ entity cpu_test_clk_wiz_0_0_clk_wiz_drp is
     \ram_clk_config_reg[30][31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \ram_clk_config_reg[31][31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end cpu_test_clk_wiz_0_0_clk_wiz_drp;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_clk_wiz_drp is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp is
   signal IP2Bus_RdAck : STD_LOGIC;
   signal IP2Bus_RdAck0 : STD_LOGIC;
   signal IP2Bus_WrAck0 : STD_LOGIC;
@@ -16221,7 +16221,7 @@ SEN_reg: unisim.vcomponents.FDRE
       Q => SEN,
       R => SR(0)
     );
-clk_inst: entity work.cpu_test_clk_wiz_0_0_clk_wiz
+clk_inst: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz
      port map (
       D(0) => D(0),
       DADDR(6 downto 0) => daddr(6 downto 0),
@@ -17128,7 +17128,7 @@ load_enable_reg_d_reg: unisim.vcomponents.FDRE
       Q => Q(20),
       R => SR(0)
     );
-mmcm_drp_inst: entity work.cpu_test_clk_wiz_0_0_mmcm_drp
+mmcm_drp_inst: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp
      port map (
       D(0) => D(1),
       DADDR(6 downto 0) => daddr(6 downto 0),
@@ -33685,7 +33685,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_slave_attachment is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_rresp : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -33814,9 +33814,9 @@ entity cpu_test_clk_wiz_0_0_slave_attachment is
     load_enable_reg_d_reg : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end cpu_test_clk_wiz_0_0_slave_attachment;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_slave_attachment is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment is
   signal \FSM_onehot_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[2]_i_1_n_0\ : STD_LOGIC;
@@ -34233,7 +34233,7 @@ begin
       Q => timeout,
       R => clear
     );
-I_DECODER: entity work.cpu_test_clk_wiz_0_0_address_decoder
+I_DECODER: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder
      port map (
       Bus_RNW_reg_reg_0(0) => Bus_RNW_reg_reg(0),
       Bus_RNW_reg_reg_1 => bus2ip_rnw_i_reg_n_0,
@@ -35708,7 +35708,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_axi_lite_ipif is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif is
   port (
     bus2ip_reset_active_high : out STD_LOGIC;
     s_axi_rresp : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -35837,11 +35837,11 @@ entity cpu_test_clk_wiz_0_0_axi_lite_ipif is
     \s_axi_rdata_i_reg[15]_0\ : in STD_LOGIC_VECTOR ( 13 downto 0 );
     load_enable_reg_d_reg : in STD_LOGIC
   );
-end cpu_test_clk_wiz_0_0_axi_lite_ipif;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_axi_lite_ipif is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif is
 begin
-I_SLAVE_ATTACHMENT: entity work.cpu_test_clk_wiz_0_0_slave_attachment
+I_SLAVE_ATTACHMENT: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment
      port map (
       Bus_RNW_reg_reg(0) => Bus_RNW_reg_reg(0),
       D(1 downto 0) => D(1 downto 0),
@@ -35975,7 +35975,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity cpu_test_clk_wiz_0_0_axi_clk_config is
+entity cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -36001,12 +36001,12 @@ entity cpu_test_clk_wiz_0_0_axi_clk_config is
     clk_in1 : in STD_LOGIC
   );
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of cpu_test_clk_wiz_0_0_axi_clk_config : entity is 11;
+  attribute C_S_AXI_ADDR_WIDTH of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config : entity is 11;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of cpu_test_clk_wiz_0_0_axi_clk_config : entity is 32;
-end cpu_test_clk_wiz_0_0_axi_clk_config;
+  attribute C_S_AXI_DATA_WIDTH of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config : entity is 32;
+end cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config;
 
-architecture STRUCTURE of cpu_test_clk_wiz_0_0_axi_clk_config is
+architecture STRUCTURE of cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config is
   signal AXI_LITE_IPIF_I_n_12 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_13 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_14 : STD_LOGIC;
@@ -36152,7 +36152,7 @@ begin
   locked <= \^locked\;
   s_axi_awready <= \^s_axi_awready\;
   s_axi_wready <= \^s_axi_awready\;
-AXI_LITE_IPIF_I: entity work.cpu_test_clk_wiz_0_0_axi_lite_ipif
+AXI_LITE_IPIF_I: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif
      port map (
       Bus_RNW_reg_reg(0) => AXI_LITE_IPIF_I_n_57,
       D(1) => IP2Bus_Data(30),
@@ -36341,7 +36341,7 @@ AXI_LITE_IPIF_I: entity work.cpu_test_clk_wiz_0_0_axi_lite_ipif
       wrack => wrack,
       wrack_reg_10 => wrack_reg_10
     );
-CLK_CORE_DRP_I: entity work.cpu_test_clk_wiz_0_0_clk_wiz_drp
+CLK_CORE_DRP_I: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp
      port map (
       D(1) => IP2Bus_Data(30),
       D(0) => IP2Bus_Data(31),
@@ -36497,7 +36497,7 @@ CLK_CORE_DRP_I: entity work.cpu_test_clk_wiz_0_0_clk_wiz_drp
       wrack_reg_10 => wrack_reg_10,
       wrack_reg_1_reg_0 => AXI_LITE_IPIF_I_n_87
     );
-SOFT_RESET_I: entity work.cpu_test_clk_wiz_0_0_soft_reset
+SOFT_RESET_I: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset
      port map (
       \RESET_FLOPS[15].RST_FLOPS_0\ => SOFT_RESET_I_n_2,
       bus2ip_reset_active_high => bus2ip_reset_active_high,
@@ -36632,7 +36632,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-inst: entity work.cpu_test_clk_wiz_0_0_axi_clk_config
+inst: entity work.cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config
      port map (
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,

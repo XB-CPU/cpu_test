@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Mon Dec 25 23:45:17 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_0_0/cpu_test_axi_bram_ctrl_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_axi_bram_ctrl_0_0 -prefix
+--               cpu_test_axi_bram_ctrl_0_0_ cpu_test_axi_bram_ctrl_0_0_sim_netlist.vhdl
 -- Design      : cpu_test_axi_bram_ctrl_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -36,8 +36,6 @@ entity cpu_test_axi_bram_ctrl_0_0_axi_lite is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 9 downto 0 );
     s_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_0_0_axi_lite : entity is "axi_lite";
 end cpu_test_axi_bram_ctrl_0_0_axi_lite;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_0_0_axi_lite is
@@ -588,8 +586,6 @@ entity cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl_top is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 9 downto 0 );
     s_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl_top : entity is "axi_bram_ctrl_top";
 end cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl_top;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl_top is
@@ -728,8 +724,6 @@ entity cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl is
   attribute C_S_AXI_PROTOCOL of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "AXI4LITE";
   attribute C_S_AXI_SUPPORTS_NARROW_BURST : integer;
   attribute C_S_AXI_SUPPORTS_NARROW_BURST of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "axi_bram_ctrl";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl : entity is "yes";
 end cpu_test_axi_bram_ctrl_0_0_axi_bram_ctrl;

@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Dec 25 23:45:36 2023
+-- Date        : Mon Dec 25 23:45:35 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_0_0/cpu_test_bluex_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_bluex_0_0 -prefix
+--               cpu_test_bluex_0_0_ cpu_test_bluex_0_0_sim_netlist.vhdl
 -- Design      : cpu_test_bluex_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -27,8 +27,6 @@ entity cpu_test_bluex_0_0_PC is
     \current_addr_reg[15]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     Res : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_PC : entity is "PC";
 end cpu_test_bluex_0_0_PC;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_PC is
@@ -295,8 +293,6 @@ entity cpu_test_bluex_0_0_alu_ex is
     \write_reg_addr_out_reg[4]_1\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \pc_next_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_alu_ex : entity is "alu_ex";
 end cpu_test_bluex_0_0_alu_ex;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_alu_ex is
@@ -10121,8 +10117,6 @@ entity cpu_test_bluex_0_0_bluex_util_vector_logic_0_0 is
   attribute CHECK_LICENSE_TYPE of cpu_test_bluex_0_0_bluex_util_vector_logic_0_0 : entity is "bluex_util_vector_logic_0_0,util_vector_logic_v2_0_3_util_vector_logic,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of cpu_test_bluex_0_0_bluex_util_vector_logic_0_0 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_util_vector_logic_0_0 : entity is "bluex_util_vector_logic_0_0";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of cpu_test_bluex_0_0_bluex_util_vector_logic_0_0 : entity is "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2";
 end cpu_test_bluex_0_0_bluex_util_vector_logic_0_0;
@@ -10151,8 +10145,6 @@ entity cpu_test_bluex_0_0_bluex_util_vector_logic_0_1 is
   attribute CHECK_LICENSE_TYPE of cpu_test_bluex_0_0_bluex_util_vector_logic_0_1 : entity is "bluex_util_vector_logic_0_1,util_vector_logic_v2_0_3_util_vector_logic,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of cpu_test_bluex_0_0_bluex_util_vector_logic_0_1 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_util_vector_logic_0_1 : entity is "bluex_util_vector_logic_0_1";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of cpu_test_bluex_0_0_bluex_util_vector_logic_0_1 : entity is "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2";
 end cpu_test_bluex_0_0_bluex_util_vector_logic_0_1;
@@ -10182,8 +10174,6 @@ entity cpu_test_bluex_0_0_bluex_util_vector_logic_1_0 is
   attribute CHECK_LICENSE_TYPE of cpu_test_bluex_0_0_bluex_util_vector_logic_1_0 : entity is "bluex_util_vector_logic_1_0,util_vector_logic_v2_0_3_util_vector_logic,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of cpu_test_bluex_0_0_bluex_util_vector_logic_1_0 : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_util_vector_logic_1_0 : entity is "bluex_util_vector_logic_1_0";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of cpu_test_bluex_0_0_bluex_util_vector_logic_1_0 : entity is "util_vector_logic_v2_0_3_util_vector_logic,Vivado 2023.2";
 end cpu_test_bluex_0_0_bluex_util_vector_logic_1_0;
@@ -10237,8 +10227,6 @@ entity cpu_test_bluex_0_0_demux_id is
     \rt_forward_reg[0]_0\ : in STD_LOGIC;
     \pc_next_reg[15]_1\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_demux_id : entity is "demux_id";
 end cpu_test_bluex_0_0_demux_id;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_demux_id is
@@ -11047,8 +11035,6 @@ entity cpu_test_bluex_0_0_reg_heap_id is
     reg_wb_0_reg_write : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_reg_heap_id : entity is "reg_heap_id";
 end cpu_test_bluex_0_0_reg_heap_id;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_reg_heap_id is
@@ -38682,8 +38668,6 @@ entity cpu_test_bluex_0_0_reg_wb is
     read_mem_out_inw : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \write_reg_addr_reg[4]_1\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_reg_wb : entity is "reg_wb";
 end cpu_test_bluex_0_0_reg_wb;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_reg_wb is
@@ -39607,8 +39591,6 @@ entity cpu_test_bluex_0_0_wrapper_mem is
     \write_reg_addr_reg[4]_1\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \write_data_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_wrapper_mem : entity is "wrapper_mem";
 end cpu_test_bluex_0_0_wrapper_mem;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_wrapper_mem is
@@ -40278,8 +40260,6 @@ entity cpu_test_bluex_0_0_bluex_PC_0_0 is
     \current_addr_reg[15]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     Res : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_PC_0_0 : entity is "bluex_PC_0_0";
 end cpu_test_bluex_0_0_bluex_PC_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_PC_0_0 is
@@ -40341,8 +40321,6 @@ entity cpu_test_bluex_0_0_bluex_alu_ex_0_0 is
     \write_reg_addr_out_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \pc_next_reg[15]\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_alu_ex_0_0 : entity is "bluex_alu_ex_0_0";
 end cpu_test_bluex_0_0_bluex_alu_ex_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_alu_ex_0_0 is
@@ -40425,8 +40403,6 @@ entity cpu_test_bluex_0_0_bluex_demux_id_0_0 is
     \rt_forward_reg[0]_0\ : in STD_LOGIC;
     \pc_next_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_demux_id_0_0 : entity is "bluex_demux_id_0_0";
 end cpu_test_bluex_0_0_bluex_demux_id_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_demux_id_0_0 is
@@ -40491,8 +40467,6 @@ entity cpu_test_bluex_0_0_bluex_reg_heap_id_0_0 is
     reg_wb_0_reg_write : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_reg_heap_id_0_0 : entity is "bluex_reg_heap_id_0_0";
 end cpu_test_bluex_0_0_bluex_reg_heap_id_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_reg_heap_id_0_0 is
@@ -40538,8 +40512,6 @@ entity cpu_test_bluex_0_0_bluex_reg_wb_0_0 is
     read_mem_out_inw : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \write_reg_addr_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_reg_wb_0_0 : entity is "bluex_reg_wb_0_0";
 end cpu_test_bluex_0_0_bluex_reg_wb_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_reg_wb_0_0 is
@@ -40586,8 +40558,6 @@ entity cpu_test_bluex_0_0_bluex_wrapper_mem_0_0 is
     \write_reg_addr_reg[4]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \write_data_reg[31]\ : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex_wrapper_mem_0_0 : entity is "bluex_wrapper_mem_0_0";
 end cpu_test_bluex_0_0_bluex_wrapper_mem_0_0;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex_wrapper_mem_0_0 is
@@ -40647,8 +40617,6 @@ entity cpu_test_bluex_0_0_bluex is
   );
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of cpu_test_bluex_0_0_bluex : entity is "bluex.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_bluex_0_0_bluex : entity is "bluex";
 end cpu_test_bluex_0_0_bluex;
 
 architecture STRUCTURE of cpu_test_bluex_0_0_bluex is

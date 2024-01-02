@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Mon Dec 25 23:12:02 2023
 // Host        : xyh running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_PS_to_CPU_controller_0_0/cpu_test_PS_to_CPU_controller_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top cpu_test_PS_to_CPU_controller_0_0 -prefix
+//               cpu_test_PS_to_CPU_controller_0_0_ cpu_test_PS_to_CPU_controller_0_0_stub.v
 // Design      : cpu_test_PS_to_CPU_controller_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-2

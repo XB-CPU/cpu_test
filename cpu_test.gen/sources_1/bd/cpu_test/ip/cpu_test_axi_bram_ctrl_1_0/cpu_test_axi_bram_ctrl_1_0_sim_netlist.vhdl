@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Mon Dec 25 23:45:25 2023
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_1_0/cpu_test_axi_bram_ctrl_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_axi_bram_ctrl_1_0 -prefix
+--               cpu_test_axi_bram_ctrl_1_0_ cpu_test_axi_bram_ctrl_1_0_sim_netlist.vhdl
 -- Design      : cpu_test_axi_bram_ctrl_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -40,8 +40,6 @@ entity cpu_test_axi_bram_ctrl_1_0_SRL_FIFO is
     \FSM_onehot_GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg[2]\ : in STD_LOGIC;
     axi_wr_burst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_SRL_FIFO : entity is "SRL_FIFO";
 end cpu_test_axi_bram_ctrl_1_0_SRL_FIFO;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_SRL_FIFO is
@@ -791,8 +789,6 @@ entity cpu_test_axi_bram_ctrl_1_0_sng_port_arb is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aresetn : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_sng_port_arb : entity is "sng_port_arb";
 end cpu_test_axi_bram_ctrl_1_0_sng_port_arb;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_sng_port_arb is
@@ -1231,8 +1227,6 @@ entity cpu_test_axi_bram_ctrl_1_0_ua_narrow is
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
     \GEN_NARROW_CNT.narrow_addr_int_reg[0]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_ua_narrow : entity is "ua_narrow";
 end cpu_test_axi_bram_ctrl_1_0_ua_narrow;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_ua_narrow is
@@ -1473,8 +1467,6 @@ entity cpu_test_axi_bram_ctrl_1_0_wrap_brst is
     aw_active_re : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_wrap_brst : entity is "wrap_brst";
 end cpu_test_axi_bram_ctrl_1_0_wrap_brst;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_wrap_brst is
@@ -2722,8 +2714,6 @@ entity cpu_test_axi_bram_ctrl_1_0_rd_chnl is
     s_axi_arid : in STD_LOGIC_VECTOR ( 12 downto 0 );
     bram_rddata_a : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_rd_chnl : entity is "rd_chnl";
 end cpu_test_axi_bram_ctrl_1_0_rd_chnl;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_rd_chnl is
@@ -6468,8 +6458,6 @@ entity cpu_test_axi_bram_ctrl_1_0_wr_chnl is
     s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_wr_chnl : entity is "wr_chnl";
 end cpu_test_axi_bram_ctrl_1_0_wr_chnl;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_wr_chnl is
@@ -8092,8 +8080,6 @@ entity cpu_test_axi_bram_ctrl_1_0_full_axi is
     s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_full_axi : entity is "full_axi";
 end cpu_test_axi_bram_ctrl_1_0_full_axi;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_full_axi is
@@ -8595,8 +8581,6 @@ entity cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl_top is
     s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl_top : entity is "axi_bram_ctrl_top";
 end cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl_top;
 
 architecture STRUCTURE of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl_top is
@@ -8752,8 +8736,6 @@ entity cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl is
   attribute C_S_AXI_PROTOCOL of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl : entity is "AXI4";
   attribute C_S_AXI_SUPPORTS_NARROW_BURST : integer;
   attribute C_S_AXI_SUPPORTS_NARROW_BURST of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl : entity is "axi_bram_ctrl";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl : entity is "yes";
 end cpu_test_axi_bram_ctrl_1_0_axi_bram_ctrl;

@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-2
 
@@ -105,17 +108,9 @@ set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dz
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_gpio_0_0/cpu_test_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_gpio_0_0/cpu_test_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xbar_0/cpu_test_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rst_ps7_0_100M_0/cpu_test_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rst_ps7_0_100M_0/cpu_test_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_rst_ps7_0_100M_0/cpu_test_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_0_0/cpu_test_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_blk_mem_gen_0_0/cpu_test_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_1_0/cpu_test_axi_bram_ctrl_1_0_ooc.xdc]
@@ -125,6 +120,18 @@ set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dz
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_proc_sys_reset_0_0/cpu_test_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_proc_sys_reset_0_0/cpu_test_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_0_0/src/bluex_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_ila_0_0/cpu_test_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/cpu_test_ooc.xdc]
 
 OPTRACE "Adding files" END { }

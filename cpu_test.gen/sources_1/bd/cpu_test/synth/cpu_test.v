@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sun Dec 31 17:52:42 2023
+//Date        : Tue Jan  2 21:38:52 2024
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test.bd
 //Design      : cpu_test
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "cpu_test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu_test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=37,numReposBlks=25,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_board_cnt=2,da_bram_cntlr_cnt=4,da_clkrst_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "cpu_test.hwdef" *) 
+(* CORE_GENERATION_INFO = "cpu_test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu_test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=38,numReposBlks=26,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_board_cnt=2,da_bram_cntlr_cnt=4,da_clkrst_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "cpu_test.hwdef" *) 
 module cpu_test
    (DDR_addr,
     DDR_ba,
@@ -89,7 +89,6 @@ module cpu_test
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_1_BRAM_PORTA_EN;
-  wire axi_bram_ctrl_1_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_1_BRAM_PORTA_WE;
   wire axi_gpio_0_GPIO_TRI_I;
   wire [0:0]axi_gpio_0_GPIO_TRI_O;
@@ -437,7 +436,6 @@ module cpu_test
         .bram_clk_a(axi_bram_ctrl_1_BRAM_PORTA_CLK),
         .bram_en_a(axi_bram_ctrl_1_BRAM_PORTA_EN),
         .bram_rddata_a(axi_bram_ctrl_1_BRAM_PORTA_DOUT),
-        .bram_rst_a(axi_bram_ctrl_1_BRAM_PORTA_RST),
         .bram_we_a(axi_bram_ctrl_1_BRAM_PORTA_WE),
         .bram_wrdata_a(axi_bram_ctrl_1_BRAM_PORTA_DIN),
         .s_axi_aclk(Net),
@@ -619,6 +617,14 @@ module cpu_test
         .s_axi_wready(ps7_0_axi_periph_M02_AXI_WREADY),
         .s_axi_wstrb(ps7_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M02_AXI_WVALID));
+  cpu_test_ila_0_0 ila_0
+       (.clk(processing_system7_0_FCLK_CLK1),
+        .probe0(PS_to_CPU_controller_0_enable_CPU),
+        .probe1(CPU_0_current_addr),
+        .probe2(PS_to_CPU_controller_0_CPU_done),
+        .probe3(bluex_0_ram_wr_data),
+        .probe4(blk_mem_gen_1_doutb),
+        .probe5(bluex_0_ram_en));
   cpu_test_blk_mem_gen_2_0 mem
        (.addra(bluex_0_MEN_BRAM_PORT_ADDR[6:0]),
         .clka(bluex_0_MEN_BRAM_PORT_CLK),
@@ -991,8 +997,8 @@ module cpu_test
         .rgb_vde(v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO),
         .rgb_vsync(v_axi4s_vid_out_0_vid_io_out_VSYNC));
   cpu_test_blk_mem_gen_1_0 rom
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CPU_0_current_addr}),
+       (.addra(axi_bram_ctrl_1_BRAM_PORTA_ADDR[10:0]),
+        .addrb(CPU_0_current_addr[10:0]),
         .clka(axi_bram_ctrl_1_BRAM_PORTA_CLK),
         .clkb(1'b0),
         .dina(axi_bram_ctrl_1_BRAM_PORTA_DIN),
@@ -1000,11 +1006,8 @@ module cpu_test
         .douta(axi_bram_ctrl_1_BRAM_PORTA_DOUT),
         .doutb(blk_mem_gen_1_doutb),
         .ena(axi_bram_ctrl_1_BRAM_PORTA_EN),
-        .enb(1'b0),
-        .rsta(axi_bram_ctrl_1_BRAM_PORTA_RST),
-        .rstb(1'b0),
-        .wea(axi_bram_ctrl_1_BRAM_PORTA_WE),
-        .web({1'b0,1'b0,1'b0,1'b0}));
+        .wea(axi_bram_ctrl_1_BRAM_PORTA_WE[0]),
+        .web(1'b0));
   cpu_test_rst_ps7_0_100M_0 rst_ps7_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),

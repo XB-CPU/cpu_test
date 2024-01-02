@@ -67,13 +67,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="6"/>
-    <Option Name="WTModelSimExportSim" Val="6"/>
-    <Option Name="WTQuestaExportSim" Val="6"/>
+    <Option Name="WTXSimExportSim" Val="11"/>
+    <Option Name="WTModelSimExportSim" Val="11"/>
+    <Option Name="WTQuestaExportSim" Val="11"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="6"/>
-    <Option Name="WTRivieraExportSim" Val="6"/>
-    <Option Name="WTActivehdlExportSim" Val="6"/>
+    <Option Name="WTVcsExportSim" Val="11"/>
+    <Option Name="WTRivieraExportSim" Val="11"/>
+    <Option Name="WTActivehdlExportSim" Val="11"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -104,47 +104,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_PS_to_CPU_controller_0_0/cpu_test_PS_to_CPU_controller_0_0.xci">
-          <Proxy FileSetName="cpu_test_PS_to_CPU_controller_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_axi_bram_ctrl_0_0/cpu_test_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="cpu_test_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_axi_bram_ctrl_1_0/cpu_test_axi_bram_ctrl_1_0.xci">
-          <Proxy FileSetName="cpu_test_axi_bram_ctrl_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_axi_gpio_0_0/cpu_test_axi_gpio_0_0.xci">
-          <Proxy FileSetName="cpu_test_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_axi_vdma_0_0/cpu_test_axi_vdma_0_0.xci">
-          <Proxy FileSetName="cpu_test_axi_vdma_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_blk_mem_gen_1_0/cpu_test_blk_mem_gen_1_0.xci">
-          <Proxy FileSetName="cpu_test_blk_mem_gen_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_blk_mem_gen_2_0/cpu_test_blk_mem_gen_2_0.xci">
-          <Proxy FileSetName="cpu_test_blk_mem_gen_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_bluex_0_0/cpu_test_bluex_0_0.xci">
-          <Proxy FileSetName="cpu_test_bluex_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_clk_wiz_0_0/cpu_test_clk_wiz_0_0.xci">
-          <Proxy FileSetName="cpu_test_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_proc_sys_reset_0_0/cpu_test_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="cpu_test_proc_sys_reset_0_0"/>
+        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_ila_0_0/cpu_test_ila_0_0.xci">
+          <Proxy FileSetName="cpu_test_ila_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_processing_system7_0_0/cpu_test_processing_system7_0_0.xci">
           <Proxy FileSetName="cpu_test_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_rgb2lcd_0_0/cpu_test_rgb2lcd_0_0.xci">
-          <Proxy FileSetName="cpu_test_rgb2lcd_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_v_axi4s_vid_out_0_0/cpu_test_v_axi4s_vid_out_0_0.xci">
-          <Proxy FileSetName="cpu_test_v_axi4s_vid_out_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="cpu_test.bd" FileRelPathName="ip/cpu_test_v_tc_0_0/cpu_test_v_tc_0_0.xci">
-          <Proxy FileSetName="cpu_test_v_tc_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/cpu_test/hdl/cpu_test_wrapper.v">
@@ -242,6 +206,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/ip/bluex_v_2_1_0/bluex_v_2_1_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="cpu_test_wrapper"/>
@@ -291,87 +263,15 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="cpu_test_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_clk_wiz_0_0" RelGenDir="$PGENDIR/cpu_test_clk_wiz_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_clk_wiz_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="cpu_test_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_processing_system7_0_0" RelGenDir="$PGENDIR/cpu_test_processing_system7_0_0">
       <Config>
         <Option Name="TopModule" Val="cpu_test_processing_system7_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="cpu_test_v_axi4s_vid_out_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_v_axi4s_vid_out_0_0" RelGenDir="$PGENDIR/cpu_test_v_axi4s_vid_out_0_0">
+    <FileSet Name="cpu_test_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_ila_0_0" RelGenDir="$PGENDIR/cpu_test_ila_0_0">
       <Config>
-        <Option Name="TopModule" Val="cpu_test_v_axi4s_vid_out_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_axi_vdma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_axi_vdma_0_0" RelGenDir="$PGENDIR/cpu_test_axi_vdma_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_axi_vdma_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_v_tc_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_v_tc_0_0" RelGenDir="$PGENDIR/cpu_test_v_tc_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_v_tc_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_PS_to_CPU_controller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_PS_to_CPU_controller_0_0" RelGenDir="$PGENDIR/cpu_test_PS_to_CPU_controller_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_PS_to_CPU_controller_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_axi_bram_ctrl_0_0" RelGenDir="$PGENDIR/cpu_test_axi_bram_ctrl_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_axi_bram_ctrl_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_blk_mem_gen_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_blk_mem_gen_1_0" RelGenDir="$PGENDIR/cpu_test_blk_mem_gen_1_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_blk_mem_gen_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_proc_sys_reset_0_0" RelGenDir="$PGENDIR/cpu_test_proc_sys_reset_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_proc_sys_reset_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_axi_bram_ctrl_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_axi_bram_ctrl_1_0" RelGenDir="$PGENDIR/cpu_test_axi_bram_ctrl_1_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_axi_bram_ctrl_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_blk_mem_gen_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_blk_mem_gen_2_0" RelGenDir="$PGENDIR/cpu_test_blk_mem_gen_2_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_blk_mem_gen_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_axi_gpio_0_0" RelGenDir="$PGENDIR/cpu_test_axi_gpio_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_axi_gpio_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_bluex_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_bluex_0_0" RelGenDir="$PGENDIR/cpu_test_bluex_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_bluex_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="cpu_test_rgb2lcd_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cpu_test_rgb2lcd_0_0" RelGenDir="$PGENDIR/cpu_test_rgb2lcd_0_0">
-      <Config>
-        <Option Name="TopModule" Val="cpu_test_rgb2lcd_0_0"/>
+        <Option Name="TopModule" Val="cpu_test_ila_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -405,16 +305,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="cpu_test_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_clk_wiz_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_clk_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_clk_wiz_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="cpu_test_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_processing_system7_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_processing_system7_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_processing_system7_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_processing_system7_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
@@ -425,117 +315,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="cpu_test_v_axi4s_vid_out_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_v_axi4s_vid_out_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_v_axi4s_vid_out_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_v_axi4s_vid_out_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_v_axi4s_vid_out_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_v_axi4s_vid_out_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_vdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_axi_vdma_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_vdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_axi_vdma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_vdma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_vdma_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_v_tc_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_v_tc_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_v_tc_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_v_tc_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_v_tc_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_v_tc_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_PS_to_CPU_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_PS_to_CPU_controller_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_PS_to_CPU_controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_PS_to_CPU_controller_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_PS_to_CPU_controller_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_PS_to_CPU_controller_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_axi_bram_ctrl_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_blk_mem_gen_1_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_blk_mem_gen_1_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_blk_mem_gen_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_blk_mem_gen_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_1_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_proc_sys_reset_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_proc_sys_reset_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_proc_sys_reset_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_proc_sys_reset_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_bram_ctrl_1_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_axi_bram_ctrl_1_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_bram_ctrl_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_axi_bram_ctrl_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_1_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_blk_mem_gen_2_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_blk_mem_gen_2_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_blk_mem_gen_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_blk_mem_gen_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_2_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_axi_gpio_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_gpio_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_gpio_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_bluex_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_bluex_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_bluex_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_bluex_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_bluex_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_bluex_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_rgb2lcd_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_rgb2lcd_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_rgb2lcd_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_rgb2lcd_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_rgb2lcd_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_rgb2lcd_0_0_synth_1">
+    <Run Id="cpu_test_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="cpu_test_ila_0_0" Part="xc7z020clg400-2" ConstrsSet="cpu_test_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/cpu_test_ila_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_ila_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_ila_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
@@ -563,23 +343,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="cpu_test_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_clk_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_clk_wiz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_clk_wiz_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="cpu_test_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_processing_system7_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_processing_system7_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_processing_system7_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
@@ -597,194 +360,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="cpu_test_v_axi4s_vid_out_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_v_axi4s_vid_out_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_v_axi4s_vid_out_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_v_axi4s_vid_out_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_v_axi4s_vid_out_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_vdma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_vdma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_axi_vdma_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_vdma_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_vdma_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_v_tc_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_v_tc_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_v_tc_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_v_tc_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_v_tc_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_PS_to_CPU_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_PS_to_CPU_controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_PS_to_CPU_controller_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_PS_to_CPU_controller_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_PS_to_CPU_controller_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_blk_mem_gen_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_blk_mem_gen_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_blk_mem_gen_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_1_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_proc_sys_reset_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_proc_sys_reset_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_bram_ctrl_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_bram_ctrl_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_axi_bram_ctrl_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_bram_ctrl_1_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_blk_mem_gen_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_blk_mem_gen_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_blk_mem_gen_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_blk_mem_gen_2_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_axi_gpio_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_axi_gpio_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_bluex_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_bluex_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_bluex_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_bluex_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_bluex_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="cpu_test_rgb2lcd_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_rgb2lcd_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_rgb2lcd_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_rgb2lcd_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_rgb2lcd_0_0_impl_1">
+    <Run Id="cpu_test_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-2" ConstrsSet="cpu_test_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="cpu_test_ila_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/cpu_test_ila_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/cpu_test_ila_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>

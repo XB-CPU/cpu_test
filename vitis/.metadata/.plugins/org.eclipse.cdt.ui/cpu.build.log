@@ -1,39 +1,10 @@
-23:05:35 **** Incremental Build of configuration Debug for project cpu ****
+21:54:25 **** Incremental Build of configuration Debug for project cpu ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:104:41: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-  104 |                 sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-      |                                      ~~~^    ~~~~~~~~~~
-      |                                         |           |
-      |                                         |           uint32_t {aka long unsigned int}
-      |                                         unsigned int
-      |                                      %08lx
-../src/main.c:104:17: warning: 'str' may be used uninitialized [-Wmaybe-uninitialized]
-  104 |                 sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/main.c:53:15: note: 'str' was declared here
-   53 |         char *str;
-      |               ^~~
-'Finished building: ../src/main.c'
-' '
-'Building target: cpu.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "cpu.elf"  ./src/vdma_api/vdma_api.o  ./src/display_ctrl/display_ctrl.o  ./src/clk_wiz/clk_wiz.o  ./src/ReadReg/pl_bram_rd.o ./src/ReadReg/pl_bram_rd_selftest.o  ./src/LCD_SHOW/LCD_show.o  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: cpu.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size cpu.elf  |tee "cpu.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  97783	   2824	  26096	 126703	  1eeef	cpu.elf
-'Finished building: cpu.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-23:05:36 Build Finished (took 1s.95ms)
+21:54:25 Build Finished (took 305ms)
 

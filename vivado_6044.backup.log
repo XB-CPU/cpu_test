@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Dec 31 17:50:57 2023
+# Process ID: 6044
+# Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4192 E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.xpr
+# Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vivado.log
+# Journal file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test\vivado.jou
+# Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'cpu_test.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+cpu_test_rgb2lcd_0_0
+
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1592.871 ; gain = 260.199
+open_bd_design {E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd}
+Reading block design file <E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- www.alientek.com:user:rgb2lcd:1.0 - rgb2lcd_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - reg2ram
+Adding component instance block -- xilinx.com:module_ref:PS_to_CPU_controller:1.0 - PS_to_CPU_controller_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - rom
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - mem
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:user:bluex:1.0 - bluex_0
+Successfully read diagram <cpu_test> from block design file <E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd>
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv www.alientek.com:user:rgb2lcd:1.0 [get_ips  cpu_test_rgb2lcd_0_0] -log ip_upgrade.log
+Upgrading 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd'
+INFO: [IP_Flow 19-3422] Upgraded cpu_test_rgb2lcd_0_0 (rgb2lcd_v1_0 1.0) from revision 3 to revision 6
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'lcd_id'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'cpu_test_rgb2lcd_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'lcd_id_i'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'lcd_id_o'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'lcd_id_t'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'cpu_test_rgb2lcd_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1165] The interface pin 'lcd_id' with bus definition 'xilinx.com:interface:gpio:1.0' is not found on the upgraded version of the cell '/rgb2lcd_0'. Its connection to the interface net 'axi_gpio_0_GPIO' has been removed. 
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'cpu_test_rgb2lcd_0_0' has identified issues that may require user intervention. Please review the upgrade log 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-2671] The dangling interface net <axi_gpio_0_GPIO> will not be written out to the BD file.
+Wrote  : <E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.srcs\sources_1\bd\cpu_test\cpu_test.bd> 
+Wrote  : <E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/ui/bd_e91060e9.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips cpu_test_rgb2lcd_0_0] -no_script -sync -force -quiet
+startgroup
+set_property -dict [list \
+  CONFIG.C_GPIO_WIDTH {1} \
+  CONFIG.C_IS_DUAL {0} \
+] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_nets axi_gpio_0_GPIO2]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO] [get_bd_intf_pins bluex_0/GPIO_r2r_control]
+validate_bd_design
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressed -of_object /ps7_0_axi_periph/S01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressable -of_object /ps7_0_axi_periph/S01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressing -of_object /ps7_0_axi_periph/S01_AXI'
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+generate_target all [get_files  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd]
+INFO: [BD 41-1662] The design 'cpu_test.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.srcs\sources_1\bd\cpu_test\cpu_test.bd> 
+Wrote  : <E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/ui/bd_e91060e9.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/reg2ram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/rom/addra'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mem/addra'(7) to pin: '/bluex_0/write_mem_addr'(16) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/rom/addrb'(32) to pin '/bluex_0/current_addr'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_rid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_rid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/s00_couplers/auto_pc/m_axi_bid'(12) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_bid'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_awid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_awid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ps7_0_axi_periph/xbar/s_axi_arid'(13) to pin: '/ps7_0_axi_periph/s00_couplers/M_AXI_arid'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/reg2ram/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(12) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/rom/addra'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/mem/addra'(7) to pin: '/bluex_0/write_mem_addr'(16) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/rom/addrb'(32) to pin '/bluex_0/current_addr'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v
+Verilog Output written to : e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/hdl/cpu_test_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2lcd_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+Exporting to file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/hw_handoff/cpu_test.hwh
+Generated Hardware Definition File e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2014.230 ; gain = 273.645
+catch { config_ip_cache -export [get_ips -all cpu_test_rgb2lcd_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_rgb2lcd_0_0
+catch { config_ip_cache -export [get_ips -all cpu_test_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_axi_gpio_0_0
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_6] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_6
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 10b347384e7fc931 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/1/0/10b347384e7fc931/cpu_test_auto_pc_6.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/1/0/10b347384e7fc931/cpu_test_auto_pc_6_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/1/0/10b347384e7fc931/cpu_test_auto_pc_6_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/1/0/10b347384e7fc931/cpu_test_auto_pc_6_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/1/0/10b347384e7fc931/cpu_test_auto_pc_6_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_6/cpu_test_auto_pc_6_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_6, cache-ID = 10b347384e7fc931; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f5843ddd596c96a9 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_0, cache-ID = f5843ddd596c96a9; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f5843ddd596c96a9 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/cpu_test_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_1, cache-ID = f5843ddd596c96a9; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_2] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f5843ddd596c96a9 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_2, cache-ID = f5843ddd596c96a9; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f5843ddd596c96a9 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_3/cpu_test_auto_pc_3_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_3, cache-ID = f5843ddd596c96a9; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_4] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_4
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6d7fc6c86743fb87 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/6/d/6d7fc6c86743fb87/cpu_test_auto_pc_4.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/6/d/6d7fc6c86743fb87/cpu_test_auto_pc_4_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/6/d/6d7fc6c86743fb87/cpu_test_auto_pc_4_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/6/d/6d7fc6c86743fb87/cpu_test_auto_pc_4_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/6/d/6d7fc6c86743fb87/cpu_test_auto_pc_4_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_4/cpu_test_auto_pc_4_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_4, cache-ID = 6d7fc6c86743fb87; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_5] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_5
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry f5843ddd596c96a9 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/f/5/f5843ddd596c96a9/cpu_test_auto_pc_5_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/cpu_test_auto_pc_5_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_5, cache-ID = f5843ddd596c96a9; cache size = 27.472 MB.
+catch { config_ip_cache -export [get_ips -all cpu_test_auto_pc_7] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_auto_pc_7
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 979175a06b52aa67 to dir: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/9/7/979175a06b52aa67/cpu_test_auto_pc_7.dcp to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/9/7/979175a06b52aa67/cpu_test_auto_pc_7_sim_netlist.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/9/7/979175a06b52aa67/cpu_test_auto_pc_7_sim_netlist.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/9/7/979175a06b52aa67/cpu_test_auto_pc_7_stub.v to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/ip/2023.2/9/7/979175a06b52aa67/cpu_test_auto_pc_7_stub.vhdl to e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpu_test_auto_pc_7, cache-ID = 979175a06b52aa67; cache size = 27.472 MB.
+export_ip_user_files -of_objects [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd]
+launch_runs cpu_test_axi_gpio_0_0_synth_1 cpu_test_rgb2lcd_0_0_synth_1 -jobs 12
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_rgb2lcd_0_0
+[Sun Dec 31 17:52:49 2023] Launched cpu_test_axi_gpio_0_0_synth_1, cpu_test_rgb2lcd_0_0_synth_1...
+Run output will be captured here:
+cpu_test_axi_gpio_0_0_synth_1: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_axi_gpio_0_0_synth_1/runme.log
+cpu_test_rgb2lcd_0_0_synth_1: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_rgb2lcd_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/cpu_test.bd] -directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files/sim_scripts -ip_user_files_dir E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files -ipstatic_source_dir E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/modelsim} {questa=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/questa} {riviera=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/riviera} {activehdl=E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property CONFIG.PCW_SD0_PERIPHERAL_ENABLE {1} [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\cpu_test.srcs\sources_1\bd\cpu_test\cpu_test.bd> 
+Wrote  : <E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/ui/bd_e91060e9.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 31 17:55:38 2023...

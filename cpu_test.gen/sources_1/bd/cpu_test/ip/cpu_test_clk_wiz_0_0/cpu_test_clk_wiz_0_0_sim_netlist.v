@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Mon Dec 25 23:13:13 2023
 // Host        : xyh running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_clk_wiz_0_0/cpu_test_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top cpu_test_clk_wiz_0_0 -prefix
+//               cpu_test_clk_wiz_0_0_ cpu_test_clk_wiz_0_0_sim_netlist.v
 // Design      : cpu_test_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -94,7 +94,7 @@ module cpu_test_clk_wiz_0_0
        (.G(\<const0> ));
   (* C_S_AXI_ADDR_WIDTH = "11" *) 
   (* C_S_AXI_DATA_WIDTH = "32" *) 
-  cpu_test_clk_wiz_0_0_axi_clk_config inst
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .locked(locked),
@@ -119,7 +119,7 @@ module cpu_test_clk_wiz_0_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-module cpu_test_clk_wiz_0_0_address_decoder
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder
    (\GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]_0 ,
     D,
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg[3]_1 ,
@@ -1742,7 +1742,7 @@ module cpu_test_clk_wiz_0_0_address_decoder
 endmodule
 
 (* C_S_AXI_ADDR_WIDTH = "11" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
-module cpu_test_clk_wiz_0_0_axi_clk_config
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_clk_config
    (s_axi_aclk,
     s_axi_aresetn,
     s_axi_awaddr,
@@ -1950,7 +1950,7 @@ module cpu_test_clk_wiz_0_0_axi_clk_config
   wire wrack_reg_10;
 
   assign s_axi_wready = s_axi_awready;
-  cpu_test_clk_wiz_0_0_axi_lite_ipif AXI_LITE_IPIF_I
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif AXI_LITE_IPIF_I
        (.Bus_RNW_reg_reg(AXI_LITE_IPIF_I_n_57),
         .D({IP2Bus_Data[30],IP2Bus_Data[31]}),
         .E(AXI_LITE_IPIF_I_n_12),
@@ -2077,7 +2077,7 @@ module cpu_test_clk_wiz_0_0_axi_clk_config
         .sw_rst_cond_d1(sw_rst_cond_d1),
         .wrack(wrack),
         .wrack_reg_10(wrack_reg_10));
-  cpu_test_clk_wiz_0_0_clk_wiz_drp CLK_CORE_DRP_I
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp CLK_CORE_DRP_I
        (.D({IP2Bus_Data[30],IP2Bus_Data[31]}),
         .E(AXI_LITE_IPIF_I_n_50),
         .IP2Bus_WrAck(IP2Bus_WrAck),
@@ -2172,7 +2172,7 @@ module cpu_test_clk_wiz_0_0_axi_clk_config
         .s_axi_wdata(s_axi_wdata),
         .wrack_reg_10(wrack_reg_10),
         .wrack_reg_1_reg_0(AXI_LITE_IPIF_I_n_87));
-  cpu_test_clk_wiz_0_0_soft_reset SOFT_RESET_I
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset SOFT_RESET_I
        (.\RESET_FLOPS[15].RST_FLOPS_0 (SOFT_RESET_I_n_2),
         .bus2ip_reset_active_high(bus2ip_reset_active_high),
         .reset_trig0(reset_trig0),
@@ -2236,7 +2236,7 @@ module cpu_test_clk_wiz_0_0_axi_clk_config
         .R(reset2ip_reset));
 endmodule
 
-module cpu_test_clk_wiz_0_0_axi_lite_ipif
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_axi_lite_ipif
    (bus2ip_reset_active_high,
     s_axi_rresp,
     s_axi_rvalid,
@@ -2617,7 +2617,7 @@ module cpu_test_clk_wiz_0_0_axi_lite_ipif
   wire wrack;
   wire wrack_reg_10;
 
-  cpu_test_clk_wiz_0_0_slave_attachment I_SLAVE_ATTACHMENT
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment I_SLAVE_ATTACHMENT
        (.Bus_RNW_reg_reg(Bus_RNW_reg_reg),
         .D(D),
         .E(E),
@@ -2746,7 +2746,7 @@ module cpu_test_clk_wiz_0_0_axi_lite_ipif
         .wrack_reg_10(wrack_reg_10));
 endmodule
 
-module cpu_test_clk_wiz_0_0_clk_wiz
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz
    (D,
     mmcm_adv_inst_0,
     drdy,
@@ -2932,7 +2932,7 @@ module cpu_test_clk_wiz_0_0_clk_wiz
         .O(D));
 endmodule
 
-module cpu_test_clk_wiz_0_0_clk_wiz_drp
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz_drp
    (IP2Bus_WrAck,
     ip2bus_rdack_int1,
     D,
@@ -4001,7 +4001,7 @@ module cpu_test_clk_wiz_0_0_clk_wiz_drp
         .D(SEN0),
         .Q(SEN),
         .R(SR));
-  cpu_test_clk_wiz_0_0_clk_wiz clk_inst
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_clk_wiz clk_inst
        (.D(D[0]),
         .DADDR(daddr),
         .DI(din),
@@ -4672,7 +4672,7 @@ module cpu_test_clk_wiz_0_0_clk_wiz_drp
         .D(s_axi_wdata[22]),
         .Q(Q[20]),
         .R(SR));
-  cpu_test_clk_wiz_0_0_mmcm_drp mmcm_drp_inst
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp mmcm_drp_inst
        (.D(D[1]),
         .DADDR(daddr),
         .DI(din),
@@ -16860,7 +16860,7 @@ module cpu_test_clk_wiz_0_0_clk_wiz_drp
         .R(wrack_reg_10));
 endmodule
 
-module cpu_test_clk_wiz_0_0_mmcm_drp
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_mmcm_drp
    (D,
     DI,
     dwe,
@@ -26501,7 +26501,7 @@ module cpu_test_clk_wiz_0_0_mmcm_drp
         .S(\state_count[4]_i_1_n_0 ));
 endmodule
 
-module cpu_test_clk_wiz_0_0_slave_attachment
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_slave_attachment
    (SR,
     s_axi_rresp,
     s_axi_rvalid,
@@ -27157,7 +27157,7 @@ module cpu_test_clk_wiz_0_0_slave_attachment
         .D(plusOp[6]),
         .Q(timeout),
         .R(clear));
-  cpu_test_clk_wiz_0_0_address_decoder I_DECODER
+  cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_address_decoder I_DECODER
        (.Bus_RNW_reg_reg_0(Bus_RNW_reg_reg),
         .Bus_RNW_reg_reg_1(bus2ip_rnw_i_reg_n_0),
         .D({IP2Bus_Data[0],IP2Bus_Data[1],IP2Bus_Data[2],IP2Bus_Data[3],IP2Bus_Data[4],IP2Bus_Data[5],IP2Bus_Data[6],IP2Bus_Data[7],IP2Bus_Data[8],IP2Bus_Data[9],IP2Bus_Data[10],IP2Bus_Data[11],IP2Bus_Data[12],IP2Bus_Data[13],IP2Bus_Data[14],IP2Bus_Data[15],IP2Bus_Data[16],IP2Bus_Data[17],IP2Bus_Data[18],IP2Bus_Data[19],IP2Bus_Data[20],IP2Bus_Data[21],IP2Bus_Data[22],IP2Bus_Data[23],IP2Bus_Data[24],IP2Bus_Data[25],IP2Bus_Data[26],IP2Bus_Data[27],IP2Bus_Data[28],IP2Bus_Data[29]}),
@@ -28278,7 +28278,7 @@ module cpu_test_clk_wiz_0_0_slave_attachment
         .O(wrack_reg_1_i_4_n_0));
 endmodule
 
-module cpu_test_clk_wiz_0_0_soft_reset
+module cpu_test_clk_wiz_0_0_cpu_test_clk_wiz_0_0_soft_reset
    (sw_rst_cond_d1,
     wrack,
     \RESET_FLOPS[15].RST_FLOPS_0 ,

@@ -2,7 +2,7 @@
 #define IP_CPU_TEST_AUTO_PC_4_SC_H_
 
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright

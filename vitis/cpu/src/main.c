@@ -49,17 +49,18 @@ unsigned int const frame_buffer_addr = (XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x100000
 u32 tim_cnt1 = 0, tim_cnt2 = 0;
 u8 int_tim = 0;
 u32 timer_update_time = 0;
+u8 fn_flag = 0;
+char* str1;
+u64 period;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
 static void ScuTimer_cfg(void);
+static void interrupt_init(void);
+static void cpu_code_download(void);
 int main(void)
 {
 	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
-
-	//PL写使能
-	XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
-	XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
 
 	//屏幕选择
 	vd_mode = VMODE_800x480;  //7寸屏,800*480分辨率
@@ -77,7 +78,38 @@ int main(void)
 	DisplayStart(&dispCtrl);
 	//LCD初始化
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
+	cpu_code_download();
+	interrupt_init();
 
+	usleep(1000*100);
+
+	while(1)
+    {
+    	// wait for interrupt
+		if(fn_flag){
+			//PL写使能
+			XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
+			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
+			usleep(1);
+			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00);//PL写通道输出1
+			usleep(1000*100);
+			LCD_rd_reg();
+			LCD_load_sd_bmp("lty.bmp");
+			LCD_clear(RED);
+			LCD_show_reg(PURPLE);
+			LCD_update();
+			sprintf(str1,"Done! T:%.3fus", (double)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)*1000000);
+			LCD_show_str(0,480-32,str1,YELLOW);
+			sprintf(str1,"per:%d", period);
+			LCD_show_str(400,480-32,str1,YELLOW);
+			LCD_update();
+			fn_flag = 0;
+		}
+    }
+    return 0;
+}
+u16 code_length = 24;
+static void interrupt_init(){
 	s32 Status = XST_SUCCESS;
 	u8 p, t;
     print("Hello World\n\r");
@@ -85,13 +117,13 @@ int main(void)
     if (scucfg == NULL)
     {
     	print("Error XScuGic_LookupConfig");
-    	return 0;
+    	return;
     }
     Status = XScuGic_CfgInitialize(scu, scucfg, scucfg->CpuBaseAddress);
 	if(Status != XST_SUCCESS)
 	{
 		printf("Error XScuGic_CfgInitialize, s:%ld", Status);
-		return 0;
+		return;
 	}
 	ScuTimer_cfg();
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, scu);
@@ -100,13 +132,13 @@ int main(void)
 	if(Status != XST_SUCCESS)
 	{
 		printf("Error XScuGic_Connect, s:%ld", Status);
-		return 0;
+		return;
 	}
 	Status = XScuGic_Connect(scu, XPAR_SCUTIMER_INTR, (Xil_ExceptionHandler)counter_update_handler, (void*)0);
 	if(Status != XST_SUCCESS)
 	{
 		printf("Error XScuGic_Connect, s:%ld", Status);
-		return 0;
+		return;
 	}
 	XScuGic_SetPriorityTriggerType(scu, 61, 160, 3);
 	XScuGic_GetPriorityTriggerType(scu, 61, &p, &t);
@@ -116,24 +148,8 @@ int main(void)
 	XScuTimer_EnableInterrupt(scut);
     DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 1);
     tim_cnt1 = XScuTimer_GetCounterValue(scut);
-    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, 65530);
-
-	usleep(1000*100);
-
-
-	LCD_rd_reg();
-	LCD_load_sd_bmp("lty.bmp");
-	LCD_clear(RED);
-	LCD_show_reg(PURPLE);
-	LCD_update();
-
-	while(1)
-    {
-    	// wait for interrupt
-    }
-    return 0;
+    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, code_length);
 }
-
 
 
 static void ScuTimer_cfg(void)
@@ -158,17 +174,31 @@ static void ScuTimer_cfg(void)
 
 static void CPU_done_handler(void* data)
 {
+
 	++int_tim;
 	if (int_tim == 1){
-	tim_cnt2 = XScuTimer_GetCounterValue(scut);
-	u64 period = tim_cnt1 - tim_cnt2 + (u64)timer_update_time * COUNTER_MAX;
-	printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
-	XScuGic_Disable(scu, 61);
-	XScuTimer_DisableInterrupt(scut);
+		tim_cnt2 = XScuTimer_GetCounterValue(scut);
+		period = tim_cnt1 - tim_cnt2 + (u64)timer_update_time * COUNTER_MAX;
+//		printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
+		XScuGic_Disable(scu, 61);
+		XScuTimer_DisableInterrupt(scut);
+		fn_flag = 1;
 	}
+
 }
 
 static void counter_update_handler(void* data)
 {
 	++timer_update_time;
 }
+
+static void cpu_code_download(){
+	uint16_t cnt;
+	for(cnt = 0;cnt < code_length; cnt ++){
+		XBram_WriteReg(XPAR_BRAM_1_BASEADDR,cnt*4,code[cnt]);
+	}
+}
+
+
+
+
