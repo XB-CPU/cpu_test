@@ -31,6 +31,8 @@ cli_parser.add_argument("-V", "--verbose", action="store_true", help="print comp
 cli_parser.add_argument("-shw", "--show_warning", action="store_false", help="show warnings", default=True)
 cli_parser.add_argument("-spw", "--suppress_warning", action="store_true", help="suppress warnings", default=False)
 cli_parser.add_argument("-rii", "--read_in_ignore", action="store_false", help="permit read in ignore mode when the encoding of some file is unrecognizable", default=True)
+cli_parser.add_argument("-b", "--binary_output", action="store_true", help="output the machine code in binary format with '0b'", default=False)
+
 cli_args = cli_parser.parse_args()
 
 macro_dict = dict()
@@ -541,7 +543,7 @@ def output_to_file():
 	with open(cli_args.output, "a") as output:
 		for ic_code in (isc_code_list):
 			isc_str = ic_code.code()
-			output.write(f"{isc_str}\n")
+			output.write(f"{'0b' if cli_args.binary_output else ''}{isc_str}\n")
 			if cli_args.print_code:
 				machine_code_print(isc_str, ic_code)
 
