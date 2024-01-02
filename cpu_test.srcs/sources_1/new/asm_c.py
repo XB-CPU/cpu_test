@@ -541,9 +541,16 @@ def link(ssl:seg_symbol_container):
 
 def output_to_file():
 	with open(cli_args.output, "a") as output:
-		for ic_code in (isc_code_list):
+		l = len(isc_code_list)
+		for (index, ic_code) in enumerate(isc_code_list):
 			isc_str = ic_code.code()
-			output.write(f"{'0b' if cli_args.binary_output else ''}{isc_str}\n")
+			if cli_args.binary_output:
+				if index == l - 1:
+					output.write(f"0b{isc_str}\n")
+				else:
+					output.write(f"0b{isc_str},\n")
+			else:
+				output.write(f"{isc_str}\n")
 			if cli_args.print_code:
 				machine_code_print(isc_str, ic_code)
 
