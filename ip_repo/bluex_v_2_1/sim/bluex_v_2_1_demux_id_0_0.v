@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -59,6 +59,7 @@ module bluex_v_2_1_demux_id_0_0 (
   rst,
   branch_taken,
   ena_n,
+  enable_CPU,
   isc,
   pc_next_inw,
   op,
@@ -70,6 +71,10 @@ module bluex_v_2_1_demux_id_0_0 (
   imm,
   addr,
   real_op,
+  ROM_rst,
+  ROM_en,
+  ROM_we,
+  ROM_clk,
   pc_next
 );
 
@@ -81,6 +86,7 @@ input wire clk;
 input wire rst;
 input wire branch_taken;
 input wire ena_n;
+input wire enable_CPU;
 input wire [31 : 0] isc;
 input wire [15 : 0] pc_next_inw;
 output wire [5 : 0] op;
@@ -92,6 +98,14 @@ output wire [5 : 0] rfunct;
 output wire [15 : 0] imm;
 output wire [15 : 0] addr;
 output wire [5 : 0] real_op;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ROM_rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ROM_rst RST" *)
+output wire ROM_rst;
+output wire ROM_en;
+output wire ROM_we;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ROM_clk, ASSOCIATED_RESET ROM_rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN bluex_v_2_1_demux_id_0_0_ROM_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ROM_clk CLK" *)
+output wire ROM_clk;
 output wire [15 : 0] pc_next;
 
   demux_id inst (
@@ -99,6 +113,7 @@ output wire [15 : 0] pc_next;
     .rst(rst),
     .branch_taken(branch_taken),
     .ena_n(ena_n),
+    .enable_CPU(enable_CPU),
     .isc(isc),
     .pc_next_inw(pc_next_inw),
     .op(op),
@@ -110,6 +125,10 @@ output wire [15 : 0] pc_next;
     .imm(imm),
     .addr(addr),
     .real_op(real_op),
+    .ROM_rst(ROM_rst),
+    .ROM_en(ROM_en),
+    .ROM_we(ROM_we),
+    .ROM_clk(ROM_clk),
     .pc_next(pc_next)
   );
 endmodule

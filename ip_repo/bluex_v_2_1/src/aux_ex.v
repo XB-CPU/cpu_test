@@ -8,7 +8,7 @@ module aux_ex (
 
 	input			[`GPR_BIT - 1 : 0] 		rs_inw,
 	input			[`GPR_BIT - 1 : 0] 		rt_inw,
-	input	signed	[`GPR_BIT - 1 : 0]		imm_inw,
+	input			[`GPR_BIT - 1 : 0]		imm_inw,
 	// input			[`GPR_BIT - 1 : 0]		shift_inw, // do not use
 
 	input			[`GPR_BIT - 1 : 0] 		write_back_data,

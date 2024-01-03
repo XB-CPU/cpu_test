@@ -8,7 +8,7 @@ module aux_id (
 	input			[`IMM_BIT - 1 : 0]		imm,
 
 	output			[`GPR_ADR - 1 : 0] 		addr_reg,
-	output	signed	[`GPR_BIT - 1 : 0]		sext_imm
+	output			[`GPR_BIT - 1 : 0]		sext_imm
 );
 	function		[`GPR_BIT - 1 : 0]		sign_ext_imm;
 		input		[`IMM_BIT - 1 : 0]		imm;

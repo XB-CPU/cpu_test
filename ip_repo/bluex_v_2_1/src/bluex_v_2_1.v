@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed Dec 27 22:29:34 2023
+//Date        : Wed Jan  3 20:02:44 2024
 //Host        : DESKTOP-50PL36L running 64-bit major release  (build 9200)
 //Command     : generate_target bluex_v_2_1.bd
 //Design      : bluex_v_2_1
@@ -12,7 +12,11 @@
 
 (* CORE_GENERATION_INFO = "bluex_v_2_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bluex_v_2_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=11,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=6,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "bluex_v_2_1.hwdef" *) 
 module bluex_v_2_1
-   (clk,
+   (ROM_clk,
+    ROM_en,
+    ROM_rst,
+    ROM_we,
+    clk,
     current_addr,
     enable_CPU,
     isc,
@@ -35,6 +39,10 @@ module bluex_v_2_1
     write_mem_en,
     write_mem_rst,
     write_mem_we);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ROM_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ROM_CLK, CLK_DOMAIN bluex_v_2_1_demux_id_0_0_ROM_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output ROM_clk;
+  output ROM_en;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ROM_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ROM_RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) output ROM_rst;
+  output ROM_we;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN bluex_v_2_1_clk_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
   output [15:0]current_addr;
   input enable_CPU;
@@ -95,6 +103,10 @@ module bluex_v_2_1
   wire decoder_id_0_memory_to_reg;
   wire decoder_id_0_memory_write;
   wire decoder_id_0_reg_write;
+  wire demux_id_0_ROM_clk;
+  wire demux_id_0_ROM_en;
+  wire demux_id_0_ROM_rst;
+  wire demux_id_0_ROM_we;
   wire [15:0]demux_id_0_imm;
   wire [15:0]demux_id_0_pc_next;
   wire [4:0]demux_id_0_rd;
@@ -133,6 +145,10 @@ module bluex_v_2_1
   wire wrapper_mem_0_write_mem_we;
   wire [4:0]wrapper_mem_0_write_reg_addr;
 
+  assign ROM_clk = demux_id_0_ROM_clk;
+  assign ROM_en = demux_id_0_ROM_en;
+  assign ROM_rst = demux_id_0_ROM_rst;
+  assign ROM_we = demux_id_0_ROM_we;
   assign clk_0_1 = clk;
   assign current_addr[15:0] = PC_0_current_addr;
   assign enable_CPU_0_1 = enable_CPU;
@@ -253,9 +269,14 @@ module bluex_v_2_1
         .real_op(demux_id_0_real_op),
         .reg_write(decoder_id_0_reg_write));
   bluex_v_2_1_demux_id_0_0 demux_id_0
-       (.branch_taken(BJT_0_branch_jump_flag),
+       (.ROM_clk(demux_id_0_ROM_clk),
+        .ROM_en(demux_id_0_ROM_en),
+        .ROM_rst(demux_id_0_ROM_rst),
+        .ROM_we(demux_id_0_ROM_we),
+        .branch_taken(BJT_0_branch_jump_flag),
         .clk(clk_0_1),
         .ena_n(controller_0_IF_ID_stall),
+        .enable_CPU(enable_CPU_0_1),
         .imm(demux_id_0_imm),
         .isc(isc_0_1),
         .pc_next(demux_id_0_pc_next),

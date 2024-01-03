@@ -46,36 +46,42 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
+// IP VLNV: xilinx.com:user:bluex_v_2_1:1.0
+// IP Revision: 3
 
-// IP VLNV: xilinx.com:module_ref:aux_id:1.0
-// IP Revision: 1
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
 
-`timescale 1ns/1ps
-
-(* IP_DEFINITION_SOURCE = "module_ref" *)
-(* DowngradeIPIdentifiedWarnings = "yes" *)
-module bluex_v_2_1_aux_id_0_0 (
-  addr_flag,
-  addr_rt,
-  addr_rd,
-  imm,
-  addr_reg,
-  sext_imm
+//----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
+bluex_v_2_1_0 your_instance_name (
+  .clk(clk),                            // input wire clk
+  .current_addr(current_addr),          // output wire [15 : 0] current_addr
+  .enable_CPU(enable_CPU),              // input wire enable_CPU
+  .isc(isc),                            // input wire [31 : 0] isc
+  .ram_addr(ram_addr),                  // output wire [31 : 0] ram_addr
+  .ram_clk(ram_clk),                    // output wire ram_clk
+  .ram_en(ram_en),                      // output wire ram_en
+  .ram_rd_data(ram_rd_data),            // input wire [31 : 0] ram_rd_data
+  .ram_rst(ram_rst),                    // output wire ram_rst
+  .ram_we(ram_we),                      // output wire [3 : 0] ram_we
+  .ram_wr_data(ram_wr_data),            // output wire [31 : 0] ram_wr_data
+  .read_mem_out_inw(read_mem_out_inw),  // input wire [31 : 0] read_mem_out_inw
+  .rst(rst),                            // input wire rst
+  .rst_n(rst_n),                        // input wire rst_n
+  .wr_en_i(wr_en_i),                    // input wire wr_en_i
+  .wr_en_o(wr_en_o),                    // output wire wr_en_o
+  .wr_en_t(wr_en_t),                    // input wire wr_en_t
+  .write_mem_addr(write_mem_addr),      // output wire [15 : 0] write_mem_addr
+  .write_mem_clk(write_mem_clk),        // output wire write_mem_clk
+  .write_mem_data(write_mem_data),      // output wire [31 : 0] write_mem_data
+  .write_mem_en(write_mem_en),          // output wire write_mem_en
+  .write_mem_rst(write_mem_rst),        // output wire write_mem_rst
+  .write_mem_we(write_mem_we)          // output wire write_mem_we
 );
+// INST_TAG_END ------ End INSTANTIATION Template ---------
 
-input wire addr_flag;
-input wire [4 : 0] addr_rt;
-input wire [4 : 0] addr_rd;
-input wire [15 : 0] imm;
-output wire [4 : 0] addr_reg;
-output wire [31 : 0] sext_imm;
+// You must compile the wrapper file bluex_v_2_1_0.v when simulating
+// the core, bluex_v_2_1_0. When compiling the wrapper file, be sure to
+// reference the Verilog simulation library.
 
-  aux_id inst (
-    .addr_flag(addr_flag),
-    .addr_rt(addr_rt),
-    .addr_rd(addr_rd),
-    .imm(imm),
-    .addr_reg(addr_reg),
-    .sext_imm(sext_imm)
-  );
-endmodule
