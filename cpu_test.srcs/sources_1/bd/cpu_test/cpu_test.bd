@@ -58,7 +58,8 @@
       "proc_sys_reset_0": "",
       "bluex_0": "",
       "ila_0": "",
-      "dist_mem_gen_0": ""
+      "dist_mem_gen_0": "",
+      "bluex_2_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2740,6 +2741,13 @@
         "xci_name": "cpu_test_dist_mem_gen_0_0",
         "xci_path": "ip\\cpu_test_dist_mem_gen_0_0\\cpu_test_dist_mem_gen_0_0.xci",
         "inst_hier_path": "dist_mem_gen_0"
+      },
+      "bluex_2_0": {
+        "vlnv": "xilinx.com:user:bluex_2:1.0",
+        "ip_revision": "9",
+        "xci_name": "cpu_test_bluex_2_0_0",
+        "xci_path": "ip\\cpu_test_bluex_2_0_0\\cpu_test_bluex_2_0_0.xci",
+        "inst_hier_path": "bluex_2_0"
       }
     },
     "interface_nets": {

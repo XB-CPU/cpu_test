@@ -32,9 +32,14 @@ module reg_heap_id (
 	integer i;
 	always @(negedge clk or negedge rst_n) begin
 		if (!rst_n) begin
-			for (i = 0; i < `GPR_NUM; i = i + 1) begin
+			for (i = 0; i < 28; i = i + 1) begin
 				ram_reg[i] <= {`GPR_BIT{1'b0}};
 			end
+			ram_reg[28] <= 28;
+			ram_reg[29] <= 29;
+			ram_reg[30] <= 30;
+			ram_reg[31] <= 31;
+			ram_reg[32] <= 32;
 		end
 		else begin
 			if (we) begin
