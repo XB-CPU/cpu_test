@@ -1,0 +1,55 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "bluex_v_2_1_BJT_0_0",
+    "cell_name": "BJT_0",
+    "component_reference": "xilinx.com:module_ref:BJT:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../bluex_update.gen/sources_1/bd/bluex_v_2_1/ip/bluex_v_2_1_BJT_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "bluex_v_2_1_BJT_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z020" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../bluex_update.gen/sources_1/bd/bluex_v_2_1/ip/bluex_v_2_1_BJT_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "branch_isc": [ { "direction": "in" } ],
+        "alu_op_ex": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
+        "imm_ex": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "rs": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "rt": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "pc_next_ex": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "alu_op_id": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
+        "imm_id": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "pc_next_id": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "branch_jump_flag": [ { "direction": "out" } ],
+        "id_jump_flag": [ { "direction": "out" } ],
+        "branch_addr_ex": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "branch_addr_id": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
+      }
+    }
+  }
+}

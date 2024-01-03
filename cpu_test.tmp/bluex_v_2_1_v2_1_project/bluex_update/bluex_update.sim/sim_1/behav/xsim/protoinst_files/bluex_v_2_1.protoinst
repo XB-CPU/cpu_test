@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bluex_v_2_1": {
+			"proto_instances": {
+			}
+		}
+	}
+}
