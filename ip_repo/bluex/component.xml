@@ -165,14 +165,14 @@
       <spirit:name>GPIO_r2r_control</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
-      <spirit:mirroredMaster/>
+      <spirit:master/>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_O</spirit:name>
+            <spirit:name>TRI_I</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>wr_en_i</spirit:name>
+            <spirit:name>wr_en_o</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -185,10 +185,10 @@
         </spirit:portMap>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_I</spirit:name>
+            <spirit:name>TRI_O</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>wr_en_o</spirit:name>
+            <spirit:name>wr_en_i</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -863,7 +863,7 @@
       <spirit:file>
         <spirit:name>src/bluex.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0c8b1cff</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_471744cb</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1037,7 +1037,7 @@
       <xilinx:displayName>bluex_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
       <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-12-25T15:41:07Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-01-03T12:46:02Z</xilinx:coreCreationDateTime>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.PHASE" xilinx:valuePermission="bd"/>
