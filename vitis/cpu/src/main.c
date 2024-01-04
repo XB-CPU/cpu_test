@@ -32,6 +32,8 @@
 
 
 #define COUNTER_MAX (0xffffffffU)
+XGpio axi_gpio;
+XGpio* axigpio = &axi_gpio;
 
 XScuGic scu_obj;
 XScuGic* scu = &scu_obj;
@@ -49,18 +51,23 @@ unsigned int const frame_buffer_addr = (XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x100000
 u32 tim_cnt1 = 0, tim_cnt2 = 0;
 u8 int_tim = 0;
 u32 timer_update_time = 0;
-u8 fn_flag = 0;
+u8 fn_flag = 0,butt_flag = 0;
 char* str1;
 u64 period;
+u16 code_length = 20;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
 static void ScuTimer_cfg(void);
 static void interrupt_init(void);
 static void cpu_code_download(void);
+static void GPIO_init(void);
+static void GPIO_intr_handler(void* data);
 int main(void)
 {
+//	code_length = sizeof(code);
 	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
+	GPIO_init();
 
 	//屏幕选择
 	vd_mode = VMODE_800x480;  //7寸屏,800*480分辨率
@@ -82,11 +89,16 @@ int main(void)
 	interrupt_init();
 
 	usleep(1000*100);
+//	LCD_load_sd_bmp("lty.bmp");
+	LCD_rd_reg();
 
+	LCD_clear(RED);
+	LCD_update();
 	while(1)
     {
     	// wait for interrupt
 		if(fn_flag){
+			fn_flag = 0;
 			//PL写使能
 			XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
 			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
@@ -94,21 +106,20 @@ int main(void)
 			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00);//PL写通道输出1
 			usleep(1000*100);
 			LCD_rd_reg();
-			LCD_load_sd_bmp("lty.bmp");
-			LCD_clear(RED);
-			LCD_show_reg(PURPLE);
+
+			LCD_show_reg(BLACK);
 			LCD_update();
 			sprintf(str1,"Done! T:%.3fus", (double)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)*1000000);
 			LCD_show_str(0,480-32,str1,YELLOW);
-			sprintf(str1,"per:%d", period);
-			LCD_show_str(400,480-32,str1,YELLOW);
 			LCD_update();
-			fn_flag = 0;
+		}
+		if(butt_flag){
+			butt_flag = 0;
 		}
     }
     return 0;
 }
-u16 code_length = 24;
+
 static void interrupt_init(){
 	s32 Status = XST_SUCCESS;
 	u8 p, t;
@@ -143,12 +154,9 @@ static void interrupt_init(){
 	XScuGic_SetPriorityTriggerType(scu, 61, 160, 3);
 	XScuGic_GetPriorityTriggerType(scu, 61, &p, &t);
 	printf("priority:%d, trigger:%d\n", p, t);
-	XScuTimer_Start(scut);
-	XScuGic_Enable(scu, 61);
-	XScuTimer_EnableInterrupt(scut);
-    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 1);
-    tim_cnt1 = XScuTimer_GetCounterValue(scut);
-    DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, code_length);
+	XScuGic_SetPriorityTriggerType(scu, XPAR_FABRIC_GPIO_1_VEC_ID, 0xA0, 3);
+    XScuGic_Connect(scu, XPAR_FABRIC_GPIO_1_VEC_ID, (Xil_ExceptionHandler)GPIO_intr_handler, axigpio);
+    XScuGic_Enable(scu, XPAR_FABRIC_GPIO_1_VEC_ID);
 }
 
 
@@ -199,6 +207,46 @@ static void cpu_code_download(){
 	}
 }
 
+uint8_t op_start_sta = 0;
+static void GPIO_intr_handler(void* data)
+{
+    u32 key_value = 0;
+    XGpio_InterruptDisable(axigpio, 0xffffffff);
+    usleep(10000);
+    key_value = XGpio_DiscreteRead(axigpio, 1);
+    if (key_value == 0x1) // button 1 to this
+    {
+    	if(!op_start_sta){
+    		op_start_sta = 1;
+			XScuTimer_Start(scut);
+			DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, code_length);
+			XScuGic_Enable(scu, 61);
+			XScuTimer_EnableInterrupt(scut);
+			DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 1);
+			tim_cnt1 = XScuTimer_GetCounterValue(scut);
+    	}
+    }
+    else if (key_value == 0x2) // button 0 to this
+    {
+    	butt_flag = 1;
+        printf("turn page\n");
+    }
+    else if (key_value == 0x3)
+    {
+        printf("released\n");
+    }
+    else {
+        printf("two button\n");
+    }
+    XGpio_InterruptClear(axigpio, 0xffffffff);
+    XGpio_InterruptEnable(axigpio, 0x00000003);
+}
 
 
-
+static void GPIO_init(void)
+{
+    XGpio_Initialize(axigpio, XPAR_AXI_GPIO_1_DEVICE_ID);
+    XGpio_SetDataDirection(axigpio, XGPIO_IR_CH1_MASK, 0xffffffff);
+    XGpio_InterruptEnable(axigpio, 0x00000003);
+    XGpio_InterruptGlobalEnable(axigpio);
+}

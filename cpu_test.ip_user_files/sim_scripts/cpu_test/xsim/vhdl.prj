@@ -18,6 +18,7 @@ vhdl xil_defaultlib  \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_0_0/sim/cpu_test_axi_bram_ctrl_0_0.vhd" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_bram_ctrl_1_0/sim/cpu_test_axi_bram_ctrl_1_0.vhd" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_proc_sys_reset_0_0/sim/cpu_test_proc_sys_reset_0_0.vhd" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_gpio_1_0/sim/cpu_test_axi_gpio_1_0.vhd" \
 
 # Do not sort compile order
 nosort

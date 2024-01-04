@@ -28,3 +28,6 @@ set_property -dict {PACKAGE_PIN U20 IOSTANDARD LVCMOS33} [get_ports lcd_de]
 set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports lcd_bl]
 set_property -dict {PACKAGE_PIN P19 IOSTANDARD LVCMOS33} [get_ports lcd_clk]
 set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports lcd_rst]
+
+set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports GPIO_tri_i[0]]
+set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports GPIO_tri_i[1]]
