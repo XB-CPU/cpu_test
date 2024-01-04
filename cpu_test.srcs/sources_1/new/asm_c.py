@@ -31,7 +31,7 @@ cli_parser.add_argument("-V", "--verbose", action="store_true", help="print comp
 cli_parser.add_argument("-shw", "--show_warning", action="store_false", help="show warnings", default=True)
 cli_parser.add_argument("-spw", "--suppress_warning", action="store_true", help="suppress warnings", default=False)
 cli_parser.add_argument("-rii", "--read_in_ignore", action="store_false", help="permit read in ignore mode when the encoding of some file is unrecognizable", default=True)
-cli_parser.add_argument("-b", "--binary_output", action="store_true", help="output the machine code in binary format with '0b'", default=False)
+cli_parser.add_argument("-ch", "--c_header", help="output the machine code in C header format", default=None)
 
 cli_args = cli_parser.parse_args()
 
@@ -283,7 +283,10 @@ def check_cli_arg_correctness():
 	except:
 		error_print(f'"{cli_args.raw_file_name}" has unrecognizable encoding! Abort')
 	if cli_args.output == None:
-		cli_args.output = f"{main_path}_machine_code.txt"
+		if cli_args.c_header != None:
+			cli_args.output = f"{main_path}_machine_code.h"
+		else:
+			cli_args.output = f"{main_path}_machine_code.txt"
 		with open(cli_args.output, "w") as file:
 			file.close() # this will clear the contents of the original file
 
@@ -542,17 +545,21 @@ def link(ssl:seg_symbol_container):
 def output_to_file():
 	with open(cli_args.output, "a") as output:
 		l = len(isc_code_list)
+		if cli_args.c_header is not None:
+			output.write(f"const static u32 {cli_args.c_header}[{l}] = {{\n")
 		for (index, ic_code) in enumerate(isc_code_list):
 			isc_str = ic_code.code()
-			if cli_args.binary_output:
-				if index == l - 1:
-					output.write(f"0b{isc_str}\n")
-				else:
-					output.write(f"0b{isc_str},\n")
+			if cli_args.c_header is not None:
+				output.write(f"\t0b{isc_str}")
+				if index != l - 1:
+					output.write(f",")
+				output.write(f"\n")
 			else:
 				output.write(f"{isc_str}\n")
 			if cli_args.print_code:
 				machine_code_print(isc_str, ic_code)
+		if cli_args.c_header is not None:
+			output.write("};")
 
 def report():
 	print(f"error:{asb_error_num}, warning:{asb_warning_num}.")
