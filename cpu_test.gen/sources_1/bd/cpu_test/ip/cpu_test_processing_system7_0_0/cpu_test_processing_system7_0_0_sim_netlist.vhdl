@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Tue Jan  2 21:32:59 2024
+-- Date        : Thu Jan  4 21:16:29 2024
 -- Host        : xyh running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_processing_system7_0_0/cpu_test_processing_system7_0_0_sim_netlist.vhdl
@@ -600,7 +600,7 @@ entity cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system
     IRQ_P2F_SPI1 : out STD_LOGIC;
     IRQ_P2F_UART1 : out STD_LOGIC;
     IRQ_P2F_CAN1 : out STD_LOGIC;
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 0 to 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
     Core0_nFIQ : in STD_LOGIC;
     Core0_nIRQ : in STD_LOGIC;
     Core1_nFIQ : in STD_LOGIC;
@@ -752,7 +752,7 @@ entity cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_NUM_F2P_INTR_INPUTS of cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of cpu_test_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -3512,8 +3512,8 @@ PS7_i: unisim.vcomponents.PS7
       FTMTP2FTRIG(1) => PS7_i_n_719,
       FTMTP2FTRIG(0) => PS7_i_n_720,
       FTMTP2FTRIGACK(3 downto 0) => B"0000",
-      IRQF2P(19 downto 1) => B"0000000000000000000",
-      IRQF2P(0) => IRQ_F2P(0),
+      IRQF2P(19 downto 2) => B"000000000000000000",
+      IRQF2P(1 downto 0) => IRQ_F2P(1 downto 0),
       IRQP2F(28) => PS7_i_n_292,
       IRQP2F(27) => PS7_i_n_293,
       IRQP2F(26) => PS7_i_n_294,
@@ -5426,7 +5426,7 @@ entity cpu_test_processing_system7_0_0 is
     S_AXI_HP0_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP0_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP0_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 0 to 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_CLK1 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
@@ -5799,7 +5799,7 @@ architecture STRUCTURE of cpu_test_processing_system7_0_0 is
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of inst : label is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 1;
+  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 2;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of inst : label is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -5929,7 +5929,7 @@ architecture STRUCTURE of cpu_test_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER of DDR_DQS : signal is "XIL_INTERFACENAME DDR, CAN_DEBUG false, TIMEPERIOD_PS 1250, MEMORY_TYPE COMPONENTS, DATA_WIDTH 8, CS_ENABLED true, DATA_MASK_ENABLED true, SLOT Single, MEM_ADDR_MAP ROW_COLUMN_BANK, BURST_LENGTH 8, AXI_ARBITRATION_SCHEME TDM, CAS_LATENCY 11, CAS_WRITE_LATENCY 11";
   attribute X_INTERFACE_INFO of DDR_DQS_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of IRQ_F2P : signal is "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT";
-  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH, PortWidth 1";
+  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:NULL, PortWidth 2";
   attribute X_INTERFACE_INFO of MIO : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARADDR : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARADDR";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARBURST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARBURST";
@@ -6176,7 +6176,7 @@ inst: entity work.cpu_test_processing_system7_0_0_processing_system7_v5_5_proces
       I2C1_SDA_I => '0',
       I2C1_SDA_O => NLW_inst_I2C1_SDA_O_UNCONNECTED,
       I2C1_SDA_T => NLW_inst_I2C1_SDA_T_UNCONNECTED,
-      IRQ_F2P(0) => IRQ_F2P(0),
+      IRQ_F2P(1 downto 0) => IRQ_F2P(1 downto 0),
       IRQ_P2F_CAN0 => NLW_inst_IRQ_P2F_CAN0_UNCONNECTED,
       IRQ_P2F_CAN1 => NLW_inst_IRQ_P2F_CAN1_UNCONNECTED,
       IRQ_P2F_CTI => NLW_inst_IRQ_P2F_CTI_UNCONNECTED,

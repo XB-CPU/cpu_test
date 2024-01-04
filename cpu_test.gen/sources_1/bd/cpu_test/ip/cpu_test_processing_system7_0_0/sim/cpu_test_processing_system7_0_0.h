@@ -164,7 +164,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP0_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP0_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP0_WSTRB;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<2> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_CLK1;
   sc_core::sc_out< bool > FCLK_RESET0_N;
@@ -321,7 +321,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP0_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP0_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP0_WSTRB;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<2> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_CLK1;
   sc_core::sc_out< bool > FCLK_RESET0_N;
@@ -478,7 +478,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP0_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP0_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP0_WSTRB;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<2> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_CLK1;
   sc_core::sc_out< bool > FCLK_RESET0_N;
@@ -639,7 +639,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP0_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP0_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP0_WSTRB;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<2> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_CLK1;
   sc_core::sc_out< bool > FCLK_RESET0_N;
@@ -808,7 +808,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<6> > S_AXI_HP0_WID;
   sc_core::sc_in< sc_dt::sc_bv<64> > S_AXI_HP0_WDATA;
   sc_core::sc_in< sc_dt::sc_bv<8> > S_AXI_HP0_WSTRB;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<2> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_CLK1;
   sc_core::sc_out< bool > FCLK_RESET0_N;

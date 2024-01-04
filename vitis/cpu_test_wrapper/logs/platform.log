@@ -6519,3 +6519,1774 @@ TRACE::2024-01-02.21:54:17::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dz
 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2024-01-02.21:54:17::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:07::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:07::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:07::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:07::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:07::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:07::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:07::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened new HwDB with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWReader::Active system found as  cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWReader::Handling sysconfig cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWDomain::checking for install qemu data   : 
+TRACE::2024-01-04.21:40:10::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-01-04.21:40:10::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-01-04.21:40:10::SCWMssOS::No sw design opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::mss exists loading the mss file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Opened the sw design from mss  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Adding the swdes entry E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-01-04.21:40:10::SCWMssOS::updating the scw layer about changes
+TRACE::2024-01-04.21:40:10::SCWMssOS::Opened the sw design.  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS:: library already available in sw design:  xilrsa:1.7
+TRACE::2024-01-04.21:40:10::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.21:40:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.21:40:10::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:10::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-01-04.21:40:10::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWReader::No isolation master present  
+TRACE::2024-01-04.21:40:10::SCWDomain::checking for install qemu data   : 
+TRACE::2024-01-04.21:40:10::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-01-04.21:40:10::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::No sw design opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::mss exists loading the mss file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Opened the sw design from mss  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Adding the swdes entry E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.21:40:10::SCWMssOS::updating the scw layer about changes
+TRACE::2024-01-04.21:40:10::SCWMssOS::Opened the sw design.  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.21:40:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.21:40:10::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:10::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-01-04.21:40:10::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:10::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:10::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:10::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:10::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:10::SCWReader::No isolation master present  
+TRACE::2024-01-04.21:40:13::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:13::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:13::SCWPlatform:: Platform location is E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.21:40:13::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:13::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:16::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::update - Opened existing hwdb cpu_test_wrapper_0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWMssOS::Doing hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Opened existing hwdb cpu_test_wrapper
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:16::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::update - Opened existing hwdb cpu_test_wrapper_0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:16::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-01-04.21:40:16::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:16::SCWMssOS::Completed hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2024-01-04.21:40:16::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:16::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:16::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:16::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-01-04.21:40:19::SCWPlatform::Opened new HwDB with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:19::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-01-04.21:40:19::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:19::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.21:40:19::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:19::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:19::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:19::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:19::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:19::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:19::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:19::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:19::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:19::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:19::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:19::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:19::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:19::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_test_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_test_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_test_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_test_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_test_wrapper",
+			"systemDesc":	"cpu_test_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_test_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"775fa3b2e857971086cf54527376aff31",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilrsa:1.7"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"8e1078d6f3bde4feddce41fc2a3046a11",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1"],
+					"libOptions":	{
+						"xilffs":	{
+							"use_lfn":	"1",
+							"libOptionNames":	["use_lfn"]
+						},
+						"libsContainingOptions":	["xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-01-04.21:40:23::SCWPlatform::Started generating the artifacts platform cpu_test_wrapper
+TRACE::2024-01-04.21:40:23::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-01-04.21:40:23::SCWPlatform::Started generating the artifacts for system configuration cpu_test_wrapper
+LOG::2024-01-04.21:40:23::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-01-04.21:40:23::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-01-04.21:40:23::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-01-04.21:40:23::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-01-04.21:40:23::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2024-01-04.21:40:23::SCWSystem::Not a boot domain 
+LOG::2024-01-04.21:40:23::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2024-01-04.21:40:23::SCWDomain::Generating domain artifcats
+TRACE::2024-01-04.21:40:23::SCWMssOS::Generating standalone artifcats
+TRACE::2024-01-04.21:40:23::SCWMssOS::Copying the qemu file from  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/qemu/
+TRACE::2024-01-04.21:40:23::SCWMssOS::Copying the qemu file from  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2024-01-04.21:40:23::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-01-04.21:40:23::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:23::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:23::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:23::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:23::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:23::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:23::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:23::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:23::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:23::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:23::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:23::SCWMssOS::Completed writing the mss file at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2024-01-04.21:40:23::SCWMssOS::Mss edits present, copying mssfile into export location E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:23::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2024-01-04.21:40:24::SCWMssOS::doing bsp build ... 
+TRACE::2024-01-04.21:40:24::SCWMssOS::System Command Ran  E: & cd  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp & make 
+TRACE::2024-01-04.21:40:24::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -j 14 --no-print-directory par_libs
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_14/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_9/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/axivdma_v6_14/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-01-04.21:40:24::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-01-04.21:40:24::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.21:40:24::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.21:40:24::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.21:40:24::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.21:40:24::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-01-04.21:40:24::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-01-04.21:40:24::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-01-04.21:40:24::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-01-04.21:40:24::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.21:40:24::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.21:40:24::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.21:40:24::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.21:40:24::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.21:40:24::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.21:40:24::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.21:40:24::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.21:40:24::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.21:40:24::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.21:40:24::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-01-04.21:40:24::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-01-04.21:40:24::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.21:40:24::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.21:40:24::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.21:40:24::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.21:40:24::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-01-04.21:40:24::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-01-04.21:40:24::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.21:40:24::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.21:40:24::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_5/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/vtc_v8_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:24::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:24::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.21:40:24::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.21:40:24::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.21:40:24::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.21:40:24::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_14/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_9/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/axivdma_v6_14/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.21:40:24::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.21:40:24::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-01-04.21:40:24::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-01-04.21:40:24::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.21:40:24::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.21:40:24::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-01-04.21:40:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-01-04.21:40:25::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-01-04.21:40:25::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-01-04.21:40:25::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-01-04.21:40:25::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.21:40:25::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.21:40:25::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:25::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.21:40:25::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.21:40:25::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.21:40:25::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.21:40:25::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:25::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.21:40:25::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.21:40:25::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:25::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-01-04.21:40:25::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-01-04.21:40:25::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-01-04.21:40:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.21:40:25::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.21:40:25::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.21:40:26::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.21:40:26::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_5/src"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/vtc_v8_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+TRACE::2024-01-04.21:40:26::SCWMssOS::IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+TRACE::2024-01-04.21:40:26::SCWMssOS::es -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:26::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:26::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-01-04.21:40:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.21:40:26::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.21:40:26::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/_sbrk
+TRACE::2024-01-04.21:40:28::SCWMssOS::.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/close.o ps7_cortexa
+TRACE::2024-01-04.21:40:28::SCWMssOS::9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/
+TRACE::2024-01-04.21:40:28::SCWMssOS::fstat.o ps7_cortexa9_0/lib/getentropy.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/lib/isatty.o ps7
+TRACE::2024-01-04.21:40:28::SCWMssOS::_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/pri
+TRACE::2024-01-04.21:40:28::SCWMssOS::nt.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/
+TRACE::2024-01-04.21:40:28::SCWMssOS::lib/time.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/ve
+TRACE::2024-01-04.21:40:28::SCWMssOS::ctors.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_intr.o p
+TRACE::2024-01-04.21:40:28::SCWMssOS::s7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xaxivdma.o ps7_cortexa9_0/lib/xaxivdma
+TRACE::2024-01-04.21:40:28::SCWMssOS::_channel.o ps7_cortexa9_0/lib/xaxivdma_g.o ps7_cortexa9_0/lib/xaxivdma_intr.o ps7_cortexa9_0/lib/xaxivdma_selftest.o ps7_cortex
+TRACE::2024-01-04.21:40:28::SCWMssOS::a9_0/lib/xaxivdma_sinit.o ps7_cortexa9_0/lib/xbram.o ps7_cortexa9_0/lib/xbram_g.o ps7_cortexa9_0/lib/xbram_intr.o ps7_cortexa9_
+TRACE::2024-01-04.21:40:28::SCWMssOS::0/lib/xbram_selftest.o ps7_cortexa9_0/lib/xbram_sinit.o ps7_cortexa9_0/lib/xclk_wiz.o ps7_cortexa9_0/lib/xclk_wiz_g.o ps7_corte
+TRACE::2024-01-04.21:40:28::SCWMssOS::xa9_0/lib/xclk_wiz_intr.o ps7_cortexa9_0/lib/xclk_wiz_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xdevcfg.o
+TRACE::2024-01-04.21:40:28::SCWMssOS:: ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xdevcfg_se
+TRACE::2024-01-04.21:40:28::SCWMssOS::lftest.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xdmaps
+TRACE::2024-01-04.21:40:28::SCWMssOS::_hw.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xgpio.o ps7_cortexa9_0/lib/xgpi
+TRACE::2024-01-04.21:40:28::SCWMssOS::o_extra.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/lib/x
+TRACE::2024-01-04.21:40:28::SCWMssOS::gpio_sinit.o ps7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xi
+TRACE::2024-01-04.21:40:28::SCWMssOS::l_clocking.o ps7_cortexa9_0/lib/xil_exception.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cort
+TRACE::2024-01-04.21:40:28::SCWMssOS::exa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o p
+TRACE::2024-01-04.21:40:28::SCWMssOS::s7_cortexa9_0/lib/xil_spinlock.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_test
+TRACE::2024-01-04.21:40:28::SCWMssOS::mem.o ps7_cortexa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/
+TRACE::2024-01-04.21:40:28::SCWMssOS::xplatform_info.o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/xpm_init.o ps7_cortexa9_0/lib/xscugic.o ps7_cortexa9_0/lib
+TRACE::2024-01-04.21:40:28::SCWMssOS::/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/xscugic_selftest.o ps7_cortex
+TRACE::2024-01-04.21:40:28::SCWMssOS::a9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xscutimer_selftest.
+TRACE::2024-01-04.21:40:28::SCWMssOS::o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.o ps7_cortexa9_0/lib/xscuwdt_s
+TRACE::2024-01-04.21:40:28::SCWMssOS::elftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_card.o ps7_cortexa9_0/lib/xsdp
+TRACE::2024-01-04.21:40:28::SCWMssOS::s_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps_sinit.o ps7_cortexa9_0/lib/xt
+TRACE::2024-01-04.21:40:28::SCWMssOS::ime_l.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_
+TRACE::2024-01-04.21:40:28::SCWMssOS::intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortex
+TRACE::2024-01-04.21:40:28::SCWMssOS::a9_0/lib/xvtc.o ps7_cortexa9_0/lib/xvtc_g.o ps7_cortexa9_0/lib/xvtc_intr.o ps7_cortexa9_0/lib/xvtc_selftest.o ps7_cortexa9_0/li
+TRACE::2024-01-04.21:40:28::SCWMssOS::b/xvtc_sinit.o
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-01-04.21:40:28::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-01-04.21:40:28::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-01-04.21:40:28::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2024-01-04.21:40:28::SCWSystem::Completed Processing the sysconfig cpu_test_wrapper
+LOG::2024-01-04.21:40:28::SCWPlatform::Completed generating the artifacts for system configuration cpu_test_wrapper
+TRACE::2024-01-04.21:40:28::SCWPlatform::Started preparing the platform 
+TRACE::2024-01-04.21:40:28::SCWSystem::Writing the bif file for system config cpu_test_wrapper
+TRACE::2024-01-04.21:40:28::SCWSystem::dir created 
+TRACE::2024-01-04.21:40:28::SCWSystem::Writing the bif 
+TRACE::2024-01-04.21:40:28::SCWPlatform::Started writing the spfm file 
+TRACE::2024-01-04.21:40:28::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-01-04.21:40:28::SCWPlatform::Completed generating the platform
+TRACE::2024-01-04.21:40:28::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.21:40:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.21:40:28::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:28::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.21:40:28::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:28::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:28::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_test_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_test_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_test_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_test_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_test_wrapper",
+			"systemDesc":	"cpu_test_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_test_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"775fa3b2e857971086cf54527376aff31",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilrsa:1.7"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"8e1078d6f3bde4feddce41fc2a3046a1",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1"],
+					"libOptions":	{
+						"xilffs":	{
+							"use_lfn":	"1",
+							"libOptionNames":	["use_lfn"]
+						},
+						"libsContainingOptions":	["xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-01-04.21:40:28::SCWPlatform::updated the xpfm file.
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.21:40:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.21:40:28::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Opened existing hwdb cpu_test_wrapper_1
+TRACE::2024-01-04.21:40:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.21:40:28::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.21:40:28::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.21:40:28::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:18::SCWPlatform::Clearing the existing platform
+TRACE::2024-01-04.22:48:18::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-01-04.22:48:18::SCWBDomain::clearing the fsbl build
+TRACE::2024-01-04.22:48:18::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:18::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:18::SCWSystem::Clearing the domains completed.
+TRACE::2024-01-04.22:48:18::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-01-04.22:48:18::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform:: Platform location is E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:18::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:18::SCWPlatform::Removing the HwDB with name E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:18::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:18::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:18::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened new HwDB with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWReader::Active system found as  cpu_test_wrapper
+TRACE::2024-01-04.22:48:21::SCWReader::Handling sysconfig cpu_test_wrapper
+TRACE::2024-01-04.22:48:21::SCWDomain::checking for install qemu data   : 
+TRACE::2024-01-04.22:48:21::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-01-04.22:48:21::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-01-04.22:48:21::SCWMssOS::No sw design opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::mss exists loading the mss file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::Opened the sw design from mss  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::Adding the swdes entry E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-01-04.22:48:21::SCWMssOS::updating the scw layer about changes
+TRACE::2024-01-04.22:48:21::SCWMssOS::Opened the sw design.  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:21::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:21::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS:: library already available in sw design:  xilrsa:1.7
+TRACE::2024-01-04.22:48:21::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.22:48:21::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.22:48:21::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:21::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-01-04.22:48:21::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:21::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWReader::No isolation master present  
+TRACE::2024-01-04.22:48:21::SCWDomain::checking for install qemu data   : 
+TRACE::2024-01-04.22:48:21::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2024-01-04.22:48:21::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:21::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:21::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:21::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:21::SCWMssOS::No sw design opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::mss exists loading the mss file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::Opened the sw design from mss  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:21::SCWMssOS::Adding the swdes entry E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.22:48:21::SCWMssOS::updating the scw layer about changes
+TRACE::2024-01-04.22:48:22::SCWMssOS::Opened the sw design.  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:22::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:22::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:22::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:22::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:22::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:22::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.22:48:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.22:48:22::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:22::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-01-04.22:48:22::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:22::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:22::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:22::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:22::SCWReader::No isolation master present  
+TRACE::2024-01-04.22:48:24::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:24::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:24::SCWPlatform:: Platform location is E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.22:48:24::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:24::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:27::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::update - Opened existing hwdb cpu_test_wrapper_4
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWMssOS::Doing hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Opened existing hwdb cpu_test_wrapper_3
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:27::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/tempdsa/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::update - Opened existing hwdb cpu_test_wrapper_4
+TRACE::2024-01-04.22:48:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:27::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-01-04.22:48:27::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:27::SCWMssOS::Completed hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2024-01-04.22:48:27::SCWMssOS::Removing the swdes entry for  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:27::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:27::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:27::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-01-04.22:48:30::SCWPlatform::Opened new HwDB with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:30::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-01-04.22:48:30::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:30::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.22:48:30::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:30::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:30::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:30::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:30::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:30::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:30::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:30::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:30::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:30::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:30::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:30::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:30::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:30::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_test_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_test_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_test_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_test_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_test_wrapper",
+			"systemDesc":	"cpu_test_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_test_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"775fa3b2e857971086cf54527376aff31",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilrsa:1.7"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"8e1078d6f3bde4feddce41fc2a3046a11",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1"],
+					"libOptions":	{
+						"xilffs":	{
+							"use_lfn":	"1",
+							"libOptionNames":	["use_lfn"]
+						},
+						"libsContainingOptions":	["xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-01-04.22:48:39::SCWPlatform::Started generating the artifacts platform cpu_test_wrapper
+TRACE::2024-01-04.22:48:39::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-01-04.22:48:39::SCWPlatform::Started generating the artifacts for system configuration cpu_test_wrapper
+LOG::2024-01-04.22:48:39::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-01-04.22:48:39::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-01-04.22:48:39::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-01-04.22:48:39::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-01-04.22:48:39::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2024-01-04.22:48:39::SCWSystem::Not a boot domain 
+LOG::2024-01-04.22:48:39::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2024-01-04.22:48:39::SCWDomain::Generating domain artifcats
+TRACE::2024-01-04.22:48:39::SCWMssOS::Generating standalone artifcats
+TRACE::2024-01-04.22:48:39::SCWMssOS::Copying the qemu file from  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/qemu/
+TRACE::2024-01-04.22:48:39::SCWMssOS::Copying the qemu file from  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt To E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2024-01-04.22:48:39::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-01-04.22:48:39::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:39::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:39::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:39::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:39::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:39::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:39::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:39::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:39::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:39::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:39::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:39::SCWMssOS::Completed writing the mss file at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2024-01-04.22:48:39::SCWMssOS::Mss edits present, copying mssfile into export location E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:39::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2024-01-04.22:48:40::SCWMssOS::doing bsp build ... 
+TRACE::2024-01-04.22:48:40::SCWMssOS::System Command Ran  E: & cd  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp & make 
+TRACE::2024-01-04.22:48:40::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -j 14 --no-print-directory par_libs
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_14/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/axivdma_v6_14/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-01-04.22:48:40::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-01-04.22:48:40::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_9/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.22:48:40::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.22:48:40::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.22:48:40::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.22:48:40::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-01-04.22:48:40::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-01-04.22:48:40::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2024-01-04.22:48:40::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2024-01-04.22:48:40::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.22:48:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.22:48:40::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.22:48:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.22:48:40::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.22:48:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.22:48:40::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.22:48:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.22:48:40::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.22:48:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.22:48:40::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-01-04.22:48:40::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-01-04.22:48:40::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.22:48:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.22:48:40::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.22:48:40::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.22:48:40::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-01-04.22:48:40::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-01-04.22:48:40::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.22:48:40::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.22:48:40::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/vtc_v8_5/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/vtc_v8_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:40::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:40::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.22:48:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.22:48:40::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-01-04.22:48:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-01-04.22:48:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-01-04.22:48:40::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_14/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_9/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/axivdma_v6_14/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.22:48:41::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.22:48:41::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-01-04.22:48:41::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-01-04.22:48:41::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/clk_wiz_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.22:48:41::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.22:48:41::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-01-04.22:48:41::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-01-04.22:48:41::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_12/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-01-04.22:48:41::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-01-04.22:48:41::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.22:48:41::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.22:48:41::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_8/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:41::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:41::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_9/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.22:48:41::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.22:48:41::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_10/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-01-04.22:48:41::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-01-04.22:48:41::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v5_2/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v5_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:41::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:41::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_5/src"
+
+TRACE::2024-01-04.22:48:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-01-04.22:48:41::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-01-04.22:48:41::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_5/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:42::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:42::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v4_2/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-01-04.22:48:42::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-01-04.22:48:42::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v9_0/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-01-04.22:48:42::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-01-04.22:48:42::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_13/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_13/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-01-04.22:48:42::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-01-04.22:48:42::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v8_5/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/vtc_v8_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARCH
+TRACE::2024-01-04.22:48:42::SCWMssOS::IVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfil
+TRACE::2024-01-04.22:48:42::SCWMssOS::es -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_7/src"
+
+TRACE::2024-01-04.22:48:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:42::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:42::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:43::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v5_1/src"
+
+TRACE::2024-01-04.22:48:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v5_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-01-04.22:48:43::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-01-04.22:48:43::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/_open.o ps7_cortexa9_0/lib/_sbrk
+TRACE::2024-01-04.22:48:45::SCWMssOS::.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/close.o ps7_cortexa
+TRACE::2024-01-04.22:48:45::SCWMssOS::9_0/lib/cpputest_time.o ps7_cortexa9_0/lib/cpu_init.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/
+TRACE::2024-01-04.22:48:45::SCWMssOS::fstat.o ps7_cortexa9_0/lib/getentropy.o ps7_cortexa9_0/lib/getpid.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0/lib/isatty.o ps7
+TRACE::2024-01-04.22:48:45::SCWMssOS::_cortexa9_0/lib/kill.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/pri
+TRACE::2024-01-04.22:48:45::SCWMssOS::nt.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/sbrk.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/
+TRACE::2024-01-04.22:48:45::SCWMssOS::lib/time.o ps7_cortexa9_0/lib/translation_table.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/ve
+TRACE::2024-01-04.22:48:45::SCWMssOS::ctors.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xadcps_intr.o p
+TRACE::2024-01-04.22:48:45::SCWMssOS::s7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xaxivdma.o ps7_cortexa9_0/lib/xaxivdma
+TRACE::2024-01-04.22:48:45::SCWMssOS::_channel.o ps7_cortexa9_0/lib/xaxivdma_g.o ps7_cortexa9_0/lib/xaxivdma_intr.o ps7_cortexa9_0/lib/xaxivdma_selftest.o ps7_cortex
+TRACE::2024-01-04.22:48:45::SCWMssOS::a9_0/lib/xaxivdma_sinit.o ps7_cortexa9_0/lib/xbram.o ps7_cortexa9_0/lib/xbram_g.o ps7_cortexa9_0/lib/xbram_intr.o ps7_cortexa9_
+TRACE::2024-01-04.22:48:45::SCWMssOS::0/lib/xbram_selftest.o ps7_cortexa9_0/lib/xbram_sinit.o ps7_cortexa9_0/lib/xclk_wiz.o ps7_cortexa9_0/lib/xclk_wiz_g.o ps7_corte
+TRACE::2024-01-04.22:48:45::SCWMssOS::xa9_0/lib/xclk_wiz_intr.o ps7_cortexa9_0/lib/xclk_wiz_sinit.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_cortexa9_0/lib/xdevcfg.o
+TRACE::2024-01-04.22:48:45::SCWMssOS:: ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortexa9_0/lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xdevcfg_se
+TRACE::2024-01-04.22:48:45::SCWMssOS::lftest.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xdmaps_g.o ps7_cortexa9_0/lib/xdmaps
+TRACE::2024-01-04.22:48:45::SCWMssOS::_hw.o ps7_cortexa9_0/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xdmaps_sinit.o ps7_cortexa9_0/lib/xgpio.o ps7_cortexa9_0/lib/xgpi
+TRACE::2024-01-04.22:48:45::SCWMssOS::o_extra.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xgpio_selftest.o ps7_cortexa9_0/lib/x
+TRACE::2024-01-04.22:48:45::SCWMssOS::gpio_sinit.o ps7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/xil_assert.o ps7_cortexa9_0/lib/xil_cache.o ps7_cortexa9_0/lib/xi
+TRACE::2024-01-04.22:48:45::SCWMssOS::l_clocking.o ps7_cortexa9_0/lib/xil_exception.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cort
+TRACE::2024-01-04.22:48:45::SCWMssOS::exa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xil_sleeptimer.o p
+TRACE::2024-01-04.22:48:45::SCWMssOS::s7_cortexa9_0/lib/xil_spinlock.o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/xil_test
+TRACE::2024-01-04.22:48:45::SCWMssOS::mem.o ps7_cortexa9_0/lib/xil_util.o ps7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xl2cc_counter.o ps7_cortexa9_0/lib/
+TRACE::2024-01-04.22:48:45::SCWMssOS::xplatform_info.o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/xpm_init.o ps7_cortexa9_0/lib/xscugic.o ps7_cortexa9_0/lib
+TRACE::2024-01-04.22:48:45::SCWMssOS::/xscugic_g.o ps7_cortexa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/xscugic_selftest.o ps7_cortex
+TRACE::2024-01-04.22:48:45::SCWMssOS::a9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xscutimer.o ps7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xscutimer_selftest.
+TRACE::2024-01-04.22:48:45::SCWMssOS::o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa9_0/lib/xscuwdt_g.o ps7_cortexa9_0/lib/xscuwdt_s
+TRACE::2024-01-04.22:48:45::SCWMssOS::elftest.o ps7_cortexa9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/xsdps_card.o ps7_cortexa9_0/lib/xsdp
+TRACE::2024-01-04.22:48:45::SCWMssOS::s_g.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xsdps_sinit.o ps7_cortexa9_0/lib/xt
+TRACE::2024-01-04.22:48:45::SCWMssOS::ime_l.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/xuartps_g.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_cortexa9_0/lib/xuartps_
+TRACE::2024-01-04.22:48:45::SCWMssOS::intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortex
+TRACE::2024-01-04.22:48:45::SCWMssOS::a9_0/lib/xvtc.o ps7_cortexa9_0/lib/xvtc_g.o ps7_cortexa9_0/lib/xvtc_intr.o ps7_cortexa9_0/lib/xvtc_selftest.o ps7_cortexa9_0/li
+TRACE::2024-01-04.22:48:45::SCWMssOS::b/xvtc_sinit.o
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-01-04.22:48:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-01-04.22:48:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-01-04.22:48:45::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2024-01-04.22:48:45::SCWSystem::Completed Processing the sysconfig cpu_test_wrapper
+LOG::2024-01-04.22:48:45::SCWPlatform::Completed generating the artifacts for system configuration cpu_test_wrapper
+TRACE::2024-01-04.22:48:45::SCWPlatform::Started preparing the platform 
+TRACE::2024-01-04.22:48:45::SCWSystem::Writing the bif file for system config cpu_test_wrapper
+TRACE::2024-01-04.22:48:45::SCWSystem::dir created 
+TRACE::2024-01-04.22:48:45::SCWSystem::Writing the bif 
+TRACE::2024-01-04.22:48:45::SCWPlatform::Started writing the spfm file 
+TRACE::2024-01-04.22:48:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-01-04.22:48:45::SCWPlatform::Completed generating the platform
+TRACE::2024-01-04.22:48:45::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-01-04.22:48:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-01-04.22:48:45::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:45::SCWMssOS::Saving the mss changes E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2024-01-04.22:48:45::SCWMssOS::Writing the mss file completed E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::Commit changes completed.
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:45::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:45::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWWriter::formatted JSON is {
+	"platformName":	"cpu_test_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"cpu_test_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/cpu_test_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"cpu_test_wrapper",
+	"systems":	[{
+			"systemName":	"cpu_test_wrapper",
+			"systemDesc":	"cpu_test_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"cpu_test_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"775fa3b2e857971086cf54527376aff31",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilrsa:1.7"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/cpu_test_wrapper/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"8e1078d6f3bde4feddce41fc2a3046a1",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1"],
+					"libOptions":	{
+						"xilffs":	{
+							"use_lfn":	"1",
+							"libOptionNames":	["use_lfn"]
+						},
+						"libsContainingOptions":	["xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-01-04.22:48:45::SCWPlatform::updated the xpfm file.
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to open the hw design at E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA given E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA absoulate path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform::DSA directory E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Platform Path E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/hw/cpu_test_wrapper.xsa
+TRACE::2024-01-04.22:48:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2024-01-04.22:48:45::SCWPlatform::Trying to set the existing hwdb with name cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Opened existing hwdb cpu_test_wrapper_5
+TRACE::2024-01-04.22:48:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-01-04.22:48:45::SCWMssOS::Checking the sw design at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2024-01-04.22:48:45::SCWMssOS::DEBUG:  swdes dump  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-01-04.22:48:45::SCWMssOS::Sw design exists and opened at  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

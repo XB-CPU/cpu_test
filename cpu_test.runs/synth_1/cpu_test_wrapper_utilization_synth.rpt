@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Jan  2 21:41:24 2024
+| Date         : Thu Jan  4 22:33:43 2024
 | Host         : xyh running 64-bit major release  (build 9200)
 | Command      : report_utilization -file cpu_test_wrapper_utilization_synth.rpt -pb cpu_test_wrapper_utilization_synth.pb
 | Design       : cpu_test_wrapper
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   30 |     0 |          0 |       125 | 24.00 |
+| Bonded IOB                  |   32 |     0 |          0 |       125 | 25.60 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -148,8 +148,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| IBUF     |   26 |                  IO |
 | OBUFT    |   24 |                  IO |
-| IBUF     |   24 |                  IO |
 | OBUF     |    6 |                  IO |
 +----------+------+---------------------+
 
@@ -169,14 +169,16 @@ Warning! LUT value is adjusted to account for LUT combining.
 | cpu_test_proc_sys_reset_0_0       |    1 |
 | cpu_test_ila_0_0                  |    1 |
 | cpu_test_clk_wiz_0_0              |    1 |
-| cpu_test_bluex_0_0                |    1 |
+| cpu_test_bluex_v_2_1_0_2          |    1 |
 | cpu_test_blk_mem_gen_2_0          |    1 |
 | cpu_test_blk_mem_gen_1_0          |    1 |
 | cpu_test_blk_mem_gen_0_0          |    1 |
 | cpu_test_axi_vdma_0_0             |    1 |
+| cpu_test_axi_gpio_1_0             |    1 |
 | cpu_test_axi_gpio_0_0             |    1 |
 | cpu_test_axi_bram_ctrl_1_0        |    1 |
 | cpu_test_axi_bram_ctrl_0_0        |    1 |
+| cpu_test_auto_pc_8                |    1 |
 | cpu_test_auto_pc_7                |    1 |
 | cpu_test_auto_pc_6                |    1 |
 | cpu_test_auto_pc_5                |    1 |

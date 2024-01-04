@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Tue Jan  2 21:38:52 2024
+//Date        : Thu Jan  4 22:31:48 2024
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test_wrapper.bd
 //Design      : cpu_test_wrapper
@@ -32,6 +32,7 @@ module cpu_test_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    GPIO_tri_i,
     lcd_bl,
     lcd_clk,
     lcd_de,
@@ -60,6 +61,7 @@ module cpu_test_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input [1:0]GPIO_tri_i;
   output lcd_bl;
   output lcd_clk;
   output lcd_de;
@@ -89,6 +91,7 @@ module cpu_test_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [1:0]GPIO_tri_i;
   wire lcd_bl;
   wire lcd_clk;
   wire lcd_de;
@@ -214,6 +217,7 @@ module cpu_test_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .GPIO_tri_i(GPIO_tri_i),
         .lcd_bl(lcd_bl),
         .lcd_clk(lcd_clk),
         .lcd_de(lcd_de),
