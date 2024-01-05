@@ -18,7 +18,7 @@
 #include "xil_exception.h"
 #include "xstatus.h"
 #include "xscutimer.h"
-#include "machine_code.h"
+#include "../../../cpu_test.srcs/sources_1/new/isc_machine_code.h"
 #include "AXI_LCD_TOU_DRI.h"
 
 #include "LCD_SHOW/LCD_show.h"
@@ -53,7 +53,6 @@ u32 timer_update_time = 0;
 u8 cpu_done_flag = 0,butt_flag = 0;
 char* str1;
 u64 period;
-u16 code_length = 0;
 u8 lcd_update_flag = 1;
 u8 page_num = 0;
 
@@ -64,11 +63,9 @@ static void interrupt_init(void);
 static void cpu_code_download(void);
 static void GPIO_init(void);
 static void GPIO_intr_handler(void* data);
-static int code_length_get(uint32_t*);
 
 int main(void)
 {
-	code_length = 20;//code_length_get(code);
 //	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO≥ı ºªØ
 	GPIO_init();
 
@@ -206,6 +203,7 @@ static void CPU_done_handler(void* data)
 //		printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
 		XScuGic_Disable(scu, 61);
 		XScuTimer_DisableInterrupt(scut);
+		DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 0);
 		cpu_done_flag = 1;
 		lcd_update_flag = 1;
 	}
@@ -219,7 +217,7 @@ static void counter_update_handler(void* data)
 
 static void cpu_code_download(){
 	uint16_t cnt;
-	for(cnt = 0;cnt < code_length; cnt ++){
+	for(cnt = 0;cnt < CODE_LENGTH; cnt ++){
 		XBram_WriteReg(XPAR_BRAM_1_BASEADDR,cnt*4,code[cnt]);
 	}
 }
@@ -237,7 +235,7 @@ static void GPIO_intr_handler(void* data)
     	if(!op_start_sta){
     		op_start_sta = 1;
 			XScuTimer_Start(scut);
-			DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, code_length);
+			DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG1_OFFSET, CODE_LENGTH);
 			XScuGic_Enable(scu, 61);
 			XScuTimer_EnableInterrupt(scut);
 			DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 1);
@@ -271,8 +269,3 @@ static void GPIO_init(void)
     XGpio_InterruptGlobalEnable(axigpio);
 }
 
-static int code_length_get(uint32_t*cod){
-	int code_lenth = 0;
-	for(;cod[code_lenth]!=0;code_lenth++);
-	return code_lenth;
-}

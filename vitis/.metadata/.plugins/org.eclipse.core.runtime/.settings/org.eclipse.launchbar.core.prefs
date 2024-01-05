@@ -7,4 +7,4 @@ org.eclipse.launchbar.core.descriptorType.default\:Debugger_cpu-Default/activeLa
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_cpu-Emulation/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_cpu-GDB/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_cpu-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
-org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cpu_system/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_cpu_system/activeLaunchMode=run

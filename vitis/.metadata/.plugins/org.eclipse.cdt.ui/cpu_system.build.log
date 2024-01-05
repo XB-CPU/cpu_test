@@ -1,7 +1,7 @@
-22:12:00 **** Incremental Build of configuration Debug for project cpu_system ****
+22:44:58 **** Incremental Build of configuration Debug for project cpu_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55807 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm standalone_ps7_cortexa9_0 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/system.bif
+generate_system_bif.bat 52788 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm standalone_ps7_cortexa9_0 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/system.bif
 ECHO 处于关闭状态。
 ECHO 处于关闭状态。
 sdcard_gen --xpfm E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm --sys_config cpu_test_wrapper --bif E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/system.bif --bitstream E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit --elf E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/Debug/cpu.elf,ps7_cortexa9_0
@@ -10,5 +10,5 @@ ECHO 处于关闭状态。
 creating BOOT.BIN using E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit
 Running E:/Xilinx/Vitis/2023.2/bin/bootgen  -image E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-22:12:06 Build Finished (took 5s.614ms)
+22:45:03 Build Finished (took 5s.210ms)
 

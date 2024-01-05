@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Jan  5 22:00:50 2024
-# Process ID: 28372
+# Start of session at: Fri Jan  5 23:18:05 2024
+# Process ID: 19732
 # Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1
 # Command line: vivado.exe -log cpu_test_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_test_wrapper.tcl
 # Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/cpu_test_wrapper.vds
@@ -12,7 +12,7 @@
 # Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
 #-----------------------------------------------------------
 source cpu_test_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 486.832 ; gain = 180.805
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 487.055 ; gain = 182.453
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.2/data/ip'.
@@ -28,194 +28,218 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 22568
+INFO: [Synth 8-7075] Helper process launched with PID 21128
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1414.254 ; gain = 440.273
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1415.543 ; gain = 441.863
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'cpu_test_wrapper' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/hdl/cpu_test_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'cpu_test' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:13]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_AXI_LCD_TOU_DRI_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_AXI_LCD_TOU_DRI_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_AXI_LCD_TOU_DRI_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_AXI_LCD_TOU_DRI_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_PS_to_CPU_controller_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_PS_to_CPU_controller_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_PS_to_CPU_controller_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_PS_to_CPU_controller_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_bram_ctrl_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_bram_ctrl_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_bram_ctrl_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_bram_ctrl_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_bram_ctrl_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_bram_ctrl_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_gpio_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_gpio_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_interconnect_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1312]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_6RQD2S' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4098]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_6RQD2S' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4098]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1WL8XN9' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4671]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1WL8XN9' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4671]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1QIWWS6' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6989]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_7' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_7' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1QIWWS6' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6989]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_xbar_1' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_xbar_1' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_interconnect_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1312]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_mem_intercon_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1887]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BW3OKB' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6431]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_6' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_6' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BW3OKB' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6431]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_mem_intercon_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1887]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_vdma_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_vdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_vdma_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_AXI_LCD_TOU_DRI_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_AXI_LCD_TOU_DRI_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_AXI_LCD_TOU_DRI_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_AXI_LCD_TOU_DRI_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_PS_to_CPU_controller_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_PS_to_CPU_controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_PS_to_CPU_controller_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_PS_to_CPU_controller_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_bram_ctrl_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_bram_ctrl_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_bram_ctrl_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_bram_ctrl_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_bram_ctrl_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_gpio_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_gpio_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_interconnect_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1321]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_6RQD2S' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4386]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_6RQD2S' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4386]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1WL8XN9' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5113]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1WL8XN9' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5113]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1QIWWS6' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7571]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_7' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_7' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1QIWWS6' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7571]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_xbar_1' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_xbar_1' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_interconnect_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1321]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_mem_intercon_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1896]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1BW3OKB' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7013]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_6' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_6' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1BW3OKB' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7013]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_mem_intercon_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1896]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_axi_vdma_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_axi_vdma_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_axi_vdma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'cpu_test_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:715]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'cpu_test_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:715]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'cpu_test_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:715]
 WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'cpu_test_axi_vdma_0_0' has 42 connections declared, but only 39 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:715]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_bluex_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_bluex_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_bluex_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_bluex_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_bluex_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_bluex_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_bluex_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_bluex_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ROM_we' of module 'cpu_test_bluex_0_0' is unconnected for instance 'bluex_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:755]
 WARNING: [Synth 8-7071] port 'wr_en_o' of module 'cpu_test_bluex_0_0' is unconnected for instance 'bluex_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:755]
 WARNING: [Synth 8-7071] port 'write_mem_rst' of module 'cpu_test_bluex_0_0' is unconnected for instance 'bluex_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:755]
 WARNING: [Synth 8-7023] instance 'bluex_0' of module 'cpu_test_bluex_0_0' has 27 connections declared, but only 24 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:755]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_clk_wiz_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_clk_wiz_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_clk_wiz_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_clk_wiz_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_clk_wiz_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'locked' of module 'cpu_test_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:780]
 WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'cpu_test_clk_wiz_0_0' has 22 connections declared, but only 21 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:780]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:802]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_ila_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_ila_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_2_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_2_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_2_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_proc_sys_reset_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_proc_sys_reset_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_proc_sys_reset_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:815]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:815]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:815]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'cpu_test_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:815]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_processing_system7_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_processing_system7_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'cpu_test_processing_system7_0_0' has 149 connections declared, but only 139 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:825]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_ps7_0_axi_periph_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:2057]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_93786Q' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4244]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_93786Q' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4244]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1LLF3YR' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4376]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4611]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4611]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4611]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_0' has 60 connections declared, but only 57 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4611]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1LLF3YR' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4376]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_AAFE7L' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4817]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_1' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_1' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_1' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5056]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_1' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5056]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_1' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5056]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_AAFE7L' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4817]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1K4HT1S' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5117]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_2' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_2' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5356]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5356]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_2' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5356]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1K4HT1S' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5117]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_C1M6GK' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5417]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_3' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_3' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_C1M6GK' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5417]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1IG48UT' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5727]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1IG48UT' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5727]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_CYVF7B' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5873]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_CYVF7B' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5873]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1HT6FRQ' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6131]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_4' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_4' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_4_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_4' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6370]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_4' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6370]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_4' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6370]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1HT6FRQ' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6131]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1OHIBN4' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6594]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_5' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_5' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_auto_pc_5_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'cpu_test_auto_pc_5' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6909]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'cpu_test_auto_pc_5' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6909]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_5' has 79 connections declared, but only 77 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6909]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1OHIBN4' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6594]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_F65XG1' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7294]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_F65XG1' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7294]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_xbar_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_xbar_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_ps7_0_axi_periph_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:2057]
-WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'cpu_test_ps7_0_axi_periph_0' has 254 connections declared, but only 223 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:965]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_rgb2lcd_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_rgb2lcd_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_rgb2lcd_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_rgb2lcd_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_blk_mem_gen_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_rst_ps7_0_100M_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_rst_ps7_0_100M_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_rst_ps7_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1234]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1234]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1234]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1234]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'cpu_test_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1234]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_v_axi4s_vid_out_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_v_axi4s_vid_out_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_v_axi4s_vid_out_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_v_axi4s_vid_out_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'vid_vblank' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'vid_hblank' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'vid_field_id' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'locked' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'overflow' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'underflow' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'status' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7071] port 'sof_state_out' of module 'cpu_test_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'cpu_test_v_axi4s_vid_out_0_0' has 32 connections declared, but only 23 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1241]
-INFO: [Synth 8-6157] synthesizing module 'cpu_test_v_tc_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_v_tc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_test_v_tc_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-28372-xyh/realtime/cpu_test_v_tc_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'irq' of module 'cpu_test_v_tc_0_0' is unconnected for instance 'v_tc_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1265]
-WARNING: [Synth 8-7071] port 'fsync_out' of module 'cpu_test_v_tc_0_0' is unconnected for instance 'v_tc_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1265]
-WARNING: [Synth 8-7023] instance 'v_tc_0' of module 'cpu_test_v_tc_0_0' has 33 connections declared, but only 31 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1265]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_ila_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_ila_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_2_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_2_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_proc_sys_reset_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_proc_sys_reset_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:818]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:818]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'cpu_test_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:818]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'cpu_test_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:818]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_processing_system7_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_processing_system7_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'cpu_test_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'cpu_test_processing_system7_0_0' has 149 connections declared, but only 139 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:828]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_ps7_0_axi_periph_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:2066]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_93786Q' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4532]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_93786Q' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4532]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1LLF3YR' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4818]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5053]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5053]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_0' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5053]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_0' has 60 connections declared, but only 57 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5053]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1LLF3YR' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:4818]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_AAFE7L' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5259]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_1' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_1' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_1' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5498]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_1' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5498]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_1' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5498]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_AAFE7L' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5259]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1K4HT1S' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5559]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_2' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_2' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5798]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_2' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5798]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_2' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5798]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1K4HT1S' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5559]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_C1M6GK' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5859]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_3' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_3' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_C1M6GK' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:5859]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1IG48UT' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6169]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1IG48UT' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6169]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_CYVF7B' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6455]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_CYVF7B' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6455]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1HT6FRQ' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6713]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_4' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_4' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'cpu_test_auto_pc_4' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6952]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'cpu_test_auto_pc_4' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6952]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_4' has 60 connections declared, but only 58 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6952]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1HT6FRQ' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:6713]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1OHIBN4' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7176]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_auto_pc_5' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_auto_pc_5' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'cpu_test_auto_pc_5' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7491]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'cpu_test_auto_pc_5' is unconnected for instance 'auto_pc' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7491]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'cpu_test_auto_pc_5' has 79 connections declared, but only 77 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7491]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1OHIBN4' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7176]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_F65XG1' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7876]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_F65XG1' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:7876]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_xbar_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_xbar_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_ps7_0_axi_periph_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:2066]
+WARNING: [Synth 8-7071] port 'M00_AXI_araddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arburst' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arcache' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arlen' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arlock' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arregion' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arsize' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_arvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awaddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awburst' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awcache' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awlen' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awlock' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awregion' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awsize' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_awvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_bready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_rready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_wdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_wlast' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M00_AXI_wvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_araddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arburst' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arcache' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arlen' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arlock' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arqos' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arregion' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arsize' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_arvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awaddr' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awburst' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awcache' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awlen' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awlock' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awqos' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awregion' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awsize' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_awvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_bready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_rready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_wdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_wlast' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_wstrb' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'M05_AXI_wvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'cpu_test_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'cpu_test_ps7_0_axi_periph_0' has 296 connections declared, but only 229 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:968]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_rgb2lcd_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_rgb2lcd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_rgb2lcd_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_rgb2lcd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_blk_mem_gen_1_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_blk_mem_gen_1_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_blk_mem_gen_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_rst_ps7_0_100M_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_rst_ps7_0_100M_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1243]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'cpu_test_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1243]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'cpu_test_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1243]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_v_axi4s_vid_out_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_v_axi4s_vid_out_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'cpu_test_v_axi4s_vid_out_0_0' has 32 connections declared, but only 23 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1250]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_v_tc_0_0' [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_v_tc_0_0' (0#1) [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/.Xil/Vivado-19732-xyh/realtime/cpu_test_v_tc_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_tc_0' of module 'cpu_test_v_tc_0_0' has 33 connections declared, but only 31 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1274]
 INFO: [Synth 8-6157] synthesizing module 'cpu_test_xlconcat_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xlconcat_0_0/synth/cpu_test_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
@@ -239,9 +263,10 @@ INFO: [Synth 8-6155] done synthesizing module 'cpu_test_wrapper' (0#1) [E:/Xilin
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PS_to_CPU_controller_0'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:470]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:802]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bluex_0'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:755]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_1'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1301]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rom'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1219]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1297]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_1'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1310]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rom'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1228]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:1306]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem'. This will prevent further optimization [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/synth/cpu_test.v:811]
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
@@ -344,18 +369,18 @@ WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_5_xlconcat__parame
 WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_5_xlconcat__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1545.906 ; gain = 571.926
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1546.570 ; gain = 572.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1545.906 ; gain = 571.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1546.570 ; gain = 572.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1545.906 ; gain = 571.926
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1546.570 ; gain = 572.891
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1545.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1546.570 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -426,26 +451,26 @@ Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_
 Finished Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1571.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1571.738 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1627.223 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'cpu_test_i/mem' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'cpu_test_i/reg2ram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'cpu_test_i/rom' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -747,10 +772,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for cpu_test_i/xlconcat_1. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for cpu_test_i/xlconstant_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cpu_test_i/xlconstant_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -773,25 +798,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -809,37 +834,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -909,28 +934,28 @@ Report Cell Usage:
 |32    |OBUF                            |     6|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1627.223 ; gain = 653.543
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 293 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1578.160 ; gain = 571.926
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1578.160 ; gain = 604.180
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1627.223 ; gain = 572.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1627.223 ; gain = 653.543
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1578.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1627.223 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1578.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
 
-Synth Design complete | Checksum: 8f94d754
+Synth Design complete | Checksum: 1a76dcce
 INFO: [Common 17-83] Releasing license: Synthesis
-145 Infos, 196 Warnings, 0 Critical Warnings and 0 Errors encountered.
+147 Infos, 219 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1578.160 ; gain = 1022.676
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1578.160 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1627.223 ; gain = 1071.605
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.223 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/synth_1/cpu_test_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file cpu_test_wrapper_utilization_synth.rpt -pb cpu_test_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 22:01:31 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 23:18:45 2024...

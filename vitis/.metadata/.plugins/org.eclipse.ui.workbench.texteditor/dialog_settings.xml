@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="cpu_done_flag"/>
+		<item key="selection" value="CODE_LENGTH"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="code_length"/>
 			<item value="fn_flag"/>
 			<item value="period"/>
 			<item value="PS_TO"/>
@@ -16,6 +17,7 @@
 			<item value="PS2PL"/>
 		</list>
 		<list key="replacehistory">
+			<item value="CODE_LENGTH"/>
 			<item value="cpu_done_flag"/>
 		</list>
 	</section>

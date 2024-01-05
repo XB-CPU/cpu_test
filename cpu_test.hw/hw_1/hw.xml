@@ -17,14 +17,16 @@
   <ObjectList object_type="hw_ila" gui_info="">
     <Object name="cpu_test_i/ila_0" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="2"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="cpu_test_i/CPU_0_current_addr[31:0]" gui_info="Trigger Setup=0"/>
     <Object name="cpu_test_i/PS_to_CPU_controller_0_CPU_done" gui_info=""/>
   </ObjectList>
   <probeset name="hw project" active="false">
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -63,7 +65,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;h0000_0004"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -74,7 +76,7 @@
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;h0000_0004"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -110,6 +112,85 @@
         <net name="cpu_test_i/CPU_0_current_addr[2]"/>
         <net name="cpu_test_i/CPU_0_current_addr[1]"/>
         <net name="cpu_test_i/CPU_0_current_addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq7&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq7&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[6:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq7&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_test_i/Net1[6]"/>
+        <net name="cpu_test_i/Net1[5]"/>
+        <net name="cpu_test_i/Net1[4]"/>
+        <net name="cpu_test_i/Net1[3]"/>
+        <net name="cpu_test_i/Net1[2]"/>
+        <net name="cpu_test_i/Net1[1]"/>
+        <net name="cpu_test_i/Net1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_test_i/Net2[31]"/>
+        <net name="cpu_test_i/Net2[30]"/>
+        <net name="cpu_test_i/Net2[29]"/>
+        <net name="cpu_test_i/Net2[28]"/>
+        <net name="cpu_test_i/Net2[27]"/>
+        <net name="cpu_test_i/Net2[26]"/>
+        <net name="cpu_test_i/Net2[25]"/>
+        <net name="cpu_test_i/Net2[24]"/>
+        <net name="cpu_test_i/Net2[23]"/>
+        <net name="cpu_test_i/Net2[22]"/>
+        <net name="cpu_test_i/Net2[21]"/>
+        <net name="cpu_test_i/Net2[20]"/>
+        <net name="cpu_test_i/Net2[19]"/>
+        <net name="cpu_test_i/Net2[18]"/>
+        <net name="cpu_test_i/Net2[17]"/>
+        <net name="cpu_test_i/Net2[16]"/>
+        <net name="cpu_test_i/Net2[15]"/>
+        <net name="cpu_test_i/Net2[14]"/>
+        <net name="cpu_test_i/Net2[13]"/>
+        <net name="cpu_test_i/Net2[12]"/>
+        <net name="cpu_test_i/Net2[11]"/>
+        <net name="cpu_test_i/Net2[10]"/>
+        <net name="cpu_test_i/Net2[9]"/>
+        <net name="cpu_test_i/Net2[8]"/>
+        <net name="cpu_test_i/Net2[7]"/>
+        <net name="cpu_test_i/Net2[6]"/>
+        <net name="cpu_test_i/Net2[5]"/>
+        <net name="cpu_test_i/Net2[4]"/>
+        <net name="cpu_test_i/Net2[3]"/>
+        <net name="cpu_test_i/Net2[2]"/>
+        <net name="cpu_test_i/Net2[1]"/>
+        <net name="cpu_test_i/Net2[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -277,6 +358,58 @@
         <net name="cpu_test_i/bluex_0_ram_wr_data[2]"/>
         <net name="cpu_test_i/bluex_0_ram_wr_data[1]"/>
         <net name="cpu_test_i/bluex_0_ram_wr_data[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_test_i/mem_douta[31]"/>
+        <net name="cpu_test_i/mem_douta[30]"/>
+        <net name="cpu_test_i/mem_douta[29]"/>
+        <net name="cpu_test_i/mem_douta[28]"/>
+        <net name="cpu_test_i/mem_douta[27]"/>
+        <net name="cpu_test_i/mem_douta[26]"/>
+        <net name="cpu_test_i/mem_douta[25]"/>
+        <net name="cpu_test_i/mem_douta[24]"/>
+        <net name="cpu_test_i/mem_douta[23]"/>
+        <net name="cpu_test_i/mem_douta[22]"/>
+        <net name="cpu_test_i/mem_douta[21]"/>
+        <net name="cpu_test_i/mem_douta[20]"/>
+        <net name="cpu_test_i/mem_douta[19]"/>
+        <net name="cpu_test_i/mem_douta[18]"/>
+        <net name="cpu_test_i/mem_douta[17]"/>
+        <net name="cpu_test_i/mem_douta[16]"/>
+        <net name="cpu_test_i/mem_douta[15]"/>
+        <net name="cpu_test_i/mem_douta[14]"/>
+        <net name="cpu_test_i/mem_douta[13]"/>
+        <net name="cpu_test_i/mem_douta[12]"/>
+        <net name="cpu_test_i/mem_douta[11]"/>
+        <net name="cpu_test_i/mem_douta[10]"/>
+        <net name="cpu_test_i/mem_douta[9]"/>
+        <net name="cpu_test_i/mem_douta[8]"/>
+        <net name="cpu_test_i/mem_douta[7]"/>
+        <net name="cpu_test_i/mem_douta[6]"/>
+        <net name="cpu_test_i/mem_douta[5]"/>
+        <net name="cpu_test_i/mem_douta[4]"/>
+        <net name="cpu_test_i/mem_douta[3]"/>
+        <net name="cpu_test_i/mem_douta[2]"/>
+        <net name="cpu_test_i/mem_douta[1]"/>
+        <net name="cpu_test_i/mem_douta[0]"/>
       </nets>
     </probe>
   </probeset>

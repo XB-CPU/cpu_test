@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  5 22:00:19 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  5 23:15:37 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="cpu_test" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -5593,7 +5593,7 @@
             <CONNECTION INSTANCE="reg2ram" PORT="dinb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="read_mem_out_inw" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_read_mem_out_inw">
+        <PORT DIR="I" LEFT="31" NAME="read_mem_out_inw" RIGHT="0" SIGIS="undef" SIGNAME="mem_douta">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="douta"/>
           </CONNECTIONS>
@@ -5617,6 +5617,7 @@
         <PORT DIR="I" NAME="wr_en_t" SIGIS="undef"/>
         <PORT DIR="O" LEFT="15" NAME="write_mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_addr">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_0" PORT="probe4"/>
             <CONNECTION INSTANCE="mem" PORT="addra"/>
           </CONNECTIONS>
         </PORT>
@@ -5628,6 +5629,7 @@
         <PORT DIR="O" LEFT="31" NAME="write_mem_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="dina"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe6"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="write_mem_en" SIGIS="undef" SIGNAME="bluex_0_write_mem_en">
@@ -5635,6 +5637,7 @@
             <CONNECTION INSTANCE="mem" PORT="ena"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="write_mem_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" NAME="write_mem_we" SIGIS="undef" SIGNAME="bluex_0_write_mem_we">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="wea"/>
@@ -5642,7 +5645,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="bluex_0_MEM_PORT" NAME="MEM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="MEM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MASTER_TYPE"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
@@ -5655,6 +5658,7 @@
             <PORTMAP LOGICAL="DIN" PHYSICAL="write_mem_data"/>
             <PORTMAP LOGICAL="DOUT" PHYSICAL="read_mem_out_inw"/>
             <PORTMAP LOGICAL="EN" PHYSICAL="write_mem_en"/>
+            <PORTMAP LOGICAL="RST" PHYSICAL="write_mem_rst"/>
             <PORTMAP LOGICAL="WE" PHYSICAL="write_mem_we"/>
           </PORTMAPS>
         </BUSINTERFACE>
@@ -6478,7 +6482,7 @@
         <PARAMETER NAME="C_MU_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="4"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="7"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
@@ -7886,7 +7890,7 @@
         <PARAMETER NAME="C_PROBE49_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="7"/>
         <PARAMETER NAME="C_PROBE500_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE500_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE500_WIDTH" VALUE="1"/>
@@ -8219,7 +8223,7 @@
         <PARAMETER NAME="C_PROBE59_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE5_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE5_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_PROBE600_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE600_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE600_WIDTH" VALUE="1"/>
@@ -8552,7 +8556,7 @@
         <PARAMETER NAME="C_PROBE69_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE6_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE6_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_PROBE700_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE700_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE700_WIDTH" VALUE="1"/>
@@ -9555,7 +9559,7 @@
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ARUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_AWUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_BUSER_WIDTH" VALUE="1"/>
@@ -9611,6 +9615,21 @@
             <CONNECTION INSTANCE="rom" PORT="doutb"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="6" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="mem_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_data"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -9648,7 +9667,7 @@
         <PARAMETER NAME="C_HAS_ENA" VALUE="1"/>
         <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
         <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
@@ -9742,7 +9761,7 @@
         <PARAMETER NAME="Read_Width_A" VALUE="32"/>
         <PARAMETER NAME="Read_Width_B" VALUE="32"/>
         <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
-        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
         <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
         <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
         <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
@@ -9774,7 +9793,7 @@
             <CONNECTION INSTANCE="bluex_0" PORT="write_mem_addr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="bluex_0_write_mem_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clka" SIGIS="clk" SIGNAME="bluex_0_write_mem_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bluex_0" PORT="write_mem_clk"/>
           </CONNECTIONS>
@@ -9784,8 +9803,9 @@
             <CONNECTION INSTANCE="bluex_0" PORT="write_mem_data"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_read_mem_out_inw">
+        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="mem_douta">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
             <CONNECTION INSTANCE="bluex_0" PORT="read_mem_out_inw"/>
           </CONNECTIONS>
         </PORT>
@@ -9801,7 +9821,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="bluex_0_MEM_PORT" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
@@ -12079,24 +12099,44 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arburst" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arcache" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arlen" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arlock" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arsize" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awburst" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awcache" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awlen" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awlock" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awsize" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_bid" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_bresp" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_rid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M00_AXI_rresp" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_wstrb" SIGIS="undef"/>
         <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
@@ -12493,24 +12533,44 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_araddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="M05_AXI_arprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arburst" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arcache" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arlen" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arlock" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="I" NAME="M05_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_arsize" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_arvalid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="M05_AXI_awprot" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awburst" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awcache" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awlen" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awlock" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="I" NAME="M05_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_awsize" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_bid" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_bready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="M05_AXI_bresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_bresp" SIGIS="undef"/>
         <PORT DIR="I" NAME="M05_AXI_bvalid" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="M05_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_rid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_rready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="M05_AXI_rresp" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M05_AXI_rresp" SIGIS="undef"/>
         <PORT DIR="I" NAME="M05_AXI_rvalid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="M05_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="M05_AXI_wready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="M05_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M05_AXI_wstrb" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_wvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
@@ -13086,21 +13146,41 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="M00_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M00_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M00_AXI_arburst"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M00_AXI_arcache"/>
+            <PORTMAP LOGICAL="ARID" PHYSICAL="M00_AXI_arid"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M00_AXI_arlen"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M00_AXI_arlock"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M00_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M00_AXI_arready"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M00_AXI_arregion"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M00_AXI_arsize"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M00_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M00_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M00_AXI_awburst"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M00_AXI_awcache"/>
+            <PORTMAP LOGICAL="AWID" PHYSICAL="M00_AXI_awid"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M00_AXI_awlen"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M00_AXI_awlock"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M00_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M00_AXI_awready"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M00_AXI_awregion"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M00_AXI_awsize"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M00_AXI_awvalid"/>
+            <PORTMAP LOGICAL="BID" PHYSICAL="M00_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M00_AXI_bready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M00_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M00_AXI_bvalid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M00_AXI_rdata"/>
+            <PORTMAP LOGICAL="RID" PHYSICAL="M00_AXI_rid"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="M00_AXI_rlast"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M00_AXI_rready"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M00_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M00_AXI_rvalid"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="M00_AXI_wlast"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M00_AXI_wready"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M00_AXI_wvalid"/>
@@ -13235,21 +13315,41 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="M05_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M05_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M05_AXI_arburst"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M05_AXI_arcache"/>
+            <PORTMAP LOGICAL="ARID" PHYSICAL="M05_AXI_arid"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M05_AXI_arlen"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M05_AXI_arlock"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M05_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M05_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M05_AXI_arready"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M05_AXI_arregion"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M05_AXI_arsize"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M05_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M05_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M05_AXI_awburst"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M05_AXI_awcache"/>
+            <PORTMAP LOGICAL="AWID" PHYSICAL="M05_AXI_awid"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M05_AXI_awlen"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M05_AXI_awlock"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M05_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M05_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M05_AXI_awready"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M05_AXI_awregion"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M05_AXI_awsize"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M05_AXI_awvalid"/>
+            <PORTMAP LOGICAL="BID" PHYSICAL="M05_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M05_AXI_bready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M05_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M05_AXI_bvalid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M05_AXI_rdata"/>
+            <PORTMAP LOGICAL="RID" PHYSICAL="M05_AXI_rid"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="M05_AXI_rlast"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M05_AXI_rready"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M05_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M05_AXI_rvalid"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M05_AXI_wdata"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="M05_AXI_wlast"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M05_AXI_wready"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M05_AXI_wstrb"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M05_AXI_wvalid"/>

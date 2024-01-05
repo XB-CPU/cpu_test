@@ -2776,6 +2776,9 @@
         "xci_path": "ip\\cpu_test_blk_mem_gen_2_0\\cpu_test_blk_mem_gen_2_0.xci",
         "inst_hier_path": "mem",
         "parameters": {
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
           "Write_Depth_A": {
             "value": "128"
           },
@@ -2802,7 +2805,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "4"
+            "value": "7"
           },
           "C_PROBE1_WIDTH": {
             "value": "32"
@@ -2811,7 +2814,13 @@
             "value": "32"
           },
           "C_PROBE4_WIDTH": {
-            "value": "1"
+            "value": "7"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "32"
           }
         }
       },
@@ -3349,12 +3358,6 @@
           "axi_mem_intercon/S00_AXI"
         ]
       },
-      "bluex_0_MEM_PORT": {
-        "interface_ports": [
-          "bluex_0/MEM_PORT",
-          "mem/BRAM_PORTA"
-        ]
-      },
       "bluex_0_REG_PORT": {
         "interface_ports": [
           "bluex_0/REG_PORT",
@@ -3492,6 +3495,20 @@
           "ps7_0_axi_periph/M07_ACLK"
         ]
       },
+      "Net1": {
+        "ports": [
+          "bluex_0/write_mem_addr",
+          "ila_0/probe4",
+          "mem/addra"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "bluex_0/write_mem_data",
+          "mem/dina",
+          "ila_0/probe6"
+        ]
+      },
       "PS_to_CPU_controller_0_CPU_done": {
         "ports": [
           "PS_to_CPU_controller_0/CPU_done",
@@ -3544,12 +3561,37 @@
           "PS_to_CPU_controller_0/PC_cnt"
         ]
       },
+      "bluex_0_write_mem_clk": {
+        "ports": [
+          "bluex_0/write_mem_clk",
+          "mem/clka"
+        ]
+      },
+      "bluex_0_write_mem_en": {
+        "ports": [
+          "bluex_0/write_mem_en",
+          "mem/ena"
+        ]
+      },
+      "bluex_0_write_mem_we": {
+        "ports": [
+          "bluex_0/write_mem_we",
+          "mem/wea"
+        ]
+      },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
           "v_tc_0/clk",
           "v_axi4s_vid_out_0/vid_io_out_clk",
           "rgb2lcd_0/pixel_clk"
+        ]
+      },
+      "mem_douta": {
+        "ports": [
+          "mem/douta",
+          "ila_0/probe5",
+          "bluex_0/read_mem_out_inw"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {

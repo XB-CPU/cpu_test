@@ -37,7 +37,6 @@ verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/includ
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/b578/sim/bluex_v_2_1_controller_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/b578/sim/bluex_v_2_1.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_0_0/sim/cpu_test_bluex_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xbar_1/sim/cpu_test_xbar_1.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e574/hdl/AXI_LCD_TOU_DRI_v1_0_S0_AXI.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e574/hdl/AXI_LCD_TOU_DRI_v1_0.v" \
@@ -45,6 +44,7 @@ verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/includ
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xlconcat_1_0/sim/cpu_test_xlconcat_1_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xlconstant_0_0/sim/cpu_test_xlconstant_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xlconstant_0_1/sim/cpu_test_xlconstant_0_1.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_5/sim/cpu_test_auto_pc_5.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/sim/cpu_test_auto_pc_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/sim/cpu_test_auto_pc_1.v" \

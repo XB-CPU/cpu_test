@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 import os
 import sys
-from typing import List
+from typing import List, Literal
 import re
 import io
 
@@ -178,11 +178,15 @@ class isc_code:
 			asb_print(f"Compile error: ad value must be less than {1 << ADR_BIT} and greater than 0, but {ad_value} are given", f, line_index)
 		self.isc += ad_value << isc_code.IM_DISP
 
-	def code(self, bin_str:bool=True):
-		if bin_str:
+	def code(self, radix:Literal[2, 10, 16] = 2):
+		if radix == 2:
 			return bin(self.isc)[2:].zfill(32)
-		else:
+		elif radix == 16:
+			return hex(self.isc)[2:].zfill(8)
+		elif radix == 10:
 			return self.isc
+		else:
+			error_print(f"radix {radix} not supportted! Abort.")
 
 	def set_cmd_type(self, cmd_type:str):
 		self.cmd_type = cmd_type
@@ -205,6 +209,7 @@ def machine_code_print(code:str, ic:isc_code):#, cmd_type:str
 		res.insert(32-16, " ")
 		res.insert(32-21, " ")
 		res.insert(32-26, " ")
+		res.append("\t")
 		op_code = int("".join(res[31:]), 2)
 	elif ic.cmd_type == "I":
 		res.insert(32-16, " ")
@@ -219,6 +224,8 @@ def machine_code_print(code:str, ic:isc_code):#, cmd_type:str
 		ad_code = int("".join(res[17:]), 2)
 		res.append("  \t" + str(ad_code))
 	res.insert(0, str(ic.asb_line + 1) + "->" + str(ic.bin_line + 1) + "#\t" +str(op_code) + "\t" + ic.cmd + "\t")
+	res.append("\t")
+	res.append(ic.code(16))
 	print("".join(res))
 
 def load_macro():
@@ -551,7 +558,8 @@ def output_to_file():
 	with open(cli_args.output, "a") as output:
 		l = len(isc_code_list)
 		if cli_args.c_header is not None:
-			output.write(f"const static u32 {cli_args.c_header}[{l}] = {{\n")
+			output.write(f"#define CODE_LENGTH {l}\n")
+			output.write(f"const static u32 {cli_args.c_header}[CODE_LENGTH] = {{\n")
 		elif cli_args.coe_format:
 			output.write(f"memory_initialization_radix=2;\n")
 			output.write(f"memory_initialization_vector =\n")

@@ -1,4 +1,4 @@
-22:13:45 **** Incremental Build of configuration Debug for project cpu ****
+23:53:40 **** Incremental Build of configuration Debug for project cpu ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,9 +7,6 @@ make --no-print-directory main-build
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:274:12: warning: 'code_length_get' defined but not used [-Wunused-function]
-  274 | static int code_length_get(uint32_t*cod){
-      |            ^~~~~~~~~~~~~~~
 'Finished building: ../src/main.c'
 ' '
 'Building target: cpu.elf'
@@ -20,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size cpu.elf  |tee "cpu.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 209856	   3688	  30608	 244152	  3b9b8	cpu.elf
+ 209752	   3688	  30608	 244048	  3b950	cpu.elf
 'Finished building: cpu.elf.size'
 ' '
 
-22:13:46 Build Finished (took 829ms)
+23:53:41 Build Finished (took 835ms)
 
