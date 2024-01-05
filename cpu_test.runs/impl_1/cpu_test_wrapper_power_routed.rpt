@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Thu Jan  4 22:37:23 2024
+| Date             : Fri Jan  5 11:53:40 2024
 | Host             : xyh running 64-bit major release  (build 9200)
 | Command          : report_power -file cpu_test_wrapper_power_routed.rpt -pb cpu_test_wrapper_power_summary_routed.pb -rpx cpu_test_wrapper_power_routed.rpx
 | Design           : cpu_test_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.883        |
+| Total On-Chip Power (W)  | 1.876        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.734        |
+| Dynamic (W)              | 1.727        |
 | Device Static (W)        | 0.149        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.3         |
-| Junction Temperature (C) | 46.7         |
+| Max Ambient (C)          | 63.4         |
+| Junction Temperature (C) | 46.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.046 |        8 |       --- |             --- |
-| Slice Logic              |     0.014 |    30570 |       --- |             --- |
-|   LUT as Logic           |     0.012 |     9916 |     53200 |           18.64 |
-|   Register               |    <0.001 |    15270 |    106400 |           14.35 |
-|   CARRY4                 |    <0.001 |      386 |     13300 |            2.90 |
-|   LUT as Shift Register  |    <0.001 |      660 |     17400 |            3.79 |
+| Clocks                   |     0.043 |        8 |       --- |             --- |
+| Slice Logic              |     0.013 |    30223 |       --- |             --- |
+|   LUT as Logic           |     0.012 |     9940 |     53200 |           18.68 |
+|   Register               |    <0.001 |    15046 |    106400 |           14.14 |
+|   CARRY4                 |    <0.001 |      379 |     13300 |            2.85 |
 |   F7/F8 Muxes            |    <0.001 |      816 |     53200 |            1.53 |
+|   LUT as Shift Register  |    <0.001 |      621 |     17400 |            3.57 |
 |   LUT as Distributed RAM |    <0.001 |       26 |     17400 |            0.15 |
-|   Others                 |     0.000 |     1056 |       --- |             --- |
-| Signals                  |     0.020 |    22269 |       --- |             --- |
-| Block RAM                |     0.007 |     10.5 |       140 |            7.50 |
+|   Others                 |     0.000 |     1027 |       --- |             --- |
+| Signals                  |     0.018 |    22022 |       --- |             --- |
+| Block RAM                |     0.006 |      9.5 |       140 |            6.79 |
 | MMCM                     |     0.106 |        1 |         4 |           25.00 |
 | I/O                      |     0.005 |       32 |       125 |           25.60 |
 | PS7                      |     1.536 |        1 |       --- |             --- |
 | Static Power             |     0.149 |          |           |                 |
-| Total                    |     1.883 |          |           |                 |
+| Total                    |     1.876 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.104 |       0.087 |      0.017 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.097 |       0.080 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.075 |       0.059 |      0.016 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,7 +142,7 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------+
 | clk_fpga_0                                                                                 | cpu_test_i/processing_system7_0/inst/FCLK_CLK0                                  |            10.0 |
 | clk_fpga_0                                                                                 | cpu_test_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                     |            10.0 |
-| clk_fpga_1                                                                                 | cpu_test_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]                     |            10.0 |
+| clk_fpga_1                                                                                 | cpu_test_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]                     |            13.9 |
 | clk_out1_cpu_test_clk_wiz_0_0                                                              | cpu_test_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clk_out1_cpu_test_clk_wiz_0_0 |            30.0 |
 | clkfbout_cpu_test_clk_wiz_0_0                                                              | cpu_test_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkfbout_cpu_test_clk_wiz_0_0 |            10.0 |
 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK               |            33.0 |
@@ -158,18 +158,18 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| cpu_test_wrapper         |     1.734 |
-|   cpu_test_i             |     1.727 |
+| cpu_test_wrapper         |     1.727 |
+|   cpu_test_i             |     1.720 |
 |     axi_bram_ctrl_1      |     0.002 |
 |       U0                 |     0.002 |
 |     axi_vdma_0           |     0.008 |
 |       U0                 |     0.008 |
-|     bluex_v_2_1_0        |     0.008 |
-|       inst               |     0.008 |
+|     bluex_0              |     0.005 |
+|       inst               |     0.005 |
 |     clk_wiz_0            |     0.111 |
 |       inst               |     0.111 |
-|     ila_0                |     0.010 |
-|       inst               |     0.010 |
+|     ila_0                |     0.006 |
+|       inst               |     0.006 |
 |     processing_system7_0 |     1.538 |
 |       inst               |     1.538 |
 |     ps7_0_axi_periph     |     0.035 |
@@ -183,8 +183,8 @@ Table of Contents
 |       xbar               |     0.011 |
 |     reg2ram              |     0.001 |
 |       U0                 |     0.001 |
-|     rom                  |     0.004 |
-|       U0                 |     0.004 |
+|     rom                  |     0.003 |
+|       U0                 |     0.003 |
 |     v_axi4s_vid_out_0    |     0.002 |
 |       inst               |     0.002 |
 |     v_tc_0               |     0.005 |

@@ -46,8 +46,8 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: xilinx.com:user:bluex_v_2_1:1.0
-// IP Revision: 3
+// IP VLNV: xilinx.com:user:bluex_v_2_1:2.1
+// IP Revision: 5
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,6 +55,10 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 bluex_v_2_1_0 your_instance_name (
+  .ROM_clk(ROM_clk),                    // output wire ROM_clk
+  .ROM_en(ROM_en),                      // output wire ROM_en
+  .ROM_rst(ROM_rst),                    // output wire ROM_rst
+  .ROM_we(ROM_we),                      // output wire ROM_we
   .clk(clk),                            // input wire clk
   .current_addr(current_addr),          // output wire [15 : 0] current_addr
   .enable_CPU(enable_CPU),              // input wire enable_CPU

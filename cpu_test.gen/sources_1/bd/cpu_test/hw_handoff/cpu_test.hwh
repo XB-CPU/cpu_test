@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan  4 22:31:49 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  5 11:46:11 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="cpu_test" PACKAGE="clg400" SPEEDGRADE="-2"/>
 
@@ -249,9 +249,9 @@
             <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="PC_cnt" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_current_addr">
+        <PORT DIR="I" LEFT="15" NAME="PC_cnt" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_current_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="current_addr"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="current_addr"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -362,7 +362,7 @@
         <PORT DIR="O" NAME="enable_CPU" SIGIS="undef" SIGNAME="PS_to_CPU_controller_0_enable_CPU">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="enable_CPU"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="enable_CPU"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1844,17 +1844,17 @@
       <PORTS>
         <PORT DIR="I" LEFT="0" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="wr_en_o"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="wr_en_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="wr_en_i"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="wr_en_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="gpio_io_t" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_t">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="wr_en_t"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="wr_en_t"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -4860,35 +4860,39 @@
         <PERIPHERAL INSTANCE="v_axi4s_vid_out_0"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="5" FULLNAME="/bluex_v_2_1_0" HWVERSION="2.1" INSTANCE="bluex_v_2_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bluex_v_2_1" VLNV="xilinx.com:user:bluex_v_2_1:2.1">
+    <MODULE COREREVISION="4" FULLNAME="/bluex_0" HWVERSION="2.1" INSTANCE="bluex_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bluex" VLNV="xilinx.com:user:bluex:2.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="cpu_test_bluex_v_2_1_0_2"/>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_test_bluex_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ROM_clk" SIGIS="clk" SIGNAME="bluex_v_2_1_0_ROM_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ROM_clk" SIGIS="clk" SIGNAME="bluex_0_ROM_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rom" PORT="clkb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ROM_en" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ROM_en">
+        <PORT DIR="O" NAME="ROM_en" SIGIS="undef" SIGNAME="bluex_0_ROM_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rom" PORT="enb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ROM_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
-        <PORT DIR="O" NAME="ROM_we" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ROM_we">
+        <PORT DIR="O" NAME="ROM_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="bluex_0_ROM_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rom" PORT="rstb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ROM_we" SIGIS="undef" SIGNAME="bluex_0_ROM_we">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rom" PORT="web"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
+        <PORT CLKFREQUENCY="72000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="current_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_current_addr">
+        <PORT DIR="O" LEFT="15" NAME="current_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_current_addr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS_to_CPU_controller_0" PORT="PC_cnt"/>
             <CONNECTION INSTANCE="rom" PORT="addrb"/>
@@ -4905,44 +4909,42 @@
             <CONNECTION INSTANCE="rom" PORT="doutb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="ram_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_addr">
+        <PORT DIR="O" LEFT="31" NAME="ram_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_addr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="addrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ram_clk" SIGIS="clk" SIGNAME="bluex_v_2_1_0_ram_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="ram_clk" SIGIS="clk" SIGNAME="bluex_0_ram_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="clkb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ram_en" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_en">
+        <PORT DIR="O" NAME="ram_en" SIGIS="undef" SIGNAME="bluex_0_ram_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="enb"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="ram_rd_data" RIGHT="0" SIGIS="undef" SIGNAME="reg2ram_doutb">
+        <PORT DIR="I" LEFT="31" NAME="ram_rd_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_rd_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="doutb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ram_rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="bluex_v_2_1_0_ram_rst">
+        <PORT DIR="O" NAME="ram_rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="bluex_0_ram_rst">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="rstb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="ram_we" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_we">
+        <PORT DIR="O" LEFT="3" NAME="ram_we" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_we">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="web"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="ram_wr_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_wr_data">
+        <PORT DIR="O" LEFT="31" NAME="ram_wr_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_wr_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="reg2ram" PORT="dinb"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="read_mem_out_inw" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_read_mem_out_inw">
+        <PORT DIR="I" LEFT="31" NAME="read_mem_out_inw" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_read_mem_out_inw">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="douta"/>
           </CONNECTIONS>
@@ -4972,51 +4974,51 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="write_mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_addr">
+        <PORT DIR="O" LEFT="15" NAME="write_mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_addr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="addra"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="write_mem_clk" SIGIS="clk" SIGNAME="bluex_v_2_1_0_write_mem_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="write_mem_clk" SIGIS="clk" SIGNAME="bluex_0_write_mem_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="clka"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="write_mem_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_data">
+        <PORT DIR="O" LEFT="31" NAME="write_mem_data" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_data">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="dina"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="write_mem_en" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_en">
+        <PORT DIR="O" NAME="write_mem_en" SIGIS="undef" SIGNAME="bluex_0_write_mem_en">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="ena"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="write_mem_we" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_we">
+        <PORT DIR="O" NAME="write_mem_we" SIGIS="undef" SIGNAME="bluex_0_write_mem_we">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mem" PORT="wea"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="ROM_BRAM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+        <BUSINTERFACE BUSNAME="bluex_0_MEM_PORT" NAME="MEM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MASTER_TYPE"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
           <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
           <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
           <PARAMETER NAME="READ_WRITE_MODE"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="current_addr"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="ROM_clk"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="isc"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="ROM_en"/>
-            <PORTMAP LOGICAL="RST" PHYSICAL="ROM_rst"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="ROM_we"/>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="write_mem_addr"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="write_mem_clk"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="write_mem_data"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="read_mem_out_inw"/>
+            <PORTMAP LOGICAL="EN" PHYSICAL="write_mem_en"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="write_mem_we"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="RAM_BRAM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+        <BUSINTERFACE BUSNAME="bluex_0_REG_PORT" NAME="REG_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MASTER_TYPE"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
           <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
@@ -5032,20 +5034,20 @@
             <PORTMAP LOGICAL="WE" PHYSICAL="ram_we"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="bluex_v_2_1_0_MEM_BRAM_PORT" NAME="MEM_BRAM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
-          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ROM_PORT" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MASTER_TYPE"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
           <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
           <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
           <PARAMETER NAME="READ_WRITE_MODE"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="ADDR" PHYSICAL="write_mem_addr"/>
-            <PORTMAP LOGICAL="CLK" PHYSICAL="write_mem_clk"/>
-            <PORTMAP LOGICAL="DIN" PHYSICAL="write_mem_data"/>
-            <PORTMAP LOGICAL="DOUT" PHYSICAL="read_mem_out_inw"/>
-            <PORTMAP LOGICAL="EN" PHYSICAL="write_mem_en"/>
-            <PORTMAP LOGICAL="WE" PHYSICAL="write_mem_we"/>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="current_addr"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="ROM_clk"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="isc"/>
+            <PORTMAP LOGICAL="EN" PHYSICAL="ROM_en"/>
+            <PORTMAP LOGICAL="RST" PHYSICAL="ROM_rst"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="ROM_we"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="GPIO" TYPE="TARGET" VLNV="xilinx.com:interface:gpio:1.0">
@@ -5835,7 +5837,7 @@
         <PARAMETER NAME="C_MU_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="6"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="4"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
@@ -7243,7 +7245,7 @@
         <PARAMETER NAME="C_PROBE49_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE500_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE500_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE500_WIDTH" VALUE="1"/>
@@ -8943,7 +8945,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
+        <PORT CLKFREQUENCY="72000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
           </CONNECTIONS>
@@ -8953,9 +8955,9 @@
             <CONNECTION INSTANCE="PS_to_CPU_controller_0" PORT="enable_CPU"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_current_addr">
+        <PORT DIR="I" LEFT="15" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_current_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="current_addr"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="current_addr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="probe2" RIGHT="0" SIGIS="undef" SIGNAME="PS_to_CPU_controller_0_CPU_done">
@@ -8963,19 +8965,9 @@
             <CONNECTION INSTANCE="PS_to_CPU_controller_0" PORT="CPU_done"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_wr_data">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_wr_data"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="rom_doutb">
+        <PORT DIR="I" LEFT="31" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="rom_doutb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rom" PORT="doutb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_en">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_en"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -9136,39 +9128,39 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="6" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_addr">
+        <PORT DIR="I" LEFT="6" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="write_mem_addr"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_addr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="bluex_v_2_1_0_write_mem_clk">
+        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="bluex_0_write_mem_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="write_mem_clk"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_data">
+        <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="write_mem_data"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_data"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_read_mem_out_inw">
+        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_read_mem_out_inw">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="read_mem_out_inw"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="read_mem_out_inw"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_en">
+        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="bluex_0_write_mem_en">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="write_mem_en"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_en"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_write_mem_we">
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_write_mem_we">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="write_mem_we"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="write_mem_we"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="bluex_v_2_1_0_MEM_BRAM_PORT" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="bluex_0_MEM_PORT" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
@@ -9219,15 +9211,15 @@
         <PORT DIR="O" NAME="mb_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="rst_n"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="rst_n"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="rst"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
+        <PORT CLKFREQUENCY="72000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK1"/>
           </CONNECTIONS>
@@ -9308,7 +9300,7 @@
         <PARAMETER NAME="PCW_ACT_ENET0_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
         <PARAMETER NAME="PCW_ACT_ENET1_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
         <PARAMETER NAME="PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ" VALUE="100.000000"/>
-        <PARAMETER NAME="PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ" VALUE="100.000000"/>
+        <PARAMETER NAME="PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ" VALUE="72.000000"/>
         <PARAMETER NAME="PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
         <PARAMETER NAME="PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ" VALUE="10.000000"/>
         <PARAMETER NAME="PCW_ACT_I2C_PERIPHERAL_FREQMHZ" VALUE="50"/>
@@ -9354,7 +9346,7 @@
         <PARAMETER NAME="PCW_CAN_PERIPHERAL_FREQMHZ" VALUE="100"/>
         <PARAMETER NAME="PCW_CAN_PERIPHERAL_VALID" VALUE="0"/>
         <PARAMETER NAME="PCW_CLK0_FREQ" VALUE="100000000"/>
-        <PARAMETER NAME="PCW_CLK1_FREQ" VALUE="100000000"/>
+        <PARAMETER NAME="PCW_CLK1_FREQ" VALUE="72000000"/>
         <PARAMETER NAME="PCW_CLK2_FREQ" VALUE="10000000"/>
         <PARAMETER NAME="PCW_CLK3_FREQ" VALUE="10000000"/>
         <PARAMETER NAME="PCW_CORE0_FIQ_INTR" VALUE="0"/>
@@ -9493,8 +9485,8 @@
         <PARAMETER NAME="PCW_FCLK0_PERIPHERAL_DIVISOR0" VALUE="6"/>
         <PARAMETER NAME="PCW_FCLK0_PERIPHERAL_DIVISOR1" VALUE="3"/>
         <PARAMETER NAME="PCW_FCLK1_PERIPHERAL_CLKSRC" VALUE="IO PLL"/>
-        <PARAMETER NAME="PCW_FCLK1_PERIPHERAL_DIVISOR0" VALUE="6"/>
-        <PARAMETER NAME="PCW_FCLK1_PERIPHERAL_DIVISOR1" VALUE="3"/>
+        <PARAMETER NAME="PCW_FCLK1_PERIPHERAL_DIVISOR0" VALUE="5"/>
+        <PARAMETER NAME="PCW_FCLK1_PERIPHERAL_DIVISOR1" VALUE="5"/>
         <PARAMETER NAME="PCW_FCLK2_PERIPHERAL_CLKSRC" VALUE="IO PLL"/>
         <PARAMETER NAME="PCW_FCLK2_PERIPHERAL_DIVISOR0" VALUE="1"/>
         <PARAMETER NAME="PCW_FCLK2_PERIPHERAL_DIVISOR1" VALUE="1"/>
@@ -9506,7 +9498,7 @@
         <PARAMETER NAME="PCW_FCLK_CLK2_BUF" VALUE="FALSE"/>
         <PARAMETER NAME="PCW_FCLK_CLK3_BUF" VALUE="FALSE"/>
         <PARAMETER NAME="PCW_FPGA0_PERIPHERAL_FREQMHZ" VALUE="100"/>
-        <PARAMETER NAME="PCW_FPGA1_PERIPHERAL_FREQMHZ" VALUE="100"/>
+        <PARAMETER NAME="PCW_FPGA1_PERIPHERAL_FREQMHZ" VALUE="72"/>
         <PARAMETER NAME="PCW_FPGA2_PERIPHERAL_FREQMHZ" VALUE="50"/>
         <PARAMETER NAME="PCW_FPGA3_PERIPHERAL_FREQMHZ" VALUE="50"/>
         <PARAMETER NAME="PCW_FPGA_FCLK0_ENABLE" VALUE="1"/>
@@ -10300,11 +10292,11 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ACLK"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
+        <PORT CLKFREQUENCY="72000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="ila_0" PORT="clk"/>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="clk"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -12705,9 +12697,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_addr_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_addr">
+        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_addr"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_addr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="axi_bram_ctrl_0_bram_clk_a">
@@ -12715,9 +12707,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_clk_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="bluex_v_2_1_0_ram_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="bluex_0_ram_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_clk"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_wrdata_a">
@@ -12725,9 +12717,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_wrdata_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_wr_data">
+        <PORT DIR="I" LEFT="31" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_wr_data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_wr_data"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_wr_data"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_rddata_a">
@@ -12735,9 +12727,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_rddata_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="reg2ram_doutb">
+        <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_rd_data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_rd_data"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_rd_data"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_en_a">
@@ -12745,9 +12737,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_en_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_en">
+        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="bluex_0_ram_en">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_en"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rsta" SIGIS="rst" SIGNAME="axi_bram_ctrl_0_bram_rst_a">
@@ -12755,9 +12747,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_rst_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rstb" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="bluex_v_2_1_0_ram_rst">
+        <PORT DIR="I" NAME="rstb" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="bluex_0_ram_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_rst"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_rst"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_0_bram_we_a">
@@ -12765,9 +12757,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="bram_we_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ram_we">
+        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ram_we">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ram_we"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ram_we"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -12789,7 +12781,7 @@
             <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+        <BUSINTERFACE BUSNAME="bluex_0_REG_PORT" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
           <PARAMETER NAME="MASTER_TYPE" VALUE="BRAM_CTRL"/>
           <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
           <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
@@ -13073,9 +13065,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="bram_addr_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_current_addr">
+        <PORT DIR="I" LEFT="31" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_current_addr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="current_addr"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="current_addr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="axi_bram_ctrl_1_bram_clk_a">
@@ -13083,9 +13075,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="bram_clk_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="bluex_v_2_1_0_ROM_clk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="bluex_0_ROM_clk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ROM_clk"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ROM_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_1_bram_wrdata_a">
@@ -13101,8 +13093,8 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="rom_doutb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe4"/>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="isc"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe3"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="isc"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="axi_bram_ctrl_1_bram_en_a">
@@ -13110,9 +13102,9 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="bram_en_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ROM_en">
+        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="bluex_0_ROM_en">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ROM_en"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ROM_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rsta" SIGIS="rst" SIGNAME="axi_bram_ctrl_1_bram_rst_a">
@@ -13120,15 +13112,19 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="bram_rst_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rstb" SIGIS="rst"/>
+        <PORT DIR="I" NAME="rstb" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="bluex_0_ROM_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bluex_0" PORT="ROM_rst"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="axi_bram_ctrl_1_bram_we_a">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_bram_ctrl_1" PORT="bram_we_a"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="bluex_v_2_1_0_ROM_we">
+        <PORT DIR="I" LEFT="3" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="bluex_0_ROM_we">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="bluex_v_2_1_0" PORT="ROM_we"/>
+            <CONNECTION INSTANCE="bluex_0" PORT="ROM_we"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

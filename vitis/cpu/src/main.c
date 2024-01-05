@@ -54,7 +54,7 @@ u32 timer_update_time = 0;
 u8 fn_flag = 0,butt_flag = 0;
 char* str1;
 u64 period;
-u16 code_length = 20;
+u16 code_length = 17;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);

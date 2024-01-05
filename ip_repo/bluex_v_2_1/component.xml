@@ -466,7 +466,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0b2b8954</spirit:value>
+            <spirit:value>874465b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -482,7 +482,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6d18eff5</spirit:value>
+            <spirit:value>6c2b3f17</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1043,7 +1043,7 @@
       <spirit:file>
         <spirit:name>src/bluex_v_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_ef0c286f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f5f2105c</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
@@ -1222,8 +1222,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>bluex_2</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
-      <xilinx:coreRevision>9</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-01-03T13:24:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-01-05T02:01:00Z</xilinx:coreCreationDateTime>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.PHASE" xilinx:valuePermission="bd"/>
@@ -1240,7 +1240,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="47e32067"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="165c1d23"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="73538b28"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="34be838a"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="22c70dc6"/>
     </xilinx:packagingInfo>

@@ -61,9 +61,9 @@
       "mem": "",
       "proc_sys_reset_0": "",
       "ila_0": "",
-      "bluex_v_2_1_0": "",
       "axi_gpio_1": "",
-      "xlconcat_0": ""
+      "xlconcat_0": "",
+      "bluex_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -342,7 +342,7 @@
             "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "72.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -396,7 +396,7 @@
             "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "100000000"
+            "value": "72000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -432,7 +432,7 @@
             "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "72"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -2886,7 +2886,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "6"
+            "value": "4"
           },
           "C_PROBE1_WIDTH": {
             "value": "16"
@@ -2895,16 +2895,9 @@
             "value": "32"
           },
           "C_PROBE4_WIDTH": {
-            "value": "32"
+            "value": "1"
           }
         }
-      },
-      "bluex_v_2_1_0": {
-        "vlnv": "xilinx.com:user:bluex_v_2_1:2.1",
-        "ip_revision": "5",
-        "xci_name": "cpu_test_bluex_v_2_1_0_2",
-        "xci_path": "ip\\cpu_test_bluex_v_2_1_0_2\\cpu_test_bluex_v_2_1_0_2.xci",
-        "inst_hier_path": "bluex_v_2_1_0"
       },
       "axi_gpio_1": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
@@ -2930,6 +2923,13 @@
         "xci_name": "cpu_test_xlconcat_0_0",
         "xci_path": "ip\\cpu_test_xlconcat_0_0\\cpu_test_xlconcat_0_0.xci",
         "inst_hier_path": "xlconcat_0"
+      },
+      "bluex_0": {
+        "vlnv": "xilinx.com:user:bluex:2.1",
+        "ip_revision": "4",
+        "xci_name": "cpu_test_bluex_0_0",
+        "xci_path": "ip\\cpu_test_bluex_0_0\\cpu_test_bluex_0_0.xci",
+        "inst_hier_path": "bluex_0"
       }
     },
     "interface_nets": {
@@ -2947,8 +2947,8 @@
       },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
-          "axi_gpio_0/GPIO",
-          "bluex_v_2_1_0/GPIO"
+          "bluex_0/GPIO",
+          "axi_gpio_0/GPIO"
         ]
       },
       "axi_gpio_1_GPIO": {
@@ -2975,10 +2975,16 @@
           "axi_mem_intercon/S00_AXI"
         ]
       },
-      "bluex_v_2_1_0_MEM_BRAM_PORT": {
+      "bluex_0_MEM_PORT": {
         "interface_ports": [
-          "bluex_v_2_1_0/MEM_BRAM_PORT",
+          "bluex_0/MEM_PORT",
           "mem/BRAM_PORTA"
+        ]
+      },
+      "bluex_0_REG_PORT": {
+        "interface_ports": [
+          "bluex_0/REG_PORT",
+          "reg2ram/BRAM_PORTB"
         ]
       },
       "processing_system7_0_DDR": {
@@ -3075,7 +3081,7 @@
     "nets": {
       "CPU_0_current_addr": {
         "ports": [
-          "bluex_v_2_1_0/current_addr",
+          "bluex_0/current_addr",
           "PS_to_CPU_controller_0/PC_cnt",
           "rom/addrb",
           "ila_0/probe1"
@@ -3126,7 +3132,7 @@
         "ports": [
           "PS_to_CPU_controller_0/enable_CPU",
           "ila_0/probe0",
-          "bluex_v_2_1_0/enable_CPU"
+          "bluex_0/enable_CPU"
         ]
       },
       "axi_gpio_1_ip2intc_irpt": {
@@ -3138,64 +3144,32 @@
       "blk_mem_gen_1_doutb": {
         "ports": [
           "rom/doutb",
-          "ila_0/probe4",
-          "bluex_v_2_1_0/isc"
+          "ila_0/probe3",
+          "bluex_0/isc"
         ]
       },
-      "bluex_0_ram_en": {
+      "bluex_0_ROM_clk": {
         "ports": [
-          "bluex_v_2_1_0/ram_en",
-          "reg2ram/enb",
-          "ila_0/probe5"
-        ]
-      },
-      "bluex_0_ram_wr_data": {
-        "ports": [
-          "bluex_v_2_1_0/ram_wr_data",
-          "reg2ram/dinb",
-          "ila_0/probe3"
-        ]
-      },
-      "bluex_v_2_1_0_ROM_clk": {
-        "ports": [
-          "bluex_v_2_1_0/ROM_clk",
+          "bluex_0/ROM_clk",
           "rom/clkb"
         ]
       },
-      "bluex_v_2_1_0_ROM_en": {
+      "bluex_0_ROM_en": {
         "ports": [
-          "bluex_v_2_1_0/ROM_en",
+          "bluex_0/ROM_en",
           "rom/enb"
         ]
       },
-      "bluex_v_2_1_0_ROM_we": {
+      "bluex_0_ROM_rst": {
         "ports": [
-          "bluex_v_2_1_0/ROM_we",
+          "bluex_0/ROM_rst",
+          "rom/rstb"
+        ]
+      },
+      "bluex_0_ROM_we": {
+        "ports": [
+          "bluex_0/ROM_we",
           "rom/web"
-        ]
-      },
-      "bluex_v_2_1_0_ram_addr": {
-        "ports": [
-          "bluex_v_2_1_0/ram_addr",
-          "reg2ram/addrb"
-        ]
-      },
-      "bluex_v_2_1_0_ram_clk": {
-        "ports": [
-          "bluex_v_2_1_0/ram_clk",
-          "reg2ram/clkb"
-        ]
-      },
-      "bluex_v_2_1_0_ram_rst": {
-        "ports": [
-          "bluex_v_2_1_0/ram_rst",
-          "reg2ram/rstb"
-        ]
-      },
-      "bluex_v_2_1_0_ram_we": {
-        "ports": [
-          "bluex_v_2_1_0/ram_we",
-          "reg2ram/web"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -3209,13 +3183,13 @@
       "proc_sys_reset_0_peripheral_aresetn": {
         "ports": [
           "proc_sys_reset_0/peripheral_aresetn",
-          "bluex_v_2_1_0/rst_n"
+          "bluex_0/rst_n"
         ]
       },
       "proc_sys_reset_0_peripheral_reset": {
         "ports": [
           "proc_sys_reset_0/peripheral_reset",
-          "bluex_v_2_1_0/rst"
+          "bluex_0/rst"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
@@ -3223,7 +3197,7 @@
           "processing_system7_0/FCLK_CLK1",
           "proc_sys_reset_0/slowest_sync_clk",
           "ila_0/clk",
-          "bluex_v_2_1_0/clk"
+          "bluex_0/clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3236,12 +3210,6 @@
         "ports": [
           "processing_system7_0/FCLK_RESET1_N",
           "proc_sys_reset_0/ext_reset_in"
-        ]
-      },
-      "reg2ram_doutb": {
-        "ports": [
-          "reg2ram/doutb",
-          "bluex_v_2_1_0/ram_rd_data"
         ]
       },
       "rgb2lcd_0_lcd_bl": {

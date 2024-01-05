@@ -26,13 +26,13 @@ mirl r0, 40h # r0 is still 0
 mirl r1, 30H
 add r1, r0, r0 # r1 is 0
 subi r2, r0, 0 # r2 is 0
-add r6, r7, r0
-beq r6, r7, eq
-neq:
-mirl r18, 64
 jmp 1
-eq:
-mirl r19, 65
+add r6, r7, r0
+#beq r6, r7, eq
+#neq:
+#mirl r18, 64
+#eq:
+#mirl r19, 65
 #for:
 #ldw r8, r7, 0
 #andi r3, r8, 1b

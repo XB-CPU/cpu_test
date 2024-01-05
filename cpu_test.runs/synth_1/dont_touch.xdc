@@ -63,14 +63,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_pr
 # IP: bd/cpu_test/ip/cpu_test_ila_0_0/cpu_test_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_ila_0_0 || ORIG_REF_NAME==cpu_test_ila_0_0} -quiet] -quiet
 
-# IP: bd/cpu_test/ip/cpu_test_bluex_v_2_1_0_2/cpu_test_bluex_v_2_1_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_bluex_v_2_1_0_2 || ORIG_REF_NAME==cpu_test_bluex_v_2_1_0_2} -quiet] -quiet
-
 # IP: bd/cpu_test/ip/cpu_test_axi_gpio_1_0/cpu_test_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_gpio_1_0 || ORIG_REF_NAME==cpu_test_axi_gpio_1_0} -quiet] -quiet
 
 # IP: bd/cpu_test/ip/cpu_test_xlconcat_0_0/cpu_test_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_xlconcat_0_0 || ORIG_REF_NAME==cpu_test_xlconcat_0_0} -quiet] -quiet
+
+# IP: bd/cpu_test/ip/cpu_test_bluex_0_0/cpu_test_bluex_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_bluex_0_0 || ORIG_REF_NAME==cpu_test_bluex_0_0} -quiet] -quiet
 
 # IP: bd/cpu_test/ip/cpu_test_auto_pc_7/cpu_test_auto_pc_7.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_auto_pc_7 || ORIG_REF_NAME==cpu_test_auto_pc_7} -quiet] -quiet

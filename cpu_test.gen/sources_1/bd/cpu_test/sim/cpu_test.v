@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Thu Jan  4 22:31:47 2024
+//Date        : Fri Jan  5 11:46:08 2024
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test.bd
 //Design      : cpu_test
@@ -64,7 +64,7 @@ module cpu_test
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO " *) input [1:0]GPIO_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO TRI_I" *) input [1:0]GPIO_tri_i;
   output lcd_bl;
   (* X_INTERFACE_INFO = "xilinx.com:user:lcd:1.0 lcd CLK" *) output lcd_clk;
   (* X_INTERFACE_INFO = "xilinx.com:user:lcd:1.0 lcd DE" *) output lcd_de;
@@ -132,21 +132,23 @@ module cpu_test
   wire [1:0]axi_vdma_0_M_AXI_MM2S_RRESP;
   wire axi_vdma_0_M_AXI_MM2S_RVALID;
   wire [31:0]blk_mem_gen_1_doutb;
-  wire bluex_0_ram_en;
-  wire [31:0]bluex_0_ram_wr_data;
-  wire [15:0]bluex_v_2_1_0_MEM_BRAM_PORT_ADDR;
-  wire bluex_v_2_1_0_MEM_BRAM_PORT_CLK;
-  wire [31:0]bluex_v_2_1_0_MEM_BRAM_PORT_DIN;
-  wire [31:0]bluex_v_2_1_0_MEM_BRAM_PORT_DOUT;
-  wire bluex_v_2_1_0_MEM_BRAM_PORT_EN;
-  wire bluex_v_2_1_0_MEM_BRAM_PORT_WE;
-  wire bluex_v_2_1_0_ROM_clk;
-  wire bluex_v_2_1_0_ROM_en;
-  wire bluex_v_2_1_0_ROM_we;
-  wire [31:0]bluex_v_2_1_0_ram_addr;
-  wire bluex_v_2_1_0_ram_clk;
-  wire bluex_v_2_1_0_ram_rst;
-  wire [3:0]bluex_v_2_1_0_ram_we;
+  wire [15:0]bluex_0_MEM_PORT_ADDR;
+  wire bluex_0_MEM_PORT_CLK;
+  wire [31:0]bluex_0_MEM_PORT_DIN;
+  wire [31:0]bluex_0_MEM_PORT_DOUT;
+  wire bluex_0_MEM_PORT_EN;
+  wire bluex_0_MEM_PORT_WE;
+  wire [31:0]bluex_0_REG_PORT_ADDR;
+  wire bluex_0_REG_PORT_CLK;
+  wire [31:0]bluex_0_REG_PORT_DIN;
+  wire [31:0]bluex_0_REG_PORT_DOUT;
+  wire bluex_0_REG_PORT_EN;
+  wire bluex_0_REG_PORT_RST;
+  wire [3:0]bluex_0_REG_PORT_WE;
+  wire bluex_0_ROM_clk;
+  wire bluex_0_ROM_en;
+  wire bluex_0_ROM_rst;
+  wire bluex_0_ROM_we;
   wire clk_wiz_0_clk_out1;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [0:0]proc_sys_reset_0_peripheral_reset;
@@ -369,7 +371,6 @@ module cpu_test
   wire ps7_0_axi_periph_M07_AXI_WREADY;
   wire [3:0]ps7_0_axi_periph_M07_AXI_WSTRB;
   wire ps7_0_axi_periph_M07_AXI_WVALID;
-  wire [31:0]reg2ram_doutb;
   wire rgb2lcd_0_lcd_CLK;
   wire rgb2lcd_0_lcd_DE;
   wire rgb2lcd_0_lcd_HS;
@@ -625,32 +626,33 @@ module cpu_test
         .s_axi_lite_wdata(ps7_0_axi_periph_M01_AXI_WDATA),
         .s_axi_lite_wready(ps7_0_axi_periph_M01_AXI_WREADY),
         .s_axi_lite_wvalid(ps7_0_axi_periph_M01_AXI_WVALID));
-  cpu_test_bluex_v_2_1_0_2 bluex_v_2_1_0
-       (.ROM_clk(bluex_v_2_1_0_ROM_clk),
-        .ROM_en(bluex_v_2_1_0_ROM_en),
-        .ROM_we(bluex_v_2_1_0_ROM_we),
+  cpu_test_bluex_0_0 bluex_0
+       (.ROM_clk(bluex_0_ROM_clk),
+        .ROM_en(bluex_0_ROM_en),
+        .ROM_rst(bluex_0_ROM_rst),
+        .ROM_we(bluex_0_ROM_we),
         .clk(processing_system7_0_FCLK_CLK1),
         .current_addr(CPU_0_current_addr),
         .enable_CPU(PS_to_CPU_controller_0_enable_CPU),
         .isc(blk_mem_gen_1_doutb),
-        .ram_addr(bluex_v_2_1_0_ram_addr),
-        .ram_clk(bluex_v_2_1_0_ram_clk),
-        .ram_en(bluex_0_ram_en),
-        .ram_rd_data(reg2ram_doutb),
-        .ram_rst(bluex_v_2_1_0_ram_rst),
-        .ram_we(bluex_v_2_1_0_ram_we),
-        .ram_wr_data(bluex_0_ram_wr_data),
-        .read_mem_out_inw(bluex_v_2_1_0_MEM_BRAM_PORT_DOUT),
+        .ram_addr(bluex_0_REG_PORT_ADDR),
+        .ram_clk(bluex_0_REG_PORT_CLK),
+        .ram_en(bluex_0_REG_PORT_EN),
+        .ram_rd_data(bluex_0_REG_PORT_DOUT),
+        .ram_rst(bluex_0_REG_PORT_RST),
+        .ram_we(bluex_0_REG_PORT_WE),
+        .ram_wr_data(bluex_0_REG_PORT_DIN),
+        .read_mem_out_inw(bluex_0_MEM_PORT_DOUT),
         .rst(proc_sys_reset_0_peripheral_reset),
         .rst_n(proc_sys_reset_0_peripheral_aresetn),
         .wr_en_i(axi_gpio_0_GPIO_TRI_O),
         .wr_en_o(axi_gpio_0_GPIO_TRI_I),
         .wr_en_t(axi_gpio_0_GPIO_TRI_T),
-        .write_mem_addr(bluex_v_2_1_0_MEM_BRAM_PORT_ADDR),
-        .write_mem_clk(bluex_v_2_1_0_MEM_BRAM_PORT_CLK),
-        .write_mem_data(bluex_v_2_1_0_MEM_BRAM_PORT_DIN),
-        .write_mem_en(bluex_v_2_1_0_MEM_BRAM_PORT_EN),
-        .write_mem_we(bluex_v_2_1_0_MEM_BRAM_PORT_WE));
+        .write_mem_addr(bluex_0_MEM_PORT_ADDR),
+        .write_mem_clk(bluex_0_MEM_PORT_CLK),
+        .write_mem_data(bluex_0_MEM_PORT_DIN),
+        .write_mem_en(bluex_0_MEM_PORT_EN),
+        .write_mem_we(bluex_0_MEM_PORT_WE));
   cpu_test_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(Net),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -678,16 +680,14 @@ module cpu_test
         .probe0(PS_to_CPU_controller_0_enable_CPU),
         .probe1(CPU_0_current_addr),
         .probe2(PS_to_CPU_controller_0_CPU_done),
-        .probe3(bluex_0_ram_wr_data),
-        .probe4(blk_mem_gen_1_doutb),
-        .probe5(bluex_0_ram_en));
+        .probe3(blk_mem_gen_1_doutb));
   cpu_test_blk_mem_gen_2_0 mem
-       (.addra(bluex_v_2_1_0_MEM_BRAM_PORT_ADDR[6:0]),
-        .clka(bluex_v_2_1_0_MEM_BRAM_PORT_CLK),
-        .dina(bluex_v_2_1_0_MEM_BRAM_PORT_DIN),
-        .douta(bluex_v_2_1_0_MEM_BRAM_PORT_DOUT),
-        .ena(bluex_v_2_1_0_MEM_BRAM_PORT_EN),
-        .wea(bluex_v_2_1_0_MEM_BRAM_PORT_WE));
+       (.addra(bluex_0_MEM_PORT_ADDR[6:0]),
+        .clka(bluex_0_MEM_PORT_CLK),
+        .dina(bluex_0_MEM_PORT_DIN),
+        .douta(bluex_0_MEM_PORT_DOUT),
+        .ena(bluex_0_MEM_PORT_EN),
+        .wea(bluex_0_MEM_PORT_WE));
   cpu_test_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
@@ -1045,19 +1045,19 @@ module cpu_test
         .S01_AXI_wvalid(1'b0));
   cpu_test_blk_mem_gen_0_0 reg2ram
        (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .addrb(bluex_v_2_1_0_ram_addr),
+        .addrb(bluex_0_REG_PORT_ADDR),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
-        .clkb(bluex_v_2_1_0_ram_clk),
+        .clkb(bluex_0_REG_PORT_CLK),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
-        .dinb(bluex_0_ram_wr_data),
+        .dinb(bluex_0_REG_PORT_DIN),
         .douta(axi_bram_ctrl_0_BRAM_PORTA_DOUT),
-        .doutb(reg2ram_doutb),
+        .doutb(bluex_0_REG_PORT_DOUT),
         .ena(axi_bram_ctrl_0_BRAM_PORTA_EN),
-        .enb(bluex_0_ram_en),
+        .enb(bluex_0_REG_PORT_EN),
         .rsta(axi_bram_ctrl_0_BRAM_PORTA_RST),
-        .rstb(bluex_v_2_1_0_ram_rst),
+        .rstb(bluex_0_REG_PORT_RST),
         .wea(axi_bram_ctrl_0_BRAM_PORTA_WE),
-        .web(bluex_v_2_1_0_ram_we));
+        .web(bluex_0_REG_PORT_WE));
   cpu_test_rgb2lcd_0_0 rgb2lcd_0
        (.lcd_bl(rgb2lcd_0_lcd_bl),
         .lcd_de(rgb2lcd_0_lcd_DE),
@@ -1077,17 +1077,17 @@ module cpu_test
        (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTA_ADDR}),
         .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,CPU_0_current_addr}),
         .clka(axi_bram_ctrl_1_BRAM_PORTA_CLK),
-        .clkb(bluex_v_2_1_0_ROM_clk),
+        .clkb(bluex_0_ROM_clk),
         .dina(axi_bram_ctrl_1_BRAM_PORTA_DIN),
         .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
         .douta(axi_bram_ctrl_1_BRAM_PORTA_DOUT),
         .doutb(blk_mem_gen_1_doutb),
         .ena(axi_bram_ctrl_1_BRAM_PORTA_EN),
-        .enb(bluex_v_2_1_0_ROM_en),
+        .enb(bluex_0_ROM_en),
         .rsta(axi_bram_ctrl_1_BRAM_PORTA_RST),
-        .rstb(1'b0),
+        .rstb(bluex_0_ROM_rst),
         .wea(axi_bram_ctrl_1_BRAM_PORTA_WE),
-        .web({bluex_v_2_1_0_ROM_we,bluex_v_2_1_0_ROM_we,bluex_v_2_1_0_ROM_we,bluex_v_2_1_0_ROM_we}));
+        .web({bluex_0_ROM_we,bluex_0_ROM_we,bluex_0_ROM_we,bluex_0_ROM_we}));
   cpu_test_rst_ps7_0_100M_0 rst_ps7_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),

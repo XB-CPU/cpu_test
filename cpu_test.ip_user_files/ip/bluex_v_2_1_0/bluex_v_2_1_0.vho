@@ -45,14 +45,18 @@
 -- PART OF THIS FILE AT ALL TIMES.
 -- 
 -- DO NOT MODIFY THIS FILE.
--- IP VLNV: xilinx.com:user:bluex_v_2_1:1.0
--- IP Revision: 3
+-- IP VLNV: xilinx.com:user:bluex_v_2_1:2.1
+-- IP Revision: 5
 
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT bluex_v_2_1_0
   PORT (
+    ROM_clk : OUT STD_LOGIC;
+    ROM_en : OUT STD_LOGIC;
+    ROM_rst : OUT STD_LOGIC;
+    ROM_we : OUT STD_LOGIC;
     clk : IN STD_LOGIC;
     current_addr : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     enable_CPU : IN STD_LOGIC;
@@ -86,6 +90,10 @@ END COMPONENT;
 ------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
 your_instance_name : bluex_v_2_1_0
   PORT MAP (
+    ROM_clk => ROM_clk,
+    ROM_en => ROM_en,
+    ROM_rst => ROM_rst,
+    ROM_we => ROM_we,
     clk => clk,
     current_addr => current_addr,
     enable_CPU => enable_CPU,
