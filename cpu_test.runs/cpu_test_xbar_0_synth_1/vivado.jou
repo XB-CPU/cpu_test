@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jan  4 21:07:46 2024
-# Process ID: 2920
+# Start of session at: Fri Jan  5 20:55:03 2024
+# Process ID: 21772
 # Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1
 # Command line: vivado.exe -log cpu_test_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_test_xbar_0.tcl
 # Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/cpu_test_xbar_0.vds

@@ -14,13 +14,13 @@
     <AddressSpace Name="cpu_test_i_processing_system7_0.cpu_test_i_axi_bram_ctrl_0" Begin="1073741824" End="1073750015">
       <AddressSpaceRange Name="cpu_test_i_processing_system7_0.cpu_test_i_axi_bram_ctrl_0" Begin="1073741824" End="1073750015" CoreMemory_Width="0" MemoryType="RAM_SP" MemoryConfiguration="">
         <BusBlock>
-          <BitLane MemType="RAMB36" Placement="X3Y15" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X3Y24" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="15" LSB="0"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
             <Parity ON="false" NumBits="0"/>
           </BitLane>
-          <BitLane MemType="RAMB36" Placement="X3Y17" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X3Y27" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="31" LSB="16"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
@@ -32,13 +32,13 @@
     <AddressSpace Name="cpu_test_i_processing_system7_0.cpu_test_i_axi_bram_ctrl_1" Begin="1107296256" End="1107304447">
       <AddressSpaceRange Name="cpu_test_i_processing_system7_0.cpu_test_i_axi_bram_ctrl_1" Begin="1107296256" End="1107304447" CoreMemory_Width="0" MemoryType="RAM_SP" MemoryConfiguration="">
         <BusBlock>
-          <BitLane MemType="RAMB36" Placement="X4Y16" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X3Y19" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="15" LSB="0"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>
             <Parity ON="false" NumBits="0"/>
           </BitLane>
-          <BitLane MemType="RAMB36" Placement="X3Y16" Read_Width="0" SLR_INDEX="-1">
+          <BitLane MemType="RAMB36" Placement="X3Y18" Read_Width="0" SLR_INDEX="-1">
             <DataWidth MSB="31" LSB="16"/>
             <AddressRange Begin="0" End="2047"/>
             <BitLayout pattern=""/>

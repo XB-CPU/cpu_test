@@ -10,14 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="939"></ZoomEndTime>
+      <ZoomEndTime time="9"></ZoomEndTime>
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="385"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="178"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="4" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="cpu_test_i/PS_to_CPU_controller_0_enable_CPU" type="logic">
@@ -30,8 +30,8 @@
    </wvobject>
    <wvobject fp_name="cpu_test_i/CPU_0_current_addr" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/CPU_0_current_addr[15:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_0_current_addr[15:0]</obj_property>
+      <obj_property name="ElementShortName">cpu_test_i/CPU_0_current_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_0_current_addr[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -49,13 +49,6 @@
       <obj_property name="ElementShortName">cpu_test_i/blk_mem_gen_1_doutb[31:0]</obj_property>
       <obj_property name="ObjectShortName">blk_mem_gen_1_doutb[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="cpu_test_i/bluex_0_ram_en" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/bluex_0_ram_en</obj_property>
-      <obj_property name="ObjectShortName">bluex_0_ram_en</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>

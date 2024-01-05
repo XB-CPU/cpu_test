@@ -4,12 +4,12 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21892-DESKTOP-50PL36L/PrjAr/_X_/bluex_update.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.tmp/bluex_v_2_1_v2_1_project/bluex_update/bluex_update.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8e85faa3c23f44de8831b635c2522f93"/>
     <Option Name="Part" Val="xc7z020clg400-2"/>
-    <Option Name="CompiledLibDir" Val="C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21892-DESKTOP-50PL36L/PrjAr/_X_/bluex_update.cache/compile_simlib"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
@@ -47,8 +47,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="D:/MyWorks/Programs/Verilog/vivado/cpu_test/ip_repo/bluex_v_2_1"/>
-    <Option Name="IPRepoPath" Val="D:/MyWorks/Programs/Verilog/vivado/bluex_update/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../ip_repo/bulex100.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>

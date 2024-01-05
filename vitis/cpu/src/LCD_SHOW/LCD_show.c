@@ -185,7 +185,7 @@ void LCD_show_mem(u32 color , u8 num)
 	LCD_show_str(350-40,0,str,color);
 	for(i=(num-1)*32,j=0;i<num*32;i++,j++){
 		sprintf(str,"R%02d=0x%08x",i,MemData[i]);
-		LCD_show_str(0+(j%3)*240,j/3*34+360,str,color);
+		LCD_show_str(0+(j%3)*240,j/3*34+36,str,color);
 	}
 }
 

@@ -19,6 +19,7 @@
 #include "xstatus.h"
 #include "xscutimer.h"
 #include "machine_code.h"
+#include "AXI_LCD_TOU_DRI.h"
 
 #include "LCD_SHOW/LCD_show.h"
 
@@ -27,8 +28,6 @@
 #define CLK_WIZ_ID         XPAR_CLK_WIZ_0_DEVICE_ID   //时钟IP核器件ID
 #define VDMA_ID            XPAR_AXIVDMA_0_DEVICE_ID   //VDMA器件ID
 #define DISP_VTC_ID        XPAR_VTC_0_DEVICE_ID       //VTC器件ID
-#define AXI_GPIO_0_ID      XPAR_AXI_GPIO_0_DEVICE_ID  //PL端  AXI GPIO 0(lcd_id)器件ID
-#define AXI_GPIO_0_CHANEL  1                          //使用AXI GPIO(lcd_id)通道1
 
 
 #define COUNTER_MAX (0xffffffffU)
@@ -51,7 +50,7 @@ unsigned int const frame_buffer_addr = (XPAR_PS7_DDR_0_S_AXI_BASEADDR + 0x100000
 u32 tim_cnt1 = 0, tim_cnt2 = 0;
 u8 int_tim = 0;
 u32 timer_update_time = 0;
-u8 fn_flag = 0,butt_flag = 0;
+u8 cpu_done_flag = 0,butt_flag = 0;
 char* str1;
 u64 period;
 u16 code_length = 0;
@@ -69,8 +68,8 @@ static int code_length_get(uint32_t*);
 
 int main(void)
 {
-	code_length = code_length_get(code);
-	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
+	code_length = 20;//code_length_get(code);
+//	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
 	GPIO_init();
 
 	//屏幕选择
@@ -92,20 +91,16 @@ int main(void)
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
 	cpu_code_download();
 	interrupt_init();
-	LCD_load_sd_bmp("lty.bmp");
+//	LCD_load_sd_bmp("fnn.bmp");
 	LCD_clear(WHITE);
 
 	usleep(1000*100);
 	while(1)
     {
     	// wait for interrupt
-		if(fn_flag){
+		if(cpu_done_flag){
 			//PL写使能
-			lcd_update_flag = 1;
-			XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
-			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
-			usleep(1);
-			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00);//PL写通道输出1
+			AXI_LCD_TOU_DRI_mWriteReg(XPAR_AXI_LCD_TOU_DRI_0_S0_AXI_BASEADDR,AXI_LCD_TOU_DRI_S0_AXI_SLV_REG1_OFFSET,0x01);
 			usleep(1000*100);
 			LCD_rd_reg();
 			LCD_rd_mem();
@@ -113,11 +108,12 @@ int main(void)
 		if(butt_flag){
 			if(butt_flag == 1){
 			}
-			else if ((butt_flag == 2)&&fn_flag){
+			else if ((butt_flag == 2)&&cpu_done_flag){
 				page_num ++;
 				if(page_num > 4) page_num = 0;
 			}
 			butt_flag = 0;
+			lcd_update_flag = 1;
 		}
 		if(lcd_update_flag){
 			lcd_update_flag = 0;
@@ -130,7 +126,7 @@ int main(void)
 					LCD_show_mem(BLACK, page_num);
 					break;
 			}
-			if(fn_flag){
+			if(cpu_done_flag){
 				sprintf(str1,"CPU_Done! T:%.3fus", (double)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)*1000000);
 				LCD_show_str(0,480-32,str1,YELLOW);
 			}
@@ -174,9 +170,9 @@ static void interrupt_init(){
 	XScuGic_SetPriorityTriggerType(scu, 61, 160, 3);
 	XScuGic_GetPriorityTriggerType(scu, 61, &p, &t);
 	printf("priority:%d, trigger:%d\n", p, t);
-	XScuGic_SetPriorityTriggerType(scu, XPAR_FABRIC_GPIO_1_VEC_ID, 0xA0, 3);
-    XScuGic_Connect(scu, XPAR_FABRIC_GPIO_1_VEC_ID, (Xil_ExceptionHandler)GPIO_intr_handler, axigpio);
-    XScuGic_Enable(scu, XPAR_FABRIC_GPIO_1_VEC_ID);
+	XScuGic_SetPriorityTriggerType(scu, XPAR_FABRIC_GPIO_0_VEC_ID, 0xA0, 3);
+    XScuGic_Connect(scu, XPAR_FABRIC_GPIO_0_VEC_ID, (Xil_ExceptionHandler)GPIO_intr_handler, axigpio);
+    XScuGic_Enable(scu, XPAR_FABRIC_GPIO_0_VEC_ID);
 }
 
 
@@ -210,7 +206,8 @@ static void CPU_done_handler(void* data)
 //		printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
 		XScuGic_Disable(scu, 61);
 		XScuTimer_DisableInterrupt(scut);
-		fn_flag = 1;
+		cpu_done_flag = 1;
+		lcd_update_flag = 1;
 	}
 
 }

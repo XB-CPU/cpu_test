@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\vitis"/>
+	<item key="scw_hwspec_file_selection" value="E:\Xilinx\FPGA_Prjs\dzy\cpu_test\cpu_test\vitis"/>
 </section>

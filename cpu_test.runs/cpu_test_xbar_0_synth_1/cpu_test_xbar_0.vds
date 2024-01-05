@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jan  4 21:07:46 2024
-# Process ID: 2920
+# Start of session at: Fri Jan  5 20:55:03 2024
+# Process ID: 21772
 # Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1
 # Command line: vivado.exe -log cpu_test_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_test_xbar_0.tcl
 # Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/cpu_test_xbar_0.vds
@@ -12,7 +12,7 @@
 # Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
 #-----------------------------------------------------------
 source cpu_test_xbar_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 484.684 ; gain = 179.719
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 485.469 ; gain = 180.934
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.2/data/ip'.
@@ -24,9 +24,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18884
+INFO: [Synth 8-7075] Helper process launched with PID 29624
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.285 ; gain = 441.117
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1367.660 ; gain = 439.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'cpu_test_xbar_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xbar_0/synth/cpu_test_xbar_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_30_axi_crossbar' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
@@ -47,10 +47,6 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_s
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized3' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized4' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized4' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized5' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized5' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized6' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized6' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_30_addr_decoder' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
 INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
 INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_ndeep_srl' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
@@ -94,10 +90,10 @@ INFO: [Synth 8-155] case statement is not full and has no default [e:/Xilinx/FPG
 INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_30_wdata_router__parameterized0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_30_addr_decoder__parameterized0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized7' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized7' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized8' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized8' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized5' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized5' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized6' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized6' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_30_addr_decoder__parameterized0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
 INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized1' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
 INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized1' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
@@ -132,6 +128,12 @@ WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_
 WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
 WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
 INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized2' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
 INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized2' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_30_wdata_mux__parameterized0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
@@ -139,19 +141,6 @@ INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_reg_srl_fif
 INFO: [Synth 8-155] case statement is not full and has no default [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
 INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized2' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_30_wdata_mux__parameterized0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
-WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized3' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_srl_fifo__parameterized3' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_30_wdata_mux__parameterized1' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
-INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized3' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
-INFO: [Synth 8-155] case statement is not full and has no default [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
-INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized3' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_30_wdata_mux__parameterized1' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
 WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_29_axi_register_slice' is unconnected for instance 'reg_slice_mi' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
 WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_29_axi_register_slice' has 93 connections declared, but only 92 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_30_decerr_slave' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
@@ -190,9 +179,6 @@ WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_lo
 WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
 WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
 WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/fb47/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
-WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
-WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
-WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
 WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
 WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
 WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/279e/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
@@ -310,18 +296,18 @@ WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_30_axi_c
 WARNING: [Synth 8-7129] Port m_axi_ruser[7] in module axi_crossbar_v2_1_30_axi_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1658.336 ; gain = 729.168
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1657.734 ; gain = 729.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1658.336 ; gain = 729.168
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1657.734 ; gain = 729.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1658.336 ; gain = 729.168
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1657.734 ; gain = 729.141
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.508 . Memory (MB): peak = 1658.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1657.734 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 264 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -334,34 +320,33 @@ Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_te
 Finished Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1746.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1750.906 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.350 . Memory (MB): peak = 1748.734 ; gain = 2.605
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 1751.500 ; gain = 0.594
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized2'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized3'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_30_decerr_slave'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -402,22 +387,13 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    ZERO |                             1000 |                               10
-                     ONE |                             0010 |                               11
-                     TWO |                             0001 |                               01
-                  iSTATE |                             0100 |                               00
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized3'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
             P_WRITE_IDLE |                              001 |                               00
             P_WRITE_DATA |                              010 |                               01
             P_WRITE_RESP |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_30_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -425,9 +401,9 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input    8 Bit       Adders := 3     
-	   2 Input    4 Bit       Adders := 48    
-	   2 Input    3 Bit       Adders := 23    
-	   2 Input    2 Bit       Adders := 24    
+	   2 Input    4 Bit       Adders := 50    
+	   2 Input    3 Bit       Adders := 26    
+	   2 Input    2 Bit       Adders := 19    
 	   2 Input    1 Bit       Adders := 2     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 40    
@@ -439,8 +415,8 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 10    
 	                8 Bit    Registers := 3     
 	                4 Bit    Registers := 20    
-	                3 Bit    Registers := 15    
-	                2 Bit    Registers := 40    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 38    
 	                1 Bit    Registers := 111   
 +---Muxes : 
 	   2 Input   72 Bit        Muxes := 18    
@@ -449,10 +425,10 @@ Detailed RTL Component Info :
 	   2 Input   16 Bit        Muxes := 4     
 	   2 Input    9 Bit        Muxes := 4     
 	   2 Input    8 Bit        Muxes := 5     
-	   2 Input    4 Bit        Muxes := 53    
+	   2 Input    4 Bit        Muxes := 55    
 	   3 Input    4 Bit        Muxes := 27    
-	   2 Input    3 Bit        Muxes := 8     
-	   2 Input    2 Bit        Muxes := 94    
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 91    
 	   3 Input    2 Bit        Muxes := 4     
 	   2 Input    1 Bit        Muxes := 128   
 	   4 Input    1 Bit        Muxes := 33    
@@ -480,30 +456,34 @@ INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and 
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__3.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__4.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__5.
-INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized2.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__6.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__7.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1.
-INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[2]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gen_wmux.wmux_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_30_wdata_mux__parameterized0.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[3]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[1]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[3]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__6.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[1]) is unused and will be removed from module axi_data_fifo_v2_1_28_axic_reg_srl_fifo__parameterized1__6.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -521,37 +501,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -569,43 +549,43 @@ Report Cell Usage:
 +------+--------+------+
 |1     |CARRY4  |    32|
 |2     |LUT1    |    47|
-|3     |LUT2    |   151|
-|4     |LUT3    |   962|
-|5     |LUT4    |   242|
-|6     |LUT5    |   283|
-|7     |LUT6    |   849|
+|3     |LUT2    |   112|
+|4     |LUT3    |   897|
+|5     |LUT4    |   228|
+|6     |LUT5    |   257|
+|7     |LUT6    |   710|
 |8     |MUXF7   |   102|
 |9     |MUXF8   |   102|
-|10    |SRLC32E |    17|
-|11    |FDRE    |  1735|
-|12    |FDSE    |    51|
+|10    |SRLC32E |    15|
+|11    |FDRE    |  1711|
+|12    |FDSE    |    44|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1751.500 ; gain = 822.906
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:31 . Memory (MB): peak = 1748.734 ; gain = 729.168
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1748.734 ; gain = 819.566
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 1751.500 ; gain = 729.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1751.500 ; gain = 822.906
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1748.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1751.500 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 236 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1748.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1751.500 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: acae3ee9
+Synth Design complete | Checksum: 6b7afcb2
 INFO: [Common 17-83] Releasing license: Synthesis
-165 Infos, 161 Warnings, 0 Critical Warnings and 0 Errors encountered.
+156 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 1748.734 ; gain = 1240.590
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1748.734 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1751.500 ; gain = 1243.559
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1751.500 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/cpu_test_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cpu_test_xbar_0, cache-ID = dde7528a9049d91d
-INFO: [Coretcl 2-1174] Renamed 88 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1748.734 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cpu_test_xbar_0, cache-ID = 0ce985934ce902a2
+INFO: [Coretcl 2-1174] Renamed 82 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1751.500 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_xbar_0_synth_1/cpu_test_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file cpu_test_xbar_0_utilization_synth.rpt -pb cpu_test_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 21:09:50 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 20:56:18 2024...

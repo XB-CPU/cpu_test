@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "cpu_test_auto_pc_2",
-    "cell_name": "ps7_0_axi_periph/m02_couplers/auto_pc",
+    "cell_name": "ps7_0_axi_periph/m03_couplers/auto_pc",
     "component_reference": "xilinx.com:ip:axi_protocol_converter:2.1",
     "ip_revision": "29",
     "gen_directory": "../../../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2",
