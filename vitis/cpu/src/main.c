@@ -54,7 +54,9 @@ u32 timer_update_time = 0;
 u8 fn_flag = 0,butt_flag = 0;
 char* str1;
 u64 period;
-u16 code_length = 17;
+u16 code_length = 0;
+u8 lcd_update_flag = 1;
+u8 page_num = 0;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
@@ -63,9 +65,11 @@ static void interrupt_init(void);
 static void cpu_code_download(void);
 static void GPIO_init(void);
 static void GPIO_intr_handler(void* data);
+static int code_length_get(uint32_t*);
+
 int main(void)
 {
-//	code_length = sizeof(code);
+	code_length = code_length_get(code);
 	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
 	GPIO_init();
 
@@ -75,6 +79,7 @@ int main(void)
 	//配置VDMA
 	run_vdma_frame_buffer(&vdma, VDMA_ID, vd_mode.width, vd_mode.height,
 							frame_buffer_addr,0, 0,ONLY_READ);
+	memset((unsigned int*)frame_buffer_addr,0xFF,vd_mode.height*vd_mode.width*BYTES_PIXEL);
 
 	//设置时钟IP核输出的时钟频率
 	clk_wiz_cfg(CLK_WIZ_ID,vd_mode.freq);
@@ -87,34 +92,49 @@ int main(void)
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
 	cpu_code_download();
 	interrupt_init();
+	LCD_load_sd_bmp("lty.bmp");
+	LCD_clear(WHITE);
 
 	usleep(1000*100);
-//	LCD_load_sd_bmp("lty.bmp");
-	LCD_rd_reg();
-
-	LCD_clear(RED);
-	LCD_update();
 	while(1)
     {
     	// wait for interrupt
 		if(fn_flag){
-			fn_flag = 0;
 			//PL写使能
+			lcd_update_flag = 1;
 			XGpio_SetDataDirection(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00); //设置PL写通道为输出
 			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x01);//PL写通道输出1
 			usleep(1);
 			XGpio_DiscreteWrite(&axi_gpio_inst,AXI_GPIO_0_CHANEL,0x00);//PL写通道输出1
 			usleep(1000*100);
 			LCD_rd_reg();
-
-			LCD_show_reg(BLACK);
-			LCD_update();
-			sprintf(str1,"Done! T:%.3fus", (double)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)*1000000);
-			LCD_show_str(0,480-32,str1,YELLOW);
-			LCD_update();
+			LCD_rd_mem();
 		}
 		if(butt_flag){
+			if(butt_flag == 1){
+			}
+			else if ((butt_flag == 2)&&fn_flag){
+				page_num ++;
+				if(page_num > 4) page_num = 0;
+			}
 			butt_flag = 0;
+		}
+		if(lcd_update_flag){
+			lcd_update_flag = 0;
+			LCD_clear(WHITE);
+			switch (page_num){
+				case 0:
+					LCD_show_reg(BLACK);
+					break;
+				default:
+					LCD_show_mem(BLACK, page_num);
+					break;
+			}
+			if(fn_flag){
+				sprintf(str1,"CPU_Done! T:%.3fus", (double)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2)*1000000);
+				LCD_show_str(0,480-32,str1,YELLOW);
+			}
+			LCD_update();
 		}
     }
     return 0;
@@ -216,6 +236,7 @@ static void GPIO_intr_handler(void* data)
     key_value = XGpio_DiscreteRead(axigpio, 1);
     if (key_value == 0x1) // button 1 to this
     {
+    	butt_flag = 1;
     	if(!op_start_sta){
     		op_start_sta = 1;
 			XScuTimer_Start(scut);
@@ -228,14 +249,16 @@ static void GPIO_intr_handler(void* data)
     }
     else if (key_value == 0x2) // button 0 to this
     {
-    	butt_flag = 1;
+    	butt_flag = 2;
         printf("turn page\n");
     }
     else if (key_value == 0x3)
     {
+    	butt_flag = 3;
         printf("released\n");
     }
     else {
+    	butt_flag = 4;
         printf("two button\n");
     }
     XGpio_InterruptClear(axigpio, 0xffffffff);
@@ -249,4 +272,10 @@ static void GPIO_init(void)
     XGpio_SetDataDirection(axigpio, XGPIO_IR_CH1_MASK, 0xffffffff);
     XGpio_InterruptEnable(axigpio, 0x00000003);
     XGpio_InterruptGlobalEnable(axigpio);
+}
+
+static int code_length_get(uint32_t*cod){
+	int code_lenth = 0;
+	for(;cod[code_lenth]!=0;code_lenth++);
+	return code_lenth;
 }

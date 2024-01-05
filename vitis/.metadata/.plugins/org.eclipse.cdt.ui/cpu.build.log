@@ -1,4 +1,4 @@
-12:05:59 **** Incremental Build of configuration Debug for project cpu ****
+15:11:14 **** Incremental Build of configuration Debug for project cpu ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,6 +7,84 @@ make --no-print-directory main-build
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/sw/cpu_test_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+../src/machine_code.h:28:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   28 |         0b10100100000001100000000000000110,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:28:9: note: (near initialization for 'code[0]')
+../src/machine_code.h:29:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   29 |         0b10100100000001110000000000001101,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:29:9: note: (near initialization for 'code[1]')
+../src/machine_code.h:30:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   30 |         0b10001100111001100000000000000000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:30:9: note: (near initialization for 'code[2]')
+../src/machine_code.h:31:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   31 |         0b10000100000001100000000000000001,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:31:9: note: (near initialization for 'code[3]')
+../src/machine_code.h:32:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   32 |         0b10001100111001100000000000000001,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:32:9: note: (near initialization for 'code[4]')
+../src/machine_code.h:33:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   33 |         0b10100100000001100000000000001001,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:33:9: note: (near initialization for 'code[5]')
+../src/machine_code.h:34:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   34 |         0b10001100111001100000000000000010,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:34:9: note: (near initialization for 'code[6]')
+../src/machine_code.h:35:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   35 |         0b10100100000001000000000000000001,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:35:9: note: (near initialization for 'code[7]')
+../src/machine_code.h:36:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   36 |         0b10100100000001010000000000000011,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:36:9: note: (near initialization for 'code[8]')
+../src/machine_code.h:37:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   37 |         0b10100100000000100000000001000000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:37:9: note: (near initialization for 'code[9]')
+../src/machine_code.h:38:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   38 |         0b10100100000000000000000001000000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:38:9: note: (near initialization for 'code[10]')
+../src/machine_code.h:39:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'unsigned int' makes pointer from integer without a cast [-Wint-conversion]
+   39 |         0b10100100000000010000000000110000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:39:9: note: (near initialization for 'code[11]')
+../src/machine_code.h:40:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   40 |         0b00000000000000000000100000010000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:40:9: note: (near initialization for 'code[12]')
+../src/machine_code.h:41:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   41 |         0b01001100000000100000000000000000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:41:9: note: (near initialization for 'code[13]')
+../src/machine_code.h:42:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   42 |         0b00010100000000000000000000000001,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:42:9: note: (near initialization for 'code[14]')
+../src/machine_code.h:43:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   43 |         0b00000000111000000011000000010000,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:43:9: note: (near initialization for 'code[15]')
+../src/machine_code.h:44:9: warning: initialization of 'const u32 *' {aka 'const long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   44 |         0b00010100000000001111111111111111
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/machine_code.h:44:9: note: (near initialization for 'code[16]')
+../src/main.c: In function 'main':
+../src/main.c:72:39: warning: passing argument 1 of 'code_length_get' from incompatible pointer type [-Wincompatible-pointer-types]
+   72 |         code_length = code_length_get(code);
+      |                                       ^~~~
+      |                                       |
+      |                                       const u32 ** {aka const long unsigned int **}
+../src/main.c:68:28: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'const u32 **' {aka 'const long unsigned int **'}
+   68 | static int code_length_get(uint32_t*);
+      |                            ^~~~~~~~~
 'Finished building: ../src/main.c'
 ' '
 'Building target: cpu.elf'
@@ -17,9 +95,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size cpu.elf  |tee "cpu.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 213408	   3704	  30608	 247720	  3c7a8	cpu.elf
+ 209912	   7800	  30608	 248320	  3ca00	cpu.elf
 'Finished building: cpu.elf.size'
 ' '
 
-12:05:59 Build Finished (took 779ms)
+15:11:16 Build Finished (took 2s.32ms)
 
