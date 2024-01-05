@@ -32,6 +32,7 @@ cli_parser.add_argument("-shw", "--show_warning", action="store_false", help="sh
 cli_parser.add_argument("-spw", "--suppress_warning", action="store_true", help="suppress warnings", default=False)
 cli_parser.add_argument("-rii", "--read_in_ignore", action="store_false", help="permit read in ignore mode when the encoding of some file is unrecognizable", default=True)
 cli_parser.add_argument("-ch", "--c_header", help="output the machine code in C header format", default=None)
+cli_parser.add_argument("-coe", "--coe_format", action="store_true", help="output the machine code in coe format", default=False)
 
 cli_args = cli_parser.parse_args()
 
@@ -282,9 +283,13 @@ def check_cli_arg_correctness():
 			f.close()
 	except:
 		error_print(f'"{cli_args.raw_file_name}" has unrecognizable encoding! Abort')
+	if cli_args.c_header != None and cli_args.coe_format:
+		error_print("Two target format are entered! Abort")
 	if cli_args.output == None:
 		if cli_args.c_header != None:
 			cli_args.output = f"{main_path}_machine_code.h"
+		elif cli_args.coe_format:
+			cli_args.output = f"{main_path}_machine_code.coe"
 		else:
 			cli_args.output = f"{main_path}_machine_code.txt"
 		with open(cli_args.output, "w") as file:
@@ -547,6 +552,9 @@ def output_to_file():
 		l = len(isc_code_list)
 		if cli_args.c_header is not None:
 			output.write(f"const static u32 {cli_args.c_header}[{l}] = {{\n")
+		elif cli_args.coe_format:
+			output.write(f"memory_initialization_radix=2;\n")
+			output.write(f"memory_initialization_vector =\n")
 		for (index, ic_code) in enumerate(isc_code_list):
 			isc_str = ic_code.code()
 			if cli_args.c_header is not None:
@@ -554,6 +562,13 @@ def output_to_file():
 				if index != l - 1:
 					output.write(f",")
 				output.write(f"\n")
+			elif cli_args.coe_format:
+				output.write(f"{isc_str}")
+				if index != l - 1:
+					output.write(",")
+				else:
+					output.write(";")
+				output.write("\n")
 			else:
 				output.write(f"{isc_str}\n")
 			if cli_args.print_code:
