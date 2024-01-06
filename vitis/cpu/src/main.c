@@ -114,7 +114,7 @@ int main(void)
 						LCD_load_sd_bmp("fnn.bmp");
 						break;
 					case 2:
-						memset((unsigned int*)(frame_buffer_addr+0x400000),0xFF,vd_mode.height*vd_mode.width*BYTES_PIXEL);
+						LCD_reset_back();
 						break;
 					case 3:
 						LCD_load_sd_bmp("fnn.bmp");
@@ -141,7 +141,7 @@ int main(void)
 					LCD_show_reg(OLD_LACE);
 					break;
 				default:
-					LCD_show_mem(BLACK, page_num);
+					LCD_show_mem(OLD_LACE, page_num);
 					break;
 			}
 			if(cpu_done_flag){

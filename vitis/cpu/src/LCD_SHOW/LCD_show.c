@@ -7,6 +7,7 @@
 #include "../ReadReg/pl_bram_rd.h"
 #include "xbram.h"
 #include "axi_wr_bram.h"
+#include <string.h>
 
 //œ‘¥ÊŒª÷√
 /*	≥ı ºµÿ÷∑ frame
@@ -66,6 +67,11 @@ void LCD_clear(u32 color){
 			y_stride += stride;
 		}
 	}
+}
+
+void LCD_reset_back(){
+	memset(frameback,0xFF,800*480*3);
+	pic_load_flag = 0;
 }
 
 void LCD_show_str(u16 x_pos_start, u16 y_pos_start, const char* str, u32 color){

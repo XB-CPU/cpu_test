@@ -766,14 +766,14 @@
 						"ARESETN": { "actual": "ARESETN"},
 						"ARLEN": { "actual": "S00_AXI_arlen[7:0]"},
 						"ARPROT": { "actual": "S00_AXI_arprot[2:0]"},
-						"ARREADY": { "actual": "S00_AXI_arready[0:0]"},
+						"ARREADY": { "actual": "S00_AXI_arready"},
 						"ARSIZE": { "actual": "S00_AXI_arsize[2:0]"},
-						"ARVALID": { "actual": "S00_AXI_arvalid[0:0]"},
+						"ARVALID": { "actual": "S00_AXI_arvalid"},
 						"RDATA": { "actual": "S00_AXI_rdata[63:0]"},
-						"RLAST": { "actual": "S00_AXI_rlast[0:0]"},
-						"RREADY": { "actual": "S00_AXI_rready[0:0]"},
+						"RLAST": { "actual": "S00_AXI_rlast"},
+						"RREADY": { "actual": "S00_AXI_rready"},
 						"RRESP": { "actual": "S00_AXI_rresp[1:0]"},
-						"RVALID": { "actual": "S00_AXI_rvalid[0:0]"}
+						"RVALID": { "actual": "S00_AXI_rvalid"}
 					}
 				},
 				"/axi_mem_intercon/s00_couplers/M_AXI": {
@@ -784,8 +784,8 @@
 						"ARBURST": { "actual": "M_AXI_arburst[1:0]"},
 						"ARCACHE": { "actual": "M_AXI_arcache[3:0]"},
 						"ARESETN": { "actual": "M_ARESETN"},
-						"ARLEN": { "actual": "M_AXI_arlen[7:0]"},
-						"ARLOCK": { "actual": "M_AXI_arlock[0:0]"},
+						"ARLEN": { "actual": "M_AXI_arlen[3:0]"},
+						"ARLOCK": { "actual": "M_AXI_arlock[1:0]"},
 						"ARPROT": { "actual": "M_AXI_arprot[2:0]"},
 						"ARQOS": { "actual": "M_AXI_arqos[3:0]"},
 						"ARREADY": { "actual": "M_AXI_arready"},

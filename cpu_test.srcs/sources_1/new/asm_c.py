@@ -79,7 +79,7 @@ def asb_print(mes:str, file:io.TextIOWrapper=None, line_index:int=None, level:in
 			else:
 				print()
 
-def imm_proc(user_imm:str, f:io.TextIOWrapper, line_index):
+def imm_proc(user_imm:str, f:io.TextIOWrapper, line_index, im_limit_bit:int=15):
 	hex_flag = False
 	bin_flag = False
 	imm = None
@@ -101,9 +101,13 @@ def imm_proc(user_imm:str, f:io.TextIOWrapper, line_index):
 			imm_type = "bin "
 			imm = int(user_imm, 2)
 	except:
-		asb_print(f"unable to convert the given imm {user_imm} to {imm_type}integer, please check it", f, line_index)
+		asb_print(f"unable to convert the given imm '{user_imm}' to {imm_type}integer, please check it", f, line_index)
 	if imm >= (1 << IMM_BIT):
 		asb_print(f"converted imm is larger than {(1 << IMM_BIT) - 1}, consider reduce it", f, line_index)
+	elif imm >= (1 << (IMM_BIT - 1)) or imm < -(1 << (IMM_BIT - 1)):
+		asb_print(f"converted imm({imm}) exceed the range of a 16 bit 2' complement, which may cause unexpected result", f, line_index, 1)
+	elif imm >= (1 << (im_limit_bit)) or imm < -(1 << (im_limit_bit)):
+		asb_print(f"converted imm exceed the range of a {im_limit_bit} bit 2' complement, which is prohibited here", f, line_index)
 	return (imm & 0xffff)
 
 class isc_code:
@@ -165,8 +169,10 @@ class isc_code:
 	def add_im(self, im_value:int, f:io.TextIOWrapper, line_index:int):
 		if not isinstance(im_value, int):
 			asb_print(f"Compile error: im value must be a integer, but {type(im_value)} are given", f, line_index)
+		# min_lim = min(((1 << IMM_BIT) - 1), special_isc_limit)
+		# print(((1 << IMM_BIT) - 1), special_isc_limit, min_lim)
 		if im_value > ((1 << IMM_BIT) - 1):
-			asb_print(f"Compile error: im value must be less than {1 << IMM_BIT}, but {im_value} are given", f, line_index)
+			asb_print(f"Compile error: im value must be less than {((1 << IMM_BIT) - 1)}, but {im_value} are given", f, line_index)
 		elif im_value < 0:
 			im_value = im_value & 0xffff
 		self.isc += im_value << isc_code.IM_DISP
@@ -373,7 +379,7 @@ def compile(f:io.TextIOWrapper):
 			if line[0] in R_set:
 				cmd_type = "R"
 				ic.set_cmd_type(cmd_type)
-				if line[0] in ("ADD", "SUB", "ORL", "AND", "XOR", "SLL", "SRL", "SRA", "SLS"):
+				if line[0] in ("ADD", "SUB", "MUL", "DVM", "ORL", "AND", "XOR", "SLL", "SRL", "SRA", "SLS"):
 					if len(line) > 4:
 						if line[4].startswith("#") or line[4].startswith("//"):
 							line = line[0:4]
@@ -390,10 +396,14 @@ def compile(f:io.TextIOWrapper):
 						except:
 							asb_print(f"reg should have a form like \"Rx\" where x is a integer, but unrecognizable form {reg} are found", f, index)
 						if reg_pos == 0:
+							if reg_num == 0:
+								asb_print("write to reg 0 is not use because it is always zero", f, index, 1)
 							ic.add_rd(reg_num, f, index)
 						elif reg_pos == 1:
 							ic.add_rs(reg_num, f, index)
 						elif reg_pos == 2:
+							if line[0] == 'DVM' and reg_num == 0:
+								asb_print("divisor should not be zero", f, index)
 							ic.add_rt(reg_num, f, index)
 					ic.set_cmd_str(line[0])
 				elif line[0] in ("NOT"):
@@ -423,7 +433,7 @@ def compile(f:io.TextIOWrapper):
 			elif line[0] in I_set:
 				cmd_type = "I"
 				ic.set_cmd_type(cmd_type)
-				if line[0] in ("ADDI", "SUBI", "ORLI", "ANDI", "XORI", "SLSI", "LDW", "SVW"):
+				if line[0] in ("ADDI", "SUBI", "MULI", "DVMI", "ORLI", "ANDI", "XORI", "SLSI", "LDW", "SVW"):
 					if len(line) > 4:
 						if line[4].startswith("#") or line[4].startswith("//"):
 							line = line[0:4]
@@ -451,7 +461,14 @@ def compile(f:io.TextIOWrapper):
 								asb_print(f"rim should have a form like \"Rx\" where x is a integer, but unrecognizable form {rim} are found", f, index)
 							ic.add_rs(rim_num, f, index)				
 						elif rim_pos == 2:
-							ic.add_im(imm_proc(rim, f, index), f, index)
+							if line[0] == "MULI":
+								ic.add_im(imm_proc(rim, f, index, IMM_BIT-1), f, index)
+							else:
+								im_num = imm_proc(rim, f, index)
+								if line[0] == "DVMI":
+									if im_num == 0:
+										asb_print(f"divisor should not be zero", f, index)
+									ic.add_im(im_num, f, index)
 					ic.set_cmd_str(line[0])
 				elif line[0] in ("BEQ", "BNE"):
 					if len(line) > 4:

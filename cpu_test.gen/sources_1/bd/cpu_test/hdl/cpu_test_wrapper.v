@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Jan  6 14:44:01 2024
+//Date        : Sat Jan  6 17:25:50 2024
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test_wrapper.bd
 //Design      : cpu_test_wrapper
@@ -11,7 +11,8 @@
 `timescale 1 ps / 1 ps
 
 module cpu_test_wrapper
-   (DDR_addr,
+   (CPU_error_LED,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -40,6 +41,7 @@ module cpu_test_wrapper
     lcd_rgb_tri_io,
     lcd_rst,
     lcd_vs);
+  output CPU_error_LED;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -70,6 +72,7 @@ module cpu_test_wrapper
   output lcd_rst;
   output lcd_vs;
 
+  wire CPU_error_LED;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -196,7 +199,8 @@ module cpu_test_wrapper
   wire lcd_vs;
 
   cpu_test cpu_test_i
-       (.DDR_addr(DDR_addr),
+       (.CPU_error_LED(CPU_error_LED),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),

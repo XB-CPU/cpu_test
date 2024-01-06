@@ -63,9 +63,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_ax
 # IP: bd/cpu_test/ip/cpu_test_xlconcat_0_0/cpu_test_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_xlconcat_0_0 || ORIG_REF_NAME==cpu_test_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/cpu_test/ip/cpu_test_bluex_0_0/cpu_test_bluex_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_bluex_0_0 || ORIG_REF_NAME==cpu_test_bluex_0_0} -quiet] -quiet
-
 # IP: bd/cpu_test/ip/cpu_test_xbar_1/cpu_test_xbar_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_xbar_1 || ORIG_REF_NAME==cpu_test_xbar_1} -quiet] -quiet
 
@@ -75,6 +72,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_ax
 # IP: bd/cpu_test/ip/cpu_test_AXI_LCD_TOU_DRI_0_0/cpu_test_AXI_LCD_TOU_DRI_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_AXI_LCD_TOU_DRI_0_0 || ORIG_REF_NAME==cpu_test_AXI_LCD_TOU_DRI_0_0} -quiet] -quiet
 
+# IP: bd/cpu_test/ip/cpu_test_axi_wr_bram_0_2/cpu_test_axi_wr_bram_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_wr_bram_0_2 || ORIG_REF_NAME==cpu_test_axi_wr_bram_0_2} -quiet] -quiet
+
+# IP: bd/cpu_test/ip/cpu_test_axi_wr_bram_0_3/cpu_test_axi_wr_bram_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_wr_bram_0_3 || ORIG_REF_NAME==cpu_test_axi_wr_bram_0_3} -quiet] -quiet
+
+# IP: bd/cpu_test/ip/cpu_test_bluex_v_3_0_0_0/cpu_test_bluex_v_3_0_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_bluex_v_3_0_0_0 || ORIG_REF_NAME==cpu_test_bluex_v_3_0_0_0} -quiet] -quiet
+
 # IP: bd/cpu_test/ip/cpu_test_auto_pc_0/cpu_test_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_auto_pc_0 || ORIG_REF_NAME==cpu_test_auto_pc_0} -quiet] -quiet
 
@@ -83,11 +89,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_au
 
 # IP: bd/cpu_test/ip/cpu_test_auto_pc_2/cpu_test_auto_pc_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_auto_pc_2 || ORIG_REF_NAME==cpu_test_auto_pc_2} -quiet] -quiet
-
-# IP: bd/cpu_test/ip/cpu_test_axi_wr_bram_0_2/cpu_test_axi_wr_bram_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_wr_bram_0_2 || ORIG_REF_NAME==cpu_test_axi_wr_bram_0_2} -quiet] -quiet
-
-# IP: bd/cpu_test/ip/cpu_test_axi_wr_bram_0_3/cpu_test_axi_wr_bram_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_wr_bram_0_3 || ORIG_REF_NAME==cpu_test_axi_wr_bram_0_3} -quiet] -quiet
 
 # XDC: e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/cpu_test_ooc.xdc

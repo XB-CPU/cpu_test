@@ -8,10 +8,10 @@
 # 	}
 # 	else {
 # 		sum = sum + i;
-## 	}
-## }
-#
-##param, r1:sum, r2:i, r3:tmp, r4:1, r5:0x10
+# 	}
+# }
+
+#param, r1:sum, r2:i, r3:tmp, r4:1, r5:0x10
 #mirl r6, 6
 #mirl r7, 13
 #svw r6, r7, 0
@@ -26,10 +26,15 @@
 #mirl r1, 30H
 #add r1, r0, r0 # r1 is 0
 #subi r2, r0, 0 # r2 is 0
+#add r6, r7, r0
+#beq r6, r7, eq
+#neq:
+#mirl r18, 64
+#jmp 1
+#eq:
+#mirl r19, 65
 #for:
-#mirh r13, 66
 #ldw r8, r7, 0
-#mirh r12, 9
 #andi r3, r8, 1b
 #addi r7, r7, 1
 #beq r3, r4, odd
@@ -42,10 +47,10 @@
 #addi r2, r2, 1
 #bne r2, r5, for
 #
-#over
+##over
 #jmp -1
-#
-##mirl r1, 20 # rd=20
+
+#mirl r1, 20 # rd=20
 #mirl r5, 20h # rd=32
 #add r3, r1, r2 # rd=20, data hazard with 1
 #addi r4, r3, 10 # rd=30, data hazard with 3
@@ -53,35 +58,52 @@
 ## because here is actually relative displacement
 #jmp -1
 
-mirh r1, 0
-ldw 
 
-
-
-
-# mirl R6 0
-# mirl R7 100
-# lop:
-# addi R6 R6 1
-# add R8 R8 R6
+# mirl r6, 6
+# mirl r7, 13
+# svw r6, r7, 0
+# mirh r6, 1
+# svw r6, r7, 1
+# mirl r6, 9
+# svw r6, r7, 2
+# mirl r4, 1b
+# mirl r5, 3h
+# mirl r2, 40H
+# mirl r0, 40h # r0 is still 0
+# mirl r1, 30H
+# add r1, r0, r0 # r1 is 0
+# subi r2, r0, 0 # r2 is 0
+# for:
+# ldw r8, r7, 0
+# andi r3, r8, 1b
+# addi r7, r7, 1
+# beq r3, r4, odd
+# even:
+# mul r8, r8, R4
+# jmp branch_done
+# odd:
+# muli r8, r8, -1
+# branch_done:
+# add r1, r1, r8
+# addi r2, r2, 1
+# bne r2, r5, for
 # 
-# bne R6 R7 lop
-# 
+# #over
 # jmp -1
 
-# mirh r1, 8
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# svw r1, r0, 0
-# ldw r2, r0, 0
-# jmp -1
+# r1: dividend; r2: divisor; r3: dvm result; r4: ; r5: quotient; r8: remainder:
+mirl r1, 34 #r1 = 34
+mirl r2, 7  #r2 = 7
+svw r2, r0, 0 #(0)=7
+mirl r2, 9999 
+mirl r6, 16 #r6=16
+ldw r2, r0, 0 #r2=7
+dvm r3, r1, r2 # r3=[4, 6] 
+srl r5, r3, r6 # r5=4, quotient
+sll r4, r5, r6 # r4=[4 , 0]
+#sub r8, r3, r4 # r8=6, remainder
+#mul r7, r2, r5 # 28
+#dvmi r9, r1, 9 # 3, 7
+#muli r10, r6, -9 # -144
+#muli r11, r6, 9 # 144
+jmp -1

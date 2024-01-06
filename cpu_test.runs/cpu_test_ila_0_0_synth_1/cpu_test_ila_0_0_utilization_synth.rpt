@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Jan  5 23:17:59 2024
+| Date         : Sat Jan  6 17:30:11 2024
 | Host         : xyh running 64-bit major release  (build 9200)
 | Command      : report_utilization -file cpu_test_ila_0_0_utilization_synth.rpt -pb cpu_test_ila_0_0_utilization_synth.pb
 | Design       : cpu_test_ila_0_0
@@ -39,7 +39,7 @@ Table of Contents
 | Slice Registers            | 1903 |     0 |          0 |    106400 |  1.79 |
 |   Register as Flip Flop    | 1903 |     0 |          0 |    106400 |  1.79 |
 |   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
-| F7 Muxes                   |    3 |     0 |          0 |     26600 |  0.01 |
+| F7 Muxes                   |    4 |     0 |          0 |     26600 |  0.02 |
 | F8 Muxes                   |    0 |     0 |          0 |     13300 |  0.00 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -152,18 +152,18 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 1893 |        Flop & Latch |
-| LUT6     |  526 |                 LUT |
+| LUT6     |  525 |                 LUT |
 | SRL16E   |  245 |  Distributed Memory |
 | LUT2     |  168 |                 LUT |
-| LUT4     |  133 |                 LUT |
 | SRLC32E  |  132 |  Distributed Memory |
+| LUT4     |  130 |                 LUT |
+| LUT5     |  109 |                 LUT |
 | LUT3     |  108 |                 LUT |
-| LUT5     |  106 |                 LUT |
 | CARRY4   |   37 |          CarryLogic |
 | LUT1     |   35 |                 LUT |
 | FDSE     |   10 |        Flop & Latch |
 | RAMB36E1 |    4 |        Block Memory |
-| MUXF7    |    3 |               MuxFx |
+| MUXF7    |    4 |               MuxFx |
 | SRLC16E  |    2 |  Distributed Memory |
 +----------+------+---------------------+
 

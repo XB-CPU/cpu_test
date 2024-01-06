@@ -63,3 +63,5 @@ set_property src_info {type:XDC file:1 line:32 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports GPIO_tri_i[0]]
 set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN K16 IOSTANDARD LVCMOS33} [get_ports GPIO_tri_i[1]]
+set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports CPU_error_LED]

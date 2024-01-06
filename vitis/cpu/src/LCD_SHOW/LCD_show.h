@@ -29,5 +29,6 @@ void LCD_show_reg(u32 color);
 void LCD_rd_mem();
 void LCD_show_mem(u32 color, u8 num);
 void LCD_show_str_with_fra(u16 x_pos_start, u16 y_pos_start, const char* str, u32 color, u32 f_color);
+void LCD_reset_back();
 
 #endif
