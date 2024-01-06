@@ -55,14 +55,12 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module cpu_test_blk_mem_gen_1_0 (
   clka,
-  rsta,
   ena,
   wea,
   addra,
   dina,
   douta,
   clkb,
-  rstb,
   enb,
   web,
   addrb,
@@ -72,32 +70,28 @@ module cpu_test_blk_mem_gen_1_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *)
 input wire clka;
-(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA RST" *)
-input wire rsta;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *)
 input wire ena;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA WE" *)
-input wire [3 : 0] wea;
+input wire [0 : 0] wea;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *)
-input wire [31 : 0] addra;
+input wire [10 : 0] addra;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN" *)
 input wire [31 : 0] dina;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE BRAM_CTRL, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *)
 output wire [31 : 0] douta;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB CLK" *)
 input wire clkb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB RST" *)
-input wire rstb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB EN" *)
 input wire enb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB WE" *)
-input wire [3 : 0] web;
+input wire [0 : 0] web;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB ADDR" *)
-input wire [31 : 0] addrb;
+input wire [10 : 0] addrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB DIN" *)
 input wire [31 : 0] dinb;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTB, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE BRAM_CTRL, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTB, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_WRITE_MODE READ_WRITE, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTB DOUT" *)
 output wire [31 : 0] doutb;
 
@@ -108,13 +102,13 @@ output wire [31 : 0] doutb;
     .C_INTERFACE_TYPE(0),
     .C_AXI_TYPE(1),
     .C_AXI_SLAVE_TYPE(0),
-    .C_USE_BRAM_BLOCK(1),
-    .C_ENABLE_32BIT_ADDRESS(1),
+    .C_USE_BRAM_BLOCK(0),
+    .C_ENABLE_32BIT_ADDRESS(0),
     .C_CTRL_ECC_ALGO("NONE"),
     .C_HAS_AXI_ID(0),
     .C_AXI_ID_WIDTH(4),
     .C_MEM_TYPE(2),
-    .C_BYTE_SIZE(8),
+    .C_BYTE_SIZE(9),
     .C_ALGORITHM(1),
     .C_PRIM_TYPE(1),
     .C_LOAD_INIT_FILE(0),
@@ -122,34 +116,34 @@ output wire [31 : 0] doutb;
     .C_INIT_FILE("NONE"),
     .C_USE_DEFAULT_DATA(0),
     .C_DEFAULT_DATA("0"),
-    .C_HAS_RSTA(1),
+    .C_HAS_RSTA(0),
     .C_RST_PRIORITY_A("CE"),
     .C_RSTRAM_A(0),
     .C_INITA_VAL("0"),
     .C_HAS_ENA(1),
     .C_HAS_REGCEA(0),
-    .C_USE_BYTE_WEA(1),
-    .C_WEA_WIDTH(4),
+    .C_USE_BYTE_WEA(0),
+    .C_WEA_WIDTH(1),
     .C_WRITE_MODE_A("WRITE_FIRST"),
     .C_WRITE_WIDTH_A(32),
     .C_READ_WIDTH_A(32),
     .C_WRITE_DEPTH_A(2048),
     .C_READ_DEPTH_A(2048),
-    .C_ADDRA_WIDTH(32),
-    .C_HAS_RSTB(1),
+    .C_ADDRA_WIDTH(11),
+    .C_HAS_RSTB(0),
     .C_RST_PRIORITY_B("CE"),
     .C_RSTRAM_B(0),
     .C_INITB_VAL("0"),
     .C_HAS_ENB(1),
     .C_HAS_REGCEB(0),
-    .C_USE_BYTE_WEB(1),
-    .C_WEB_WIDTH(4),
+    .C_USE_BYTE_WEB(0),
+    .C_WEB_WIDTH(1),
     .C_WRITE_MODE_B("WRITE_FIRST"),
     .C_WRITE_WIDTH_B(32),
     .C_READ_WIDTH_B(32),
     .C_WRITE_DEPTH_B(2048),
     .C_READ_DEPTH_B(2048),
-    .C_ADDRB_WIDTH(32),
+    .C_ADDRB_WIDTH(11),
     .C_HAS_MEM_OUTPUT_REGS_A(0),
     .C_HAS_MEM_OUTPUT_REGS_B(0),
     .C_HAS_MUX_OUTPUT_REGS_A(0),
@@ -176,10 +170,10 @@ output wire [31 : 0] doutb;
     .C_DISABLE_WARN_BHV_RANGE(0),
     .C_COUNT_36K_BRAM("2"),
     .C_COUNT_18K_BRAM("0"),
-    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     10.7492 mW")
+    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     10.698 mW")
   ) inst (
     .clka(clka),
-    .rsta(rsta),
+    .rsta(1'D0),
     .ena(ena),
     .regcea(1'D0),
     .wea(wea),
@@ -187,7 +181,7 @@ output wire [31 : 0] doutb;
     .dina(dina),
     .douta(douta),
     .clkb(clkb),
-    .rstb(rstb),
+    .rstb(1'D0),
     .enb(enb),
     .regceb(1'D0),
     .web(web),
@@ -215,7 +209,7 @@ output wire [31 : 0] doutb;
     .s_axi_awvalid(1'D0),
     .s_axi_awready(),
     .s_axi_wdata(32'B0),
-    .s_axi_wstrb(4'B0),
+    .s_axi_wstrb(1'B0),
     .s_axi_wlast(1'D0),
     .s_axi_wvalid(1'D0),
     .s_axi_wready(),

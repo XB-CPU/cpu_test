@@ -11,23 +11,13 @@
 
 <MemInfoSimulation Version="1" Minor="1">
   <Processor Endianness="Little" InstPath="cpu_test_i/processing_system7_0">
-    <AddressSpace Name="cpu_test_i_processing_system7_0.cpu_test_i_reg2ram_ADDR_SPACE" ECC="NONE" Begin="1073741824" End="1073745919">
+    <AddressSpace Name="cpu_test_i_processing_system7_0.cpu_test_i_reg2ram_4K_1_ADDR_SPACE" ECC="NONE" Begin="1073741824" End="1073745919">
       <BusBlock>
-        <BitLane MemType="reg2ram_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1073745919">
+        <BitLane MemType="reg2ram_4K_1_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1073745919">
           <DataWidth MSB="31" LSB="0"/>
           <AddressRange Begin="0" End="1023"/>
           <Parity ON="false" NumBits="0"/>
           <MemFile Name="cpu_test_blk_mem_gen_0_0.mem"/>
-        </BitLane>
-      </BusBlock>
-    </AddressSpace>
-    <AddressSpace Name="cpu_test_i_processing_system7_0.cpu_test_i_rom_ADDR_SPACE" ECC="NONE" Begin="1107296256" End="1107304447">
-      <BusBlock>
-        <BitLane MemType="rom_MEM_DEVICE" MemType_DataWidth="32" MemType_AddressDepth="1107304447">
-          <DataWidth MSB="31" LSB="0"/>
-          <AddressRange Begin="0" End="2047"/>
-          <Parity ON="false" NumBits="0"/>
-          <MemFile Name="cpu_test_blk_mem_gen_1_0.mem"/>
         </BitLane>
       </BusBlock>
     </AddressSpace>

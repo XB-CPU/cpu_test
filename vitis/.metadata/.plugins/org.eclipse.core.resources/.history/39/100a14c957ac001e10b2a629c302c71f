@@ -1,0 +1,24 @@
+
+
+/***************************** Include Files *******************************/
+#include "axi_wr_bram.h"
+
+/************************** Function Definitions ***************************/
+void AXI_WR_BRAM_Reg_W_DATA(uint32_t BaseAddress,uint32_t St_Addr,uint32_t Data_length,uint32_t *Data){
+	uint32_t i;
+	AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG0_OFFSET, 0x03);
+	for(i = 0;i < Data_length; i++){
+		AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG3_OFFSET, i + St_Addr);
+		AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG1_OFFSET, Data[i]);
+	}
+    AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG0_OFFSET, 0x00);
+}
+void AXI_WR_BRAM_Reg_R_DATA(uint32_t BaseAddress,uint32_t St_Addr,uint32_t Data_length,uint32_t *Data){
+	uint32_t i;
+	AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG0_OFFSET, 0x01);
+	for(i = 0;i < Data_length; i++){
+		AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG3_OFFSET, i + St_Addr);
+		Data[i] = AXI_WR_BRAM_mReadReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG2_OFFSET);
+	}
+    AXI_WR_BRAM_mWriteReg(BaseAddress, AXI_WR_BRAM_S0_AXI_SLV_REG0_OFFSET, 0x00);
+}

@@ -2,8 +2,8 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "bluex_v_2_1_0",
-    "component_reference": "xilinx.com:user:bluex_v_2_1:2.1",
-    "ip_revision": "5",
+    "component_reference": "xilinx.com:user:bluex:2.1",
+    "ip_revision": "4",
     "gen_directory": "../../../../cpu_test.gen/sources_1/ip/bluex_v_2_1_0",
     "parameters": {
       "component_parameters": {
@@ -24,7 +24,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "5" } ],
+        "IPREVISION": [ { "value": "4" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../cpu_test.gen/sources_1/ip/bluex_v_2_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -69,9 +69,9 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "constant", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_src": "constant", "usage": "all" } ],
             "PHASE": [ { "value": "0.0", "value_src": "constant", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_BUSIF": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -196,69 +196,69 @@
             "RST": [ { "physical_name": "ROM_rst" } ]
           }
         },
-        "ROM_BRAM_PORT": {
+        "MEM_PORT": {
           "vlnv": "xilinx.com:interface:bram:1.0",
           "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
           "mode": "master",
           "parameters": {
+            "MASTER_TYPE": [ { "value": "", "value_src": "constant", "usage": "all" } ],
             "MEM_SIZE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "MEM_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "MEM_ECC": [ { "value": "NONE", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "MASTER_TYPE": [ { "value": "OTHER", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "READ_WRITE_MODE": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "READ_LATENCY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "write_mem_rst" } ],
+            "CLK": [ { "physical_name": "write_mem_clk" } ],
+            "DIN": [ { "physical_name": "write_mem_data" } ],
+            "EN": [ { "physical_name": "write_mem_en" } ],
+            "DOUT": [ { "physical_name": "read_mem_out_inw" } ],
+            "WE": [ { "physical_name": "write_mem_we" } ],
+            "ADDR": [ { "physical_name": "write_mem_addr" } ]
+          }
+        },
+        "REG_PORT": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "MASTER_TYPE": [ { "value": "", "value_src": "constant", "usage": "all" } ],
+            "MEM_SIZE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MEM_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MEM_ECC": [ { "value": "NONE", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "READ_WRITE_MODE": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "READ_LATENCY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "ram_rst" } ],
+            "CLK": [ { "physical_name": "ram_clk" } ],
+            "DIN": [ { "physical_name": "ram_wr_data" } ],
+            "EN": [ { "physical_name": "ram_en" } ],
+            "DOUT": [ { "physical_name": "ram_rd_data" } ],
+            "WE": [ { "physical_name": "ram_we" } ],
+            "ADDR": [ { "physical_name": "ram_addr" } ]
+          }
+        },
+        "ROM_PORT": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "MASTER_TYPE": [ { "value": "", "value_src": "constant", "usage": "all" } ],
+            "MEM_SIZE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MEM_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MEM_ECC": [ { "value": "NONE", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "READ_WRITE_MODE": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "READ_LATENCY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "EN": [ { "physical_name": "ROM_en" } ],
-            "DOUT": [ { "physical_name": "isc" } ],
             "RST": [ { "physical_name": "ROM_rst" } ],
+            "DOUT": [ { "physical_name": "isc" } ],
             "CLK": [ { "physical_name": "ROM_clk" } ],
             "WE": [ { "physical_name": "ROM_we" } ],
             "ADDR": [ { "physical_name": "current_addr" } ]
-          }
-        },
-        "RAM_BRAM_PORT": {
-          "vlnv": "xilinx.com:interface:bram:1.0",
-          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "MEM_SIZE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "MEM_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "MEM_ECC": [ { "value": "NONE", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "MASTER_TYPE": [ { "value": "OTHER", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_WRITE_MODE": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_LATENCY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "EN": [ { "physical_name": "ram_en" } ],
-            "WE": [ { "physical_name": "ram_we" } ],
-            "ADDR": [ { "physical_name": "ram_addr" } ],
-            "CLK": [ { "physical_name": "ram_clk" } ],
-            "RST": [ { "physical_name": "ram_rst" } ],
-            "DIN": [ { "physical_name": "ram_wr_data" } ],
-            "DOUT": [ { "physical_name": "ram_rd_data" } ]
-          }
-        },
-        "MEM_BRAM_PORT": {
-          "vlnv": "xilinx.com:interface:bram:1.0",
-          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "MEM_SIZE": [ { "value": "8192", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "MEM_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "MEM_ECC": [ { "value": "NONE", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "MASTER_TYPE": [ { "value": "OTHER", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_WRITE_MODE": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_LATENCY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "EN": [ { "physical_name": "write_mem_en" } ],
-            "WE": [ { "physical_name": "write_mem_we" } ],
-            "ADDR": [ { "physical_name": "write_mem_addr" } ],
-            "CLK": [ { "physical_name": "write_mem_clk" } ],
-            "RST": [ { "physical_name": "write_mem_rst" } ],
-            "DOUT": [ { "physical_name": "read_mem_out_inw" } ],
-            "DIN": [ { "physical_name": "write_mem_data" } ]
           }
         },
         "GPIO": {

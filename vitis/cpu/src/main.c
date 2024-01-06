@@ -20,7 +20,7 @@
 #include "xscutimer.h"
 #include "../../../cpu_test.srcs/sources_1/new/isc_machine_code.h"
 #include "AXI_LCD_TOU_DRI.h"
-
+#include "axi_wr_bram.h"
 #include "LCD_SHOW/LCD_show.h"
 
 //宏定义
@@ -55,6 +55,7 @@ char* str1;
 u64 period;
 u8 lcd_update_flag = 1;
 u8 page_num = 0;
+u8 pic_num = 0;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
@@ -66,7 +67,6 @@ static void GPIO_intr_handler(void* data);
 
 int main(void)
 {
-//	XGpio_Initialize(&axi_gpio_inst,AXI_GPIO_0_ID);                //GPIO初始化
 	GPIO_init();
 
 	//屏幕选择
@@ -76,7 +76,7 @@ int main(void)
 	run_vdma_frame_buffer(&vdma, VDMA_ID, vd_mode.width, vd_mode.height,
 							frame_buffer_addr,0, 0,ONLY_READ);
 	memset((unsigned int*)frame_buffer_addr,0xFF,vd_mode.height*vd_mode.width*BYTES_PIXEL);
-
+//	Xil_DCacheDisable();
 	//设置时钟IP核输出的时钟频率
 	clk_wiz_cfg(CLK_WIZ_ID,vd_mode.freq);
     //初始化Display controller
@@ -88,8 +88,10 @@ int main(void)
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
 	cpu_code_download();
 	interrupt_init();
-//	LCD_load_sd_bmp("fnn.bmp");
-	LCD_clear(WHITE);
+	LCD_load_sd_bmp("fnn.bmp");
+	LCD_clear(BLUE);
+	LCD_update();
+
 
 	usleep(1000*100);
 	while(1)
@@ -103,21 +105,40 @@ int main(void)
 			LCD_rd_mem();
 		}
 		if(butt_flag){
-			if(butt_flag == 1){
+			if((butt_flag == 1)&&cpu_done_flag){
+				switch (pic_num){
+					case 0:
+						LCD_load_sd_bmp("lty.bmp");
+						break;
+					case 1:
+						LCD_load_sd_bmp("fnn.bmp");
+						break;
+					case 2:
+						memset((unsigned int*)(frame_buffer_addr+0x400000),0xFF,vd_mode.height*vd_mode.width*BYTES_PIXEL);
+						break;
+					case 3:
+						LCD_load_sd_bmp("fnn.bmp");
+						break;
+				}
+				lcd_update_flag = 1;
+				pic_num++;
+				if(pic_num > 3)
+					pic_num = 0;
 			}
 			else if ((butt_flag == 2)&&cpu_done_flag){
 				page_num ++;
 				if(page_num > 4) page_num = 0;
+				lcd_update_flag = 1;
 			}
 			butt_flag = 0;
-			lcd_update_flag = 1;
+
 		}
 		if(lcd_update_flag){
 			lcd_update_flag = 0;
-			LCD_clear(WHITE);
+			LCD_clear(BLUE);
 			switch (page_num){
 				case 0:
-					LCD_show_reg(BLACK);
+					LCD_show_reg(OLD_LACE);
 					break;
 				default:
 					LCD_show_mem(BLACK, page_num);
@@ -216,10 +237,7 @@ static void counter_update_handler(void* data)
 }
 
 static void cpu_code_download(){
-	uint16_t cnt;
-	for(cnt = 0;cnt < CODE_LENGTH; cnt ++){
-		XBram_WriteReg(XPAR_BRAM_1_BASEADDR,cnt*4,code[cnt]);
-	}
+	AXI_WR_BRAM_Reg_W_DATA(XPAR_AXI_WR_ROM_S0_AXI_BASEADDR ,0 ,CODE_LENGTH,(uint32_t *)code);
 }
 
 uint8_t op_start_sta = 0;

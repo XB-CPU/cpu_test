@@ -6,6 +6,7 @@
 #include "LCD_arrays.h"
 #include "../ReadReg/pl_bram_rd.h"
 #include "xbram.h"
+#include "axi_wr_bram.h"
 
 //显存位置
 /*	初始地址 frame
@@ -101,8 +102,56 @@ void LCD_show_str(u16 x_pos_start, u16 y_pos_start, const char* str, u32 color){
 }
 
 void LCD_update(){
-	Xil_DCacheFlush();     //刷新Cache，数据更新至内存
+//	Xil_DCacheFlush();     //刷新Cache，数据更新至内存
+	Xil_DCacheFlushRange(frame, 0x400000);
 }
+
+void LCD_show_str_with_fra(u16 x_pos_start, u16 y_pos_start, const char* str, u32 color, u32 f_color){
+	uint32_t x_pos, y_pos;
+	uint16_t stride= BYTES_PIXEL*width;
+	uint16_t str_length=strlen(str);
+	uint32_t y_stride = stride*y_pos_start;
+
+	uint8_t str_num=0;
+	uint8_t char_num=0;
+	uint8_t x_byte=0;
+	uint8_t current_bit=0;
+	uint16_t x_cnt;
+	uint16_t bits_8=0x80;
+	//x_pos_start ~ (16*str_length)+x_pos_start ; y_pos_start ~ 32+y_pos_start
+	for(y_pos = y_pos_start;y_pos < 32 + y_pos_start;y_pos++){
+		for(x_pos = x_pos_start*3,x_cnt=0;x_pos < (16*str_length)*3+x_pos_start*3; x_pos += 3,x_cnt++){
+			str_num = str[x_cnt/16]-32;
+			char_num =(x_cnt%16)/8+2*(y_pos-y_pos_start);
+			current_bit = x_cnt%8;
+
+			x_byte=LCD_char16X32[str_num][char_num];
+			if(x_byte&(bits_8>>current_bit)){
+//				frame[x_pos + y_stride + 0] = (u8)color;
+//				frame[x_pos + y_stride + 1] = (u8)(color>>8);
+//				frame[x_pos + y_stride + 2] = (u8)(color>>16);
+				frame[x_pos + y_stride - 3] = (u8)f_color;
+				frame[x_pos + y_stride - 2] = (u8)(f_color>>8);
+				frame[x_pos + y_stride - 1] = (u8)(f_color>>16);
+				frame[x_pos + y_stride + 3] = (u8)f_color;
+				frame[x_pos + y_stride + 4] = (u8)(f_color>>8);
+				frame[x_pos + y_stride + 5] = (u8)(f_color>>16);
+				frame[x_pos + y_stride - stride + 0] = (u8)f_color;
+				frame[x_pos + y_stride - stride + 1] = (u8)(f_color>>8);
+				frame[x_pos + y_stride - stride + 2] = (u8)(f_color>>16);
+				frame[x_pos + y_stride + stride + 0] = (u8)f_color;
+				frame[x_pos + y_stride + stride + 1] = (u8)(f_color>>8);
+				frame[x_pos + y_stride + stride + 2] = (u8)(f_color>>16);
+			}
+
+		}
+		y_stride += stride;
+		LCD_show_str(x_pos_start,y_pos_start,str,color);
+	}
+
+//	Xil_DCacheFlush();     //刷新Cache，数据更新至内存
+}
+
 
 //从SD卡中读取BMP图片
 int LCD_load_sd_bmp(char* file)
@@ -163,19 +212,15 @@ void LCD_show_reg(u32 color)
 	LCD_show_str(350,0,str,color);
 
 	for(i=0;i<REG_DEPTH;i++){
-		sprintf(str,"R%02d=0x%08x",i,RegData[i]);
-		LCD_show_str(0+(i%3)*240+20,i/3*34+36,str,color);
+		sprintf(str,"R%02d=%08xH",i,RegData[i]);
+		LCD_show_str(0+(i%3)*250+20,i/3*34+36,str,color);
 	}
 }
 
 //读取主存的值
 void LCD_rd_mem()
 {
-    int i=0,cnt=0;
-    //循环从BRAM中读出数据
-    for(i = BRAM_DATA_BYTE*START_ADDR,cnt=0; i < BRAM_DATA_BYTE*(START_ADDR + MEM_DEPTH*4) ;i += BRAM_DATA_BYTE,cnt++){
-    	//MemData[cnt] = XBram_ReadReg(XPAR_BRAM_1_BASEADDR,i) ;
-    }
+	AXI_WR_BRAM_Reg_R_DATA(XPAR_AXI_WR_BRAM_0_S0_AXI_BASEADDR ,0 ,MEM_DEPTH ,MemData );
 }
 
 void LCD_show_mem(u32 color , u8 num)
@@ -184,8 +229,8 @@ void LCD_show_mem(u32 color , u8 num)
 	sprintf(str,"NUM of MEM,Page %d",num);
 	LCD_show_str(350-40,0,str,color);
 	for(i=(num-1)*32,j=0;i<num*32;i++,j++){
-		sprintf(str,"R%02d=0x%08x",i,MemData[i]);
-		LCD_show_str(0+(j%3)*240,j/3*34+36,str,color);
+		sprintf(str,"M%02d=%08xH",i,MemData[i]);
+		LCD_show_str(0+(j%3)*250+20,j/3*34+36,str,color);
 	}
 }
 

@@ -70,8 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "cpu_test_blk_mem_gen_2_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
+set_msg_config  -id {17-179}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }

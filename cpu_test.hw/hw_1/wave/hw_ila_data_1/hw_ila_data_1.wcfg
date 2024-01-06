@@ -9,29 +9,21 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="15"></ZoomStartTime>
+      <ZoomStartTime time="16"></ZoomStartTime>
       <ZoomEndTime time="23"></ZoomEndTime>
-      <Cursor1Time time="18"></Cursor1Time>
+      <Cursor1Time time="8"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="272"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <NameColumnWidth column_width="467"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
+   <WVObjectSize size="5" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="cpu_test_i/PS_to_CPU_controller_0_enable_CPU" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">cpu_test_i/PS_to_CPU_controller_0_enable_CPU</obj_property>
       <obj_property name="ObjectShortName">PS_to_CPU_controller_0_enable_CPU</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="cpu_test_i/CPU_0_current_addr" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/CPU_0_current_addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_0_current_addr[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -52,14 +44,6 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="cpu_test_i/CPU_0_current_addr" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/CPU_0_current_addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">CPU_0_current_addr[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="cpu_test_i/mem_douta" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">cpu_test_i/mem_douta[31:0]</obj_property>
@@ -68,20 +52,9 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="cpu_test_i/Net1" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/Net1[6:0]</obj_property>
-      <obj_property name="ObjectShortName">Net1[6:0]</obj_property>
+   <wvobject fp_name="cpu_test_i/bluex_0_current_addr" type="array">
+      <obj_property name="ElementShortName">cpu_test_i/bluex_0_current_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bluex_0_current_addr[15:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="cpu_test_i/Net2" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">cpu_test_i/Net2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">Net2[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>

@@ -46,8 +46,8 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: xilinx.com:user:bluex_v_2_1:2.1
-// IP Revision: 5
+// IP VLNV: xilinx.com:user:bluex:2.1
+// IP Revision: 4
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

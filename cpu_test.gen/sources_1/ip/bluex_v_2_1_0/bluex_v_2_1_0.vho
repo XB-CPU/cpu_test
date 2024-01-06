@@ -45,8 +45,8 @@
 -- PART OF THIS FILE AT ALL TIMES.
 -- 
 -- DO NOT MODIFY THIS FILE.
--- IP VLNV: xilinx.com:user:bluex_v_2_1:2.1
--- IP Revision: 5
+-- IP VLNV: xilinx.com:user:bluex:2.1
+-- IP Revision: 4
 
 -- The following code must appear in the VHDL architecture header.
 

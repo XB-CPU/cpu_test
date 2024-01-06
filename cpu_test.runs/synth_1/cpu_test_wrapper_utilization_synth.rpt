@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Jan  5 23:18:45 2024
+| Date         : Sat Jan  6 14:46:01 2024
 | Host         : xyh running 64-bit major release  (build 9200)
 | Command      : report_utilization -file cpu_test_wrapper_utilization_synth.rpt -pb cpu_test_wrapper_utilization_synth.pb
 | Design       : cpu_test_wrapper
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   16 |     0 |          0 |     53200 |  0.03 |
-|   LUT as Logic          |   16 |     0 |          0 |     53200 |  0.03 |
+| Slice LUTs*             |    0 |     0 |          0 |     53200 |  0.00 |
+|   LUT as Logic          |    0 |     0 |          0 |     53200 |  0.00 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
 | Slice Registers         |    0 |     0 |          0 |    106400 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |          0 |    106400 |  0.00 |
@@ -150,7 +150,6 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | IBUF     |   26 |                  IO |
 | OBUFT    |   24 |                  IO |
-| LUT1     |   16 |                 LUT |
 | OBUF     |    6 |                  IO |
 +----------+------+---------------------+
 
@@ -175,15 +174,11 @@ Warning! LUT value is adjusted to account for LUT combining.
 | cpu_test_blk_mem_gen_2_0          |    1 |
 | cpu_test_blk_mem_gen_1_0          |    1 |
 | cpu_test_blk_mem_gen_0_0          |    1 |
+| cpu_test_axi_wr_bram_0_3          |    1 |
+| cpu_test_axi_wr_bram_0_2          |    1 |
 | cpu_test_axi_vdma_0_0             |    1 |
 | cpu_test_axi_gpio_1_0             |    1 |
-| cpu_test_axi_bram_ctrl_1_0        |    1 |
 | cpu_test_axi_bram_ctrl_0_0        |    1 |
-| cpu_test_auto_pc_7                |    1 |
-| cpu_test_auto_pc_6                |    1 |
-| cpu_test_auto_pc_5                |    1 |
-| cpu_test_auto_pc_4                |    1 |
-| cpu_test_auto_pc_3                |    1 |
 | cpu_test_auto_pc_2                |    1 |
 | cpu_test_auto_pc_1                |    1 |
 | cpu_test_auto_pc_0                |    1 |

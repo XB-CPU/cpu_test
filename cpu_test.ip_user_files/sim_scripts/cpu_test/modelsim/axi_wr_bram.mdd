@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER axi_wr_bram
+	OPTION supported_peripherals = (axi_wr_bram);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = axi_wr_bram;
+END DRIVER

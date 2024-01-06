@@ -226,8 +226,8 @@
             },
             "V5": {
                 "VT": "AC",
-                "BA": "0x41210000",
-                "HA": "0x4121FFFF",
+                "BA": "0x41000000",
+                "HA": "0x4100FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data",
@@ -243,24 +243,6 @@
                 "TU": "register"
             },
             "V6": {
-                "VT": "AC",
-                "BA": "0x42000000",
-                "HA": "0x42001FFF",
-                "BP": "C_S_AXI_BASEADDR",
-                "HP": "C_S_AXI_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_bram_ctrl_1_Mem0",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_bram_ctrl_1",
-                "SI": "S_AXI",
-                "SS": "Mem0",
-                "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
-                "TM": "both",
-                "TU": "memory"
-            },
-            "V7": {
                 "VT": "AC",
                 "BA": "0x43000000",
                 "HA": "0x4300FFFF",
@@ -278,7 +260,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V8": {
+            "V7": {
                 "VT": "AC",
                 "BA": "0x43C00000",
                 "HA": "0x43C0FFFF",
@@ -296,7 +278,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V9": {
+            "V8": {
                 "VT": "AC",
                 "BA": "0x43C10000",
                 "HA": "0x43C1FFFF",
@@ -314,10 +296,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V10": {
+            "V9": {
                 "VT": "AC",
-                "BA": "0x83C00000",
-                "HA": "0x83C0007F",
+                "BA": "0x81000000",
+                "HA": "0x8100007F",
                 "BP": "C_S0_AXI_BASEADDR",
                 "HP": "C_S0_AXI_HIGHADDR",
                 "MA": "Data",
@@ -332,10 +314,10 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V11": {
+            "V10": {
                 "VT": "AC",
-                "BA": "0x88000000",
-                "HA": "0x88000FFF",
+                "BA": "0x83000000",
+                "HA": "0x83000FFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data",
@@ -347,6 +329,42 @@
                 "SI": "S_AXI",
                 "SS": "reg0",
                 "SV": "xilinx.com:module_ref:PS_to_CPU_controller:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V11": {
+                "VT": "AC",
+                "BA": "0x83C00000",
+                "HA": "0x83C0FFFF",
+                "BP": "C_S0_AXI_BASEADDR",
+                "HP": "C_S0_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP1",
+                "MS": "SEG_axi_wr_bram_0_S0_AXI_reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/axi_wr_bram_0",
+                "SI": "S0_AXI",
+                "SS": "S0_AXI_reg",
+                "SV": "xilinx.com:user:axi_wr_bram:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V12": {
+                "VT": "AC",
+                "BA": "0x83C10000",
+                "HA": "0x83C1FFFF",
+                "BP": "C_S0_AXI_BASEADDR",
+                "HP": "C_S0_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP1",
+                "MS": "SEG_axi_wr_rom_S0_AXI_reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/axi_wr_rom",
+                "SI": "S0_AXI",
+                "SS": "S0_AXI_reg",
+                "SV": "xilinx.com:user:axi_wr_bram:1.0",
                 "TM": "both",
                 "TU": "register"
             }
@@ -402,6 +420,11 @@
             },
             {
                 "src": "V11",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V12",
                 "trg": "V2",
                 "EH": "2"
             }

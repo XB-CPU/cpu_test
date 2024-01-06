@@ -8,44 +8,44 @@
 # 	}
 # 	else {
 # 		sum = sum + i;
-# 	}
-# }
-
-#param, r1:sum, r2:i, r3:tmp, r4:1, r5:0x10
-mirl r6, 6
-mirl r7, 13
-svw r6, r7, 0
-mirh r6, 1
-svw r6, r7, 1
-mirl r6, 9
-svw r6, r7, 2
-mirl r4, 1b
-mirl r5, 3h
-mirl r2, 40H
-mirl r0, 40h # r0 is still 0
-mirl r1, 30H
-add r1, r0, r0 # r1 is 0
-subi r2, r0, 0 # r2 is 0
-for:
-mirh r13, 66
-ldw r8, r7, 0
-mirh r12, 9
-andi r3, r8, 1b
-addi r7, r7, 1
-beq r3, r4, odd
-even:
-add r1, r1, r8
-jmp branch_done
-odd:
-sub r1, r1, r8
-branch_done:
-addi r2, r2, 1
-bne r2, r5, for
-
+## 	}
+## }
+#
+##param, r1:sum, r2:i, r3:tmp, r4:1, r5:0x10
+#mirl r6, 6
+#mirl r7, 13
+#svw r6, r7, 0
+#mirh r6, 1
+#svw r6, r7, 1
+#mirl r6, 9
+#svw r6, r7, 2
+#mirl r4, 1b
+#mirl r5, 3h
+#mirl r2, 40H
+#mirl r0, 40h # r0 is still 0
+#mirl r1, 30H
+#add r1, r0, r0 # r1 is 0
+#subi r2, r0, 0 # r2 is 0
+#for:
+#mirh r13, 66
+#ldw r8, r7, 0
+#mirh r12, 9
+#andi r3, r8, 1b
+#addi r7, r7, 1
+#beq r3, r4, odd
+#even:
+#add r1, r1, r8
+#jmp branch_done
+#odd:
+#sub r1, r1, r8
+#branch_done:
+#addi r2, r2, 1
+#bne r2, r5, for
+#
 #over
-jmp -1
-
-#mirl r1, 20 # rd=20
+#jmp -1
+#
+##mirl r1, 20 # rd=20
 #mirl r5, 20h # rd=32
 #add r3, r1, r2 # rd=20, data hazard with 1
 #addi r4, r3, 10 # rd=30, data hazard with 3
@@ -53,11 +53,11 @@ jmp -1
 ## because here is actually relative displacement
 #jmp -1
 
-#
-#
-#
-#
-#
+mirh r1, 0
+ldw 
+
+
+
 
 # mirl R6 0
 # mirl R7 100
