@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e2ba/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/a29c/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ae90/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/0e59/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src" \
+verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e2ba/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/a29c/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ae90/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/0e59/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_processing_system7_0_0/sim/cpu_test_processing_system7_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_v_axi4s_vid_out_0_0/sim/cpu_test_v_axi4s_vid_out_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/031e/src/rgb2lcd.v" \
@@ -21,36 +21,36 @@ verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/includ
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/f18f/hdl/axi_wr_bram_v1_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_wr_bram_0_2/sim/cpu_test_axi_wr_bram_0_2.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_wr_bram_0_3/sim/cpu_test_axi_wr_bram_0_3.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/aux_ex.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_aux_ex_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/BJT.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_BJT_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/PC.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_PC_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/alu_ex.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_alu_ex_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/aux_id.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_aux_id_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/demux_id.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_demux_id_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/reg_heap_id.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_reg_heap_id_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/reg_wb.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_reg_wb_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/wrapper_mem.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_wrapper_mem_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/decoder_id.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_decoder_id_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/controller.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_controller_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/src/matcop.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1_matcop_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/cfe5/sim/bluex_v_2_1.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_0_0_0/sim/cpu_test_bluex_v_3_0_0_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_ex.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_aux_ex_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/BJT.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_BJT_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/PC.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_PC_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/alu_ex.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_alu_ex_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_id.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_aux_id_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/demux_id.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_demux_id_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_heap_id.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_reg_heap_id_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_wb.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_reg_wb_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/wrapper_mem.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_wrapper_mem_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/decoder_id.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_decoder_id_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/controller.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_controller_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/matcop.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1_matcop_0_0.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/sim/bluex_v_2_1.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/sim/cpu_test_bluex_v_3_1_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_0/sim/cpu_test_auto_pc_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_1/sim/cpu_test_auto_pc_1.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_auto_pc_2/sim/cpu_test_auto_pc_2.v" \
+"../../../../cpu_test.gen/sources_1/bd/cpu_test/sim/cpu_test.v" \
 
 verilog xil_defaultlib "glbl.v"
 

@@ -1,0 +1,463 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Jan  6 23:27:20 2024
+# Process ID: 5768
+# Current directory: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1
+# Command line: vivado.exe -log cpu_test_bluex_v_3_1_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_test_bluex_v_3_1_0_0.tcl
+# Log file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/cpu_test_bluex_v_3_1_0_0.vds
+# Journal file: E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1\vivado.jou
+# Running On: xyh, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16889 MB
+#-----------------------------------------------------------
+source cpu_test_bluex_v_3_1_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 485.250 ; gain = 179.141
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cpu_test_bluex_v_3_1_0_0
+Command: synth_design -top cpu_test_bluex_v_3_1_0_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 14576
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1360.211 ; gain = 439.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'mul_result_valid', assumed default net type 'wire' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/matcop.v:49]
+INFO: [Synth 8-11241] undeclared symbol 'dvm_result_valid', assumed default net type 'wire' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/matcop.v:50]
+INFO: [Synth 8-6157] synthesizing module 'cpu_test_bluex_v_3_1_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/synth/cpu_test_bluex_v_3_1_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_BJT_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_BJT_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BJT' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/BJT.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BJT' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/BJT.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_BJT_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_BJT_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_PC_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_PC_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PC' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/PC.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/PC.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_PC_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_PC_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_alu_ex_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_alu_ex_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'alu_ex' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/alu_ex.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ex' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/alu_ex.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_alu_ex_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_alu_ex_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_aux_ex_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_aux_ex_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'aux_ex' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_ex.v:4]
+INFO: [Synth 8-226] default block is never used [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_ex.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'aux_ex' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_ex.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_aux_ex_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_aux_ex_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_aux_id_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_aux_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'aux_id' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'aux_id' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/aux_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_aux_id_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_aux_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_controller_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_controller_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'controller' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/controller.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/controller.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_controller_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_controller_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_decoder_id_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_decoder_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'decoder_id' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/decoder_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_id' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/decoder_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_decoder_id_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_decoder_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_demux_id_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_demux_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'demux_id' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/demux_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'demux_id' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/demux_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_demux_id_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_demux_id_0_0.v:53]
+WARNING: [Synth 8-7071] port 'op' of module 'bluex_v_2_1_demux_id_0_0' is unconnected for instance 'demux_id_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:279]
+WARNING: [Synth 8-7071] port 'shamt' of module 'bluex_v_2_1_demux_id_0_0' is unconnected for instance 'demux_id_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:279]
+WARNING: [Synth 8-7071] port 'rfunct' of module 'bluex_v_2_1_demux_id_0_0' is unconnected for instance 'demux_id_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:279]
+WARNING: [Synth 8-7071] port 'addr' of module 'bluex_v_2_1_demux_id_0_0' is unconnected for instance 'demux_id_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:279]
+WARNING: [Synth 8-7023] instance 'demux_id_0' of module 'bluex_v_2_1_demux_id_0_0' has 21 connections declared, but only 17 given [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:279]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_matcop_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_matcop_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'matcop' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/matcop.v:4]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 31 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/mult_gen_0/synth/mult_gen_0.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/div_gen_0/synth/div_gen_0.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 12 - type: integer 
+	Parameter ALGORITHM_TYPE bound to: 1 - type: integer 
+	Parameter DIVISOR_WIDTH bound to: 16 - type: integer 
+	Parameter DIVIDEND_WIDTH bound to: 16 - type: integer 
+	Parameter SIGNED_B bound to: 1 - type: integer 
+	Parameter DIVCLK_SEL bound to: 1 - type: integer 
+	Parameter FRACTIONAL_B bound to: 0 - type: integer 
+	Parameter FRACTIONAL_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_DIV_BY_ZERO bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'div_gen_v5_1_20' declared at 'e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/div_gen_0/hdl/div_gen_v5_1_vh_rfs.vhd:13454' bound to instance 'U0' of component 'div_gen_v5_1_20' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/div_gen_0/synth/div_gen_0.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/div_gen_0/synth/div_gen_0.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'matcop' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/matcop.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_matcop_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_matcop_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_reg_heap_id_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_reg_heap_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'reg_heap_id' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_heap_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'reg_heap_id' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_heap_id.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_reg_heap_id_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_reg_heap_id_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_reg_wb_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_reg_wb_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'reg_wb' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_wb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'reg_wb' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/reg_wb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_reg_wb_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_reg_wb_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bluex_v_2_1_wrapper_mem_0_0' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_wrapper_mem_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'wrapper_mem' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/wrapper_mem.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper_mem' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/wrapper_mem.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1_wrapper_mem_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1_wrapper_mem_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bluex_v_2_1' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/bluex_v_2_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_test_bluex_v_3_1_0_0' (0#1) [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/synth/cpu_test_bluex_v_3_1_0_0.v:53]
+WARNING: [Synth 8-7129] Port ram_rd_data[31] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[30] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[29] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[28] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[27] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[26] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[25] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[24] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[23] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[22] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[21] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[20] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[19] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[18] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[17] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[16] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[15] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[14] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[13] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[12] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[11] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[10] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[9] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[8] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[7] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[6] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[5] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[4] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[3] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[2] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[1] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ram_rd_data[0] in module reg_heap_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_twos_comp_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_out in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_lut6__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_lut6__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_viv__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized67 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_out in module c_addsub_lut6 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1590.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 578 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/bluex_v_2_1_matcop_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/bluex_v_2_1_matcop_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/bluex_v_2_1_ooc.xdc] for cell 'inst'
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/bluex_v_2_1_ooc.xdc:9]
+Finished Parsing XDC File [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_bluex_v_3_1_0_0/src/bluex_v_2_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1590.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1590.398 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/matcop_0/inst/u_multiplier_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/matcop_0/inst/u_dvm_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'shift_error_reg' [e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ipshared/3bf4/src/alu_ex.v:109]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (alu_ex_0/inst/shift_error_reg[1]) is unused and will be removed from module bluex_v_2_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+ Sort Area is  gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg_0 : 0 0 : 3298 3298 : Used 1 time 100
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1590.398 ; gain = 670.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1669.043 ; gain = 748.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp         | (A'*B')'    | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    59|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |    77|
+|4     |LUT2    |   183|
+|5     |LUT3    |   354|
+|6     |LUT4    |   139|
+|7     |LUT5    |   268|
+|8     |LUT6    |  1225|
+|9     |MUXCY   |   289|
+|10    |MUXF7   |   384|
+|11    |SRL16E  |     3|
+|12    |XORCY   |   289|
+|13    |FDCE    |  1162|
+|14    |FDPE    |     1|
+|15    |FDRE    |   828|
+|16    |LDC     |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1669.977 ; gain = 749.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1669.977 ; gain = 749.664
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1677.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1023 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1685.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 85 instances
+  LDC => LDCE: 1 instance 
+
+Synth Design complete | Checksum: 9add0c6
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1685.535 ; gain = 1186.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1685.535 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/cpu_test_bluex_v_3_1_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cpu_test_bluex_v_3_1_0_0, cache-ID = c7a1d97efc78466a
+INFO: [Coretcl 2-1174] Renamed 171 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1685.535 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.runs/cpu_test_bluex_v_3_1_0_0_synth_1/cpu_test_bluex_v_3_1_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_test_bluex_v_3_1_0_0_utilization_synth.rpt -pb cpu_test_bluex_v_3_1_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  6 23:28:33 2024...

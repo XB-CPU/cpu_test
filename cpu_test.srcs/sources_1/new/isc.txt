@@ -92,15 +92,23 @@
 # jmp -1
 
 # r1: dividend; r2: divisor; r3: dvm result; r4: ; r5: quotient; r8: remainder:
-mirl r1, 34 #r1 = 34
-mirl r2, 7  #r2 = 7
-svw r2, r0, 0 #(0)=7
-mirl r2, 9999 
-mirl r6, 16 #r6=16
-ldw r2, r0, 0 #r2=7
-dvm r3, r1, r2 # r3=[4, 6] 
-srl r5, r3, r6 # r5=4, quotient
-sll r4, r5, r6 # r4=[4 , 0]
+#mirl r1, 34 #r1 = 34
+#mirl r2, 7  #r2 = 7
+#svw r2, r0, 0 #(0)=7
+#mirl r2, 9999 
+#mirl r6, 16 #r6=16
+#ldw r2, r0, 0 #r2=7
+#dvm r3, r1, r2 # r3=[4, 6] 
+#srl r5, r3, r6 # r5=4, quotient
+#sll r4, r5, r6 # r4=[4 , 0]
+
+mirl r8, 128
+mirl r9, 0
+lpp:
+svw r9, r9, 0
+addi r9, r9, 1
+bne r8, r9, lpp
+addi r9, r9, 
 #sub r8, r3, r4 # r8=6, remainder
 #mul r7, r2, r5 # 28
 #dvmi r9, r1, 9 # 3, 7

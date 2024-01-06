@@ -224,7 +224,7 @@ static void CPU_done_handler(void* data)
 //		printf("Done!1:%lu, 2:%lu, u:%lu, %fs\n", tim_cnt1, tim_cnt2, timer_update_time, (float)(period) / (XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ / 2));
 		XScuGic_Disable(scu, 61);
 		XScuTimer_DisableInterrupt(scut);
-		DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 0);
+//		DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 0);
 		cpu_done_flag = 1;
 		lcd_update_flag = 1;
 	}

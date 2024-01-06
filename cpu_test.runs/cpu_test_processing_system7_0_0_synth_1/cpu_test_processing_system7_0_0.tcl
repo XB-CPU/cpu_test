@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "cpu_test_processing_system7_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 set_msg_config  -id {17-179}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run

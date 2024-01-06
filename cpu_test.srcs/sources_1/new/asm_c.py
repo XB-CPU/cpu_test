@@ -17,7 +17,7 @@ OPC_BIT = 0
 asb_error_num = 0
 asb_warning_num = 0
 
-version = "2023.12.23.1.0"
+version = "2024.01.06.2.1"
 
 def show_version():
     return version
@@ -361,6 +361,7 @@ class seg_symbol_container:
 		new_ss = seg_symbol(symb, use_line=index)
 		self.container.append(new_ss)
 
+replace_list = []
 def compile(f:io.TextIOWrapper):
 	cmd_type = None
 	asb_line = 0
@@ -369,6 +370,11 @@ def compile(f:io.TextIOWrapper):
 		line = line.strip()
 		if line.startswith("#") or line.startswith("//") or line == "":
 			continue
+		elif line.startswith("`"):
+			line_tmp = line.split()
+			if line_tmp[0] == "`def":
+				replace_list.append([line_tmp[1].upper(), line_tmp[2].upper()])
+			continue
 		else:
 			ic = isc_code(asb_line=index)
 			line = line.upper().replace(",", "").split()
@@ -376,6 +382,11 @@ def compile(f:io.TextIOWrapper):
 				symbol = line[0][:-1]
 				seg_symbol_list.try_dec_symb(symbol, index)
 				continue
+			rep_tmp_line = line
+			for (index_tmp, word) in enumerate(rep_tmp_line):
+				for rep in replace_list:
+					if word == rep[0]:
+						line[index_tmp] = rep[1]
 			if line[0] in R_set:
 				cmd_type = "R"
 				ic.set_cmd_type(cmd_type)
@@ -468,7 +479,7 @@ def compile(f:io.TextIOWrapper):
 								if line[0] == "DVMI":
 									if im_num == 0:
 										asb_print(f"divisor should not be zero", f, index)
-									ic.add_im(im_num, f, index)
+								ic.add_im(im_num, f, index)
 					ic.set_cmd_str(line[0])
 				elif line[0] in ("BEQ", "BNE"):
 					if len(line) > 4:
