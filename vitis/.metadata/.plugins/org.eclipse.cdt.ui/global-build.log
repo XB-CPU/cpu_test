@@ -1,6 +1,6 @@
 Nothing to build in platform 'cpu_test_wrapper'
 
-00:21:28 **** Incremental Build of configuration Debug for project cpu ****
+12:53:36 **** Incremental Build of configuration Debug for project cpu ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -19,6 +19,17 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size cpu.elf  |tee "cpu.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 211232	   3688	  30608	 245528	  3bf18	cpu.elf
+ 211432	   3696	  30608	 245736	  3bfe8	cpu.elf
 'Finished building: cpu.elf.size'
 ' '
+12:53:37 **** Incremental Build of configuration Debug for project cpu_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64665 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm standalone_ps7_cortexa9_0 E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/system.bif
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+sdcard_gen --xpfm E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper/export/cpu_test_wrapper/cpu_test_wrapper.xpfm --sys_config cpu_test_wrapper --bif E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/system.bif --bitstream E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit --elf E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/Debug/cpu.elf,ps7_cortexa9_0
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+creating BOOT.BIN using E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu/_ide/bitstream/cpu_test_wrapper.bit
+Running E:/Xilinx/Vitis/2023.2/bin/bootgen  -image E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

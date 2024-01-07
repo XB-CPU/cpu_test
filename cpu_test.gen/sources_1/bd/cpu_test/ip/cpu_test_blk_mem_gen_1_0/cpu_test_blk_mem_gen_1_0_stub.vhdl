@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Sat Jan  6 13:23:00 2024
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_blk_mem_gen_1_0/cpu_test_blk_mem_gen_1_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top cpu_test_blk_mem_gen_1_0 -prefix
+--               cpu_test_blk_mem_gen_1_0_ cpu_test_blk_mem_gen_1_0_stub.vhdl
 -- Design      : cpu_test_blk_mem_gen_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2

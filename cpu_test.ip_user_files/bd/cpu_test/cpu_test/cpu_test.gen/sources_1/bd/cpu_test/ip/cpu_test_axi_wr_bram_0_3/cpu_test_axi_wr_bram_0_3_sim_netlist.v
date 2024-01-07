@@ -2,11 +2,11 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Jan  6 14:14:33 2024
+// Date        : Sun Jan  7 12:39:27 2024
 // Host        : xyh running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top cpu_test_axi_wr_bram_0_3 -prefix
-//               cpu_test_axi_wr_bram_0_3_ cpu_test_axi_wr_bram_0_0_sim_netlist.v
-// Design      : cpu_test_axi_wr_bram_0_0
+//               cpu_test_axi_wr_bram_0_3_ cpu_test_axi_wr_bram_0_2_sim_netlist.v
+// Design      : cpu_test_axi_wr_bram_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg400-2
@@ -1581,7 +1581,7 @@ module cpu_test_axi_wr_bram_0_3_axi_wr_bram_v1_0_S0_AXI
         .O(slv_reg_rden__0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "cpu_test_axi_wr_bram_0_0,axi_wr_bram_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_wr_bram_v1_0,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "cpu_test_axi_wr_bram_0_2,axi_wr_bram_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_wr_bram_v1_0,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
 module cpu_test_axi_wr_bram_0_3
    (bram_clk,

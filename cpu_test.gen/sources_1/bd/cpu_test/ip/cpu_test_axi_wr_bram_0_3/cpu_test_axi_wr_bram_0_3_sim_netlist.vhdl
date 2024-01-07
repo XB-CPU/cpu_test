@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Sat Jan  6 14:14:33 2024
+-- Date        : Sun Jan  7 12:39:27 2024
 -- Host        : xyh running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_axi_wr_bram_0_3 -prefix
---               cpu_test_axi_wr_bram_0_3_ cpu_test_axi_wr_bram_0_0_sim_netlist.vhdl
--- Design      : cpu_test_axi_wr_bram_0_0
+--               cpu_test_axi_wr_bram_0_3_ cpu_test_axi_wr_bram_0_2_sim_netlist.vhdl
+-- Design      : cpu_test_axi_wr_bram_0_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7z020clg400-2
@@ -2013,7 +2013,7 @@ entity cpu_test_axi_wr_bram_0_3 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of cpu_test_axi_wr_bram_0_3 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of cpu_test_axi_wr_bram_0_3 : entity is "cpu_test_axi_wr_bram_0_0,axi_wr_bram_v1_0,{}";
+  attribute CHECK_LICENSE_TYPE of cpu_test_axi_wr_bram_0_3 : entity is "cpu_test_axi_wr_bram_0_2,axi_wr_bram_v1_0,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of cpu_test_axi_wr_bram_0_3 : entity is "yes";
   attribute X_CORE_INFO : string;

@@ -2,11 +2,11 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Sat Jan  6 14:14:33 2024
+-- Date        : Sun Jan  7 12:39:27 2024
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top cpu_test_axi_wr_bram_0_2 -prefix
---               cpu_test_axi_wr_bram_0_2_ cpu_test_axi_wr_bram_0_0_stub.vhdl
--- Design      : cpu_test_axi_wr_bram_0_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_wr_bram_0_2/cpu_test_axi_wr_bram_0_2_stub.vhdl
+-- Design      : cpu_test_axi_wr_bram_0_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2
 -- --------------------------------------------------------------------------------

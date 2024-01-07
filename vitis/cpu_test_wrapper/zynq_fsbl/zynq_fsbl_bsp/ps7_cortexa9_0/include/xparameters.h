@@ -31,6 +31,34 @@
  
  
 /******************************************************************/
+/* Definitions for driver AXI_LCD_TOU_DRI */
+#define XPAR_AXI_LCD_TOU_DRI_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_LCD_TOU_DRI_0 */
+#define XPAR_AXI_LCD_TOU_DRI_0_DEVICE_ID 0
+#define XPAR_AXI_LCD_TOU_DRI_0_S0_AXI_BASEADDR 0x81000000
+#define XPAR_AXI_LCD_TOU_DRI_0_S0_AXI_HIGHADDR 0x8100007F
+
+
+/******************************************************************/
+
+/* Definitions for driver AXI_WR_BRAM */
+#define XPAR_AXI_WR_BRAM_NUM_INSTANCES 2
+
+/* Definitions for peripheral AXI_WR_ROM */
+#define XPAR_AXI_WR_ROM_DEVICE_ID 0
+#define XPAR_AXI_WR_ROM_S0_AXI_BASEADDR 0x83C10000
+#define XPAR_AXI_WR_ROM_S0_AXI_HIGHADDR 0x83C1FFFF
+
+
+/* Definitions for peripheral AXI_WR_BRAM_0 */
+#define XPAR_AXI_WR_BRAM_0_DEVICE_ID 1
+#define XPAR_AXI_WR_BRAM_0_S0_AXI_BASEADDR 0x83C00000
+#define XPAR_AXI_WR_BRAM_0_S0_AXI_HIGHADDR 0x83C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver AXIVDMA */
 #define XPAR_XAXIVDMA_NUM_INSTANCES 1U
 
@@ -119,7 +147,7 @@
 /******************************************************************/
 
 /* Definitions for driver BRAM */
-#define XPAR_XBRAM_NUM_INSTANCES 2U
+#define XPAR_XBRAM_NUM_INSTANCES 1U
 
 /* Definitions for peripheral AXI_BRAM_CTRL_0 */
 #define XPAR_AXI_BRAM_CTRL_0_DEVICE_ID 0U
@@ -137,24 +165,6 @@
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_HIGHADDR 0x40000FFFU
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_CTRL_BASEADDR 0xFFFFFFFFU  
 #define XPAR_AXI_BRAM_CTRL_0_S_AXI_CTRL_HIGHADDR 0xFFFFFFFFU  
-
-
-/* Definitions for peripheral AXI_BRAM_CTRL_1 */
-#define XPAR_AXI_BRAM_CTRL_1_DEVICE_ID 1U
-#define XPAR_AXI_BRAM_CTRL_1_DATA_WIDTH 32U
-#define XPAR_AXI_BRAM_CTRL_1_ECC 0U
-#define XPAR_AXI_BRAM_CTRL_1_FAULT_INJECT 0U
-#define XPAR_AXI_BRAM_CTRL_1_CE_FAILING_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_UE_FAILING_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_STATUS_REGISTERS 0U
-#define XPAR_AXI_BRAM_CTRL_1_CE_COUNTER_WIDTH 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_ONOFF_REGISTER 0U
-#define XPAR_AXI_BRAM_CTRL_1_ECC_ONOFF_RESET_VALUE 0U
-#define XPAR_AXI_BRAM_CTRL_1_WRITE_ACCESS 0U
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_BASEADDR 0x42000000U
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_HIGHADDR 0x42001FFFU
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_CTRL_BASEADDR 0xFFFFFFFFU  
-#define XPAR_AXI_BRAM_CTRL_1_S_AXI_CTRL_HIGHADDR 0xFFFFFFFFU  
 
 
 /******************************************************************/
@@ -175,23 +185,6 @@
 #define XPAR_BRAM_0_HIGHADDR 0x40000FFFU
 #define XPAR_BRAM_0_CTRL_BASEADDR 0xFFFFFFFFU  
 #define XPAR_BRAM_0_CTRL_HIGHADDR 0xFFFFFFFEU  
-
-/* Canonical definitions for peripheral AXI_BRAM_CTRL_1 */
-#define XPAR_BRAM_1_DEVICE_ID XPAR_AXI_BRAM_CTRL_1_DEVICE_ID
-#define XPAR_BRAM_1_DATA_WIDTH 32U
-#define XPAR_BRAM_1_ECC 0U
-#define XPAR_BRAM_1_FAULT_INJECT 0U
-#define XPAR_BRAM_1_CE_FAILING_REGISTERS 0U
-#define XPAR_BRAM_1_UE_FAILING_REGISTERS 0U
-#define XPAR_BRAM_1_ECC_STATUS_REGISTERS 0U
-#define XPAR_BRAM_1_CE_COUNTER_WIDTH 0U
-#define XPAR_BRAM_1_ECC_ONOFF_REGISTER 0U
-#define XPAR_BRAM_1_ECC_ONOFF_RESET_VALUE 0U
-#define XPAR_BRAM_1_WRITE_ACCESS 0U
-#define XPAR_BRAM_1_BASEADDR 0x42000000U
-#define XPAR_BRAM_1_HIGHADDR 0x42001FFFU
-#define XPAR_BRAM_1_CTRL_BASEADDR 0xFFFFFFFFU  
-#define XPAR_BRAM_1_CTRL_HIGHADDR 0xFFFFFFFEU  
 
 
 /******************************************************************/
@@ -284,8 +277,8 @@
 
 
 /* Peripheral Definitions for peripheral PS_TO_CPU_CONTROLLER_0 */
-#define XPAR_PS_TO_CPU_CONTROLLER_0_BASEADDR 0x44000000
-#define XPAR_PS_TO_CPU_CONTROLLER_0_HIGHADDR 0x44000FFF
+#define XPAR_PS_TO_CPU_CONTROLLER_0_BASEADDR 0x83000000
+#define XPAR_PS_TO_CPU_CONTROLLER_0_HIGHADDR 0x83000FFF
 
 
 /* Peripheral Definitions for peripheral PS7_AFI_0 */
@@ -419,23 +412,33 @@
 /* Definitions for driver GPIO */
 #define XPAR_XGPIO_NUM_INSTANCES 1
 
-/* Definitions for peripheral AXI_GPIO_0 */
-#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
-#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_AXI_GPIO_0_DEVICE_ID 0
-#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_AXI_GPIO_0_IS_DUAL 1
+/* Definitions for peripheral AXI_GPIO_1 */
+#define XPAR_AXI_GPIO_1_BASEADDR 0x41000000
+#define XPAR_AXI_GPIO_1_HIGHADDR 0x4100FFFF
+#define XPAR_AXI_GPIO_1_DEVICE_ID 0
+#define XPAR_AXI_GPIO_1_INTERRUPT_PRESENT 1
+#define XPAR_AXI_GPIO_1_IS_DUAL 0
 
 
 /******************************************************************/
 
-/* Canonical definitions for peripheral AXI_GPIO_0 */
-#define XPAR_GPIO_0_BASEADDR 0x41200000
-#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
-#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
-#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_GPIO_0_IS_DUAL 1
+/* Canonical definitions for peripheral AXI_GPIO_1 */
+#define XPAR_GPIO_0_BASEADDR 0x41000000
+#define XPAR_GPIO_0_HIGHADDR 0x4100FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 1
+#define XPAR_GPIO_0_IS_DUAL 0
 
+
+/******************************************************************/
+
+/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR 62U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_GPIO_0_VEC_ID XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
 
 /******************************************************************/
 

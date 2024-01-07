@@ -18,7 +18,8 @@
 #include "xil_exception.h"
 #include "xstatus.h"
 #include "xscutimer.h"
-#include "../../../cpu_test.srcs/sources_1/new/isc_machine_code.h"
+//#include "../../../cpu_test.srcs/sources_1/new/isc_machine_code.h"
+#include "E:\Xilinx\FPGA_Prjs\dzy\cpu_test\bluex_update\bluex_update\bluex_update.srcs\sources_1\new\isc_machine_code.h"
 #include "AXI_LCD_TOU_DRI.h"
 #include "axi_wr_bram.h"
 #include "LCD_SHOW/LCD_show.h"
@@ -56,6 +57,7 @@ u64 period;
 u8 lcd_update_flag = 1;
 u8 page_num = 0;
 u8 pic_num = 0;
+u32 current_color = OLD_LACE;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
@@ -88,7 +90,7 @@ int main(void)
 	LCD_init(frame_buffer_addr,vd_mode.width,vd_mode.height,BYTES_PIXEL);
 	cpu_code_download();
 	interrupt_init();
-	LCD_load_sd_bmp("fnn.bmp");
+	LCD_reset_back();
 	LCD_clear(BLUE);
 	LCD_update();
 
@@ -105,19 +107,22 @@ int main(void)
 			LCD_rd_mem();
 		}
 		if(butt_flag){
-			if((butt_flag == 1)&&cpu_done_flag){
+			if(butt_flag == 1){
 				switch (pic_num){
 					case 0:
-						LCD_load_sd_bmp("lty.bmp");
+						LCD_reset_back();
 						break;
 					case 1:
 						LCD_load_sd_bmp("fnn.bmp");
+						current_color = OLD_LACE;
 						break;
 					case 2:
-						LCD_reset_back();
+						LCD_load_sd_bmp("lty.bmp");
+						current_color = OLD_LACE;
 						break;
 					case 3:
-						LCD_load_sd_bmp("fnn.bmp");
+						LCD_load_sd_bmp("mmc.bmp");
+						current_color = PURPLE;
 						break;
 				}
 				lcd_update_flag = 1;
@@ -138,10 +143,10 @@ int main(void)
 			LCD_clear(BLUE);
 			switch (page_num){
 				case 0:
-					LCD_show_reg(OLD_LACE);
+					LCD_show_reg(current_color);
 					break;
 				default:
-					LCD_show_mem(OLD_LACE, page_num);
+					LCD_show_mem(current_color, page_num);
 					break;
 			}
 			if(cpu_done_flag){
@@ -249,7 +254,7 @@ static void GPIO_intr_handler(void* data)
     key_value = XGpio_DiscreteRead(axigpio, 1);
     if (key_value == 0x1) // button 1 to this
     {
-    	butt_flag = 1;
+    	if(cpu_done_flag)butt_flag = 1;
     	if(!op_start_sta){
     		op_start_sta = 1;
 			XScuTimer_Start(scut);

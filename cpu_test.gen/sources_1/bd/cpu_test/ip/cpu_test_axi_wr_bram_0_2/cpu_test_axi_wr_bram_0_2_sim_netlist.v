@@ -2,17 +2,134 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Sat Jan  6 14:14:33 2024
+// Date        : Sun Jan  7 12:39:27 2024
 // Host        : xyh running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top cpu_test_axi_wr_bram_0_2 -prefix
-//               cpu_test_axi_wr_bram_0_2_ cpu_test_axi_wr_bram_0_0_sim_netlist.v
-// Design      : cpu_test_axi_wr_bram_0_0
+// Command     : write_verilog -force -mode funcsim
+//               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_axi_wr_bram_0_2/cpu_test_axi_wr_bram_0_2_sim_netlist.v
+// Design      : cpu_test_axi_wr_bram_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xc7z020clg400-2
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "cpu_test_axi_wr_bram_0_2,axi_wr_bram_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_wr_bram_v1_0,Vivado 2023.2" *) 
+(* NotValidForBitStream *)
+module cpu_test_axi_wr_bram_0_2
+   (bram_clk,
+    bram_rd_data,
+    bram_en,
+    bram_addr,
+    bram_we,
+    bram_wr_data,
+    bram_rst,
+    s0_axi_aclk,
+    s0_axi_aresetn,
+    s0_axi_awaddr,
+    s0_axi_awprot,
+    s0_axi_awvalid,
+    s0_axi_awready,
+    s0_axi_wdata,
+    s0_axi_wstrb,
+    s0_axi_wvalid,
+    s0_axi_wready,
+    s0_axi_bresp,
+    s0_axi_bvalid,
+    s0_axi_bready,
+    s0_axi_araddr,
+    s0_axi_arprot,
+    s0_axi_arvalid,
+    s0_axi_arready,
+    s0_axi_rdata,
+    s0_axi_rresp,
+    s0_axi_rvalid,
+    s0_axi_rready);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 bram_clk CLK, xilinx.com:interface:bram:1.0 BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_clk, ASSOCIATED_RESET bram_rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output bram_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT DOUT" *) input [31:0]bram_rd_data;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT EN" *) output bram_en;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT ADDR" *) output [31:0]bram_addr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT WE" *) output bram_we;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT DIN" *) output [31:0]bram_wr_data;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 bram_rst RST, xilinx.com:interface:bram:1.0 BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_rst, POLARITY ACTIVE_LOW, INSERT_VIP 0, XIL_INTERFACENAME BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, READ_LATENCY 1" *) output bram_rst;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S0_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI_CLK, ASSOCIATED_BUSIF S0_AXI, ASSOCIATED_RESET s0_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input s0_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S0_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s0_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWADDR" *) input [3:0]s0_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWPROT" *) input [2:0]s0_axi_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWVALID" *) input s0_axi_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWREADY" *) output s0_axi_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WDATA" *) input [31:0]s0_axi_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WSTRB" *) input [3:0]s0_axi_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WVALID" *) input s0_axi_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WREADY" *) output s0_axi_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BRESP" *) output [1:0]s0_axi_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BVALID" *) output s0_axi_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BREADY" *) input s0_axi_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARADDR" *) input [3:0]s0_axi_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARPROT" *) input [2:0]s0_axi_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARVALID" *) input s0_axi_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARREADY" *) output s0_axi_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RDATA" *) output [31:0]s0_axi_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RRESP" *) output [1:0]s0_axi_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RVALID" *) output s0_axi_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s0_axi_rready;
+
+  wire \<const0> ;
+  wire [31:0]bram_addr;
+  wire bram_en;
+  wire [31:0]bram_rd_data;
+  wire bram_we;
+  wire [31:0]bram_wr_data;
+  wire s0_axi_aclk;
+  wire [3:0]s0_axi_araddr;
+  wire s0_axi_aresetn;
+  wire s0_axi_arready;
+  wire s0_axi_arvalid;
+  wire [3:0]s0_axi_awaddr;
+  wire s0_axi_awready;
+  wire s0_axi_awvalid;
+  wire s0_axi_bready;
+  wire s0_axi_bvalid;
+  wire [31:0]s0_axi_rdata;
+  wire s0_axi_rready;
+  wire s0_axi_rvalid;
+  wire [31:0]s0_axi_wdata;
+  wire s0_axi_wready;
+  wire [3:0]s0_axi_wstrb;
+  wire s0_axi_wvalid;
+
+  assign bram_clk = s0_axi_aclk;
+  assign bram_rst = s0_axi_aresetn;
+  assign s0_axi_bresp[1] = \<const0> ;
+  assign s0_axi_bresp[0] = \<const0> ;
+  assign s0_axi_rresp[1] = \<const0> ;
+  assign s0_axi_rresp[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0 inst
+       (.Q({bram_we,bram_en}),
+        .S_AXI_ARREADY(s0_axi_arready),
+        .S_AXI_AWREADY(s0_axi_awready),
+        .S_AXI_WREADY(s0_axi_wready),
+        .bram_addr(bram_addr),
+        .bram_rd_data(bram_rd_data),
+        .bram_wr_data(bram_wr_data),
+        .s0_axi_aclk(s0_axi_aclk),
+        .s0_axi_araddr(s0_axi_araddr[3:2]),
+        .s0_axi_aresetn(s0_axi_aresetn),
+        .s0_axi_arvalid(s0_axi_arvalid),
+        .s0_axi_awaddr(s0_axi_awaddr[3:2]),
+        .s0_axi_awvalid(s0_axi_awvalid),
+        .s0_axi_bready(s0_axi_bready),
+        .s0_axi_bvalid(s0_axi_bvalid),
+        .s0_axi_rdata(s0_axi_rdata),
+        .s0_axi_rready(s0_axi_rready),
+        .s0_axi_rvalid(s0_axi_rvalid),
+        .s0_axi_wdata(s0_axi_wdata),
+        .s0_axi_wstrb(s0_axi_wstrb),
+        .s0_axi_wvalid(s0_axi_wvalid));
+endmodule
+
+(* ORIG_REF_NAME = "axi_wr_bram_v1_0" *) 
 module cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0
    (S_AXI_AWREADY,
     S_AXI_WREADY,
@@ -103,6 +220,7 @@ module cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0
         .s0_axi_wvalid(s0_axi_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "axi_wr_bram_v1_0_S0_AXI" *) 
 module cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0_S0_AXI
    (S_AXI_AWREADY,
     S_AXI_WREADY,
@@ -1579,122 +1697,6 @@ module cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0_S0_AXI
         .I1(s0_axi_rvalid),
         .I2(S_AXI_ARREADY),
         .O(slv_reg_rden__0));
-endmodule
-
-(* CHECK_LICENSE_TYPE = "cpu_test_axi_wr_bram_0_0,axi_wr_bram_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_wr_bram_v1_0,Vivado 2023.2" *) 
-(* NotValidForBitStream *)
-module cpu_test_axi_wr_bram_0_2
-   (bram_clk,
-    bram_rd_data,
-    bram_en,
-    bram_addr,
-    bram_we,
-    bram_wr_data,
-    bram_rst,
-    s0_axi_aclk,
-    s0_axi_aresetn,
-    s0_axi_awaddr,
-    s0_axi_awprot,
-    s0_axi_awvalid,
-    s0_axi_awready,
-    s0_axi_wdata,
-    s0_axi_wstrb,
-    s0_axi_wvalid,
-    s0_axi_wready,
-    s0_axi_bresp,
-    s0_axi_bvalid,
-    s0_axi_bready,
-    s0_axi_araddr,
-    s0_axi_arprot,
-    s0_axi_arvalid,
-    s0_axi_arready,
-    s0_axi_rdata,
-    s0_axi_rresp,
-    s0_axi_rvalid,
-    s0_axi_rready);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 bram_clk CLK, xilinx.com:interface:bram:1.0 BRAM_PORT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_clk, ASSOCIATED_RESET bram_rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output bram_clk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT DOUT" *) input [31:0]bram_rd_data;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT EN" *) output bram_en;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT ADDR" *) output [31:0]bram_addr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT WE" *) output bram_we;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORT DIN" *) output [31:0]bram_wr_data;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 bram_rst RST, xilinx.com:interface:bram:1.0 BRAM_PORT RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME bram_rst, POLARITY ACTIVE_LOW, INSERT_VIP 0, XIL_INTERFACENAME BRAM_PORT, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, READ_LATENCY 1" *) output bram_rst;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S0_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI_CLK, ASSOCIATED_BUSIF S0_AXI, ASSOCIATED_RESET s0_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) input s0_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S0_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s0_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWADDR" *) input [3:0]s0_axi_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWPROT" *) input [2:0]s0_axi_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWVALID" *) input s0_axi_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI AWREADY" *) output s0_axi_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WDATA" *) input [31:0]s0_axi_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WSTRB" *) input [3:0]s0_axi_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WVALID" *) input s0_axi_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI WREADY" *) output s0_axi_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BRESP" *) output [1:0]s0_axi_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BVALID" *) output s0_axi_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI BREADY" *) input s0_axi_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARADDR" *) input [3:0]s0_axi_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARPROT" *) input [2:0]s0_axi_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARVALID" *) input s0_axi_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI ARREADY" *) output s0_axi_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RDATA" *) output [31:0]s0_axi_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RRESP" *) output [1:0]s0_axi_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RVALID" *) output s0_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S0_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S0_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s0_axi_rready;
-
-  wire \<const0> ;
-  wire [31:0]bram_addr;
-  wire bram_en;
-  wire [31:0]bram_rd_data;
-  wire bram_we;
-  wire [31:0]bram_wr_data;
-  wire s0_axi_aclk;
-  wire [3:0]s0_axi_araddr;
-  wire s0_axi_aresetn;
-  wire s0_axi_arready;
-  wire s0_axi_arvalid;
-  wire [3:0]s0_axi_awaddr;
-  wire s0_axi_awready;
-  wire s0_axi_awvalid;
-  wire s0_axi_bready;
-  wire s0_axi_bvalid;
-  wire [31:0]s0_axi_rdata;
-  wire s0_axi_rready;
-  wire s0_axi_rvalid;
-  wire [31:0]s0_axi_wdata;
-  wire s0_axi_wready;
-  wire [3:0]s0_axi_wstrb;
-  wire s0_axi_wvalid;
-
-  assign bram_clk = s0_axi_aclk;
-  assign bram_rst = s0_axi_aresetn;
-  assign s0_axi_bresp[1] = \<const0> ;
-  assign s0_axi_bresp[0] = \<const0> ;
-  assign s0_axi_rresp[1] = \<const0> ;
-  assign s0_axi_rresp[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  cpu_test_axi_wr_bram_0_2_axi_wr_bram_v1_0 inst
-       (.Q({bram_we,bram_en}),
-        .S_AXI_ARREADY(s0_axi_arready),
-        .S_AXI_AWREADY(s0_axi_awready),
-        .S_AXI_WREADY(s0_axi_wready),
-        .bram_addr(bram_addr),
-        .bram_rd_data(bram_rd_data),
-        .bram_wr_data(bram_wr_data),
-        .s0_axi_aclk(s0_axi_aclk),
-        .s0_axi_araddr(s0_axi_araddr[3:2]),
-        .s0_axi_aresetn(s0_axi_aresetn),
-        .s0_axi_arvalid(s0_axi_arvalid),
-        .s0_axi_awaddr(s0_axi_awaddr[3:2]),
-        .s0_axi_awvalid(s0_axi_awvalid),
-        .s0_axi_bready(s0_axi_bready),
-        .s0_axi_bvalid(s0_axi_bvalid),
-        .s0_axi_rdata(s0_axi_rdata),
-        .s0_axi_rready(s0_axi_rready),
-        .s0_axi_rvalid(s0_axi_rvalid),
-        .s0_axi_wdata(s0_axi_wdata),
-        .s0_axi_wstrb(s0_axi_wstrb),
-        .s0_axi_wvalid(s0_axi_wvalid));
 endmodule
 `ifndef GLBL
 `define GLBL

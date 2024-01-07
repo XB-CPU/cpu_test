@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:bluex_v_3_1:3.1
-// IP Revision: 5
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -94,7 +94,7 @@ output wire ROM_en;
 output wire ROM_rst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_PORT WE" *)
 output wire ROM_we;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_RESET rst, FREQ_HZ 111111115, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_RESET rst, FREQ_HZ 50000000, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *)
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_PORT ADDR" *)

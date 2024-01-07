@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Dec 25 23:12:02 2023
+-- Date        : Sun Jan  7 12:43:28 2024
 -- Host        : xyh running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top cpu_test_PS_to_CPU_controller_0_0 -prefix
---               cpu_test_PS_to_CPU_controller_0_0_ cpu_test_PS_to_CPU_controller_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_PS_to_CPU_controller_0_0/cpu_test_PS_to_CPU_controller_0_0_sim_netlist.vhdl
 -- Design      : cpu_test_PS_to_CPU_controller_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -38,6 +38,8 @@ entity cpu_test_PS_to_CPU_controller_0_0_PS_to_CPU_controller is
     S_AXI_BREADY : in STD_LOGIC;
     S_AXI_RREADY : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of cpu_test_PS_to_CPU_controller_0_0_PS_to_CPU_controller : entity is "PS_to_CPU_controller";
 end cpu_test_PS_to_CPU_controller_0_0_PS_to_CPU_controller;
 
 architecture STRUCTURE of cpu_test_PS_to_CPU_controller_0_0_PS_to_CPU_controller is

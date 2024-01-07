@@ -35,7 +35,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK.FREQ_HZ">10000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -816,11 +816,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 06 15:27:12 UTC 2024</spirit:value>
+            <spirit:value>Sun Jan 07 04:38:46 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c570b3f0</spirit:value>
+            <spirit:value>9:fb35ee3f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -835,11 +835,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 06 15:27:12 UTC 2024</spirit:value>
+            <spirit:value>Sun Jan 07 04:38:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:659ac2a3</spirit:value>
+            <spirit:value>9:5bdf9f6c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -853,11 +853,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 06 15:28:33 UTC 2024</spirit:value>
+            <spirit:value>Sun Jan 07 04:40:00 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:659ac2a3</spirit:value>
+            <spirit:value>9:5bdf9f6c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -868,7 +868,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:659ac2a3</spirit:value>
+            <spirit:value>9:5bdf9f6c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -884,11 +884,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 06 15:27:12 UTC 2024</spirit:value>
+            <spirit:value>Sun Jan 07 04:38:46 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c570b3f0</spirit:value>
+            <spirit:value>9:fb35ee3f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -904,11 +904,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Jan 06 15:27:12 UTC 2024</spirit:value>
+            <spirit:value>Sun Jan 07 04:38:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:659ac2a3</spirit:value>
+            <spirit:value>9:5bdf9f6c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1301,228 +1301,231 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/global_macro.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:isIncludeFile>true</spirit:isIncludeFile>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/aux_ex.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/global_macro.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_aux_ex_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/aux_ex.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/BJT.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_aux_ex_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_BJT_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/BJT.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/PC.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_BJT_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_PC_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/PC.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/alu_ex.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_PC_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_alu_ex_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/alu_ex.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/aux_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_alu_ex_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_aux_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/aux_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/demux_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_aux_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_demux_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/demux_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/reg_heap_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_demux_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_reg_heap_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/reg_heap_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/reg_wb.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_reg_heap_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_reg_wb_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/reg_wb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/wrapper_mem.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_reg_wb_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_wrapper_mem_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/wrapper_mem.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/decoder_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_wrapper_mem_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_decoder_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/decoder_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/controller.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_decoder_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_controller_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/controller.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_controller_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/div_gen_0/div_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_dvm_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/mult_gen_0/mult_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_multiplier_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/matcop.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/matcop.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1_matcop_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1_matcop_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/sim/bluex_v_2_1.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/sim/bluex_v_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/global_macro.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/global_macro.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/aux_ex.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/aux_ex.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_aux_ex_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_aux_ex_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/BJT.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/BJT.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_BJT_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_BJT_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/PC.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/PC.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_PC_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_PC_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/alu_ex.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/alu_ex.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_alu_ex_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_alu_ex_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/aux_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/aux_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_aux_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_aux_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/demux_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/demux_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_demux_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_demux_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/reg_heap_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/reg_heap_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_reg_heap_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_reg_heap_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/reg_wb.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/reg_wb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_reg_wb_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_reg_wb_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/wrapper_mem.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/wrapper_mem.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_wrapper_mem_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_wrapper_mem_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/decoder_id.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/decoder_id.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_decoder_id_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_decoder_id_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/controller.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_controller_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_controller_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/div_gen_0/div_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_dvm_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/mult_gen_0/mult_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_multiplier_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/matcop.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/matcop.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1_matcop_0_0.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1_matcop_0_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1537,7 +1540,7 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/3bf4/src/bluex_v_2_1.v</spirit:name>
+        <spirit:name>../../ipshared/9ac7/src/bluex_v_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1605,7 +1608,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>bluex_v_3_1</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK.ASSOCIATED_PORT" xilinx:valuePermission="bd_and_user"/>
@@ -1663,7 +1666,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="028a5098"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d5782cea"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2dd3ed39"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f17e52cf"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="22c70dc6"/>
     </xilinx:packagingInfo>

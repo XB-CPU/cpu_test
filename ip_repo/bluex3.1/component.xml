@@ -452,7 +452,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c479cb30</spirit:value>
+            <spirit:value>b3950a84</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -474,7 +474,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6cea927e</spirit:value>
+            <spirit:value>e04c1ffb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1000,11 +1000,13 @@
         <spirit:name>src/div_gen_0/div_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_dvm_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/mult_gen_0/mult_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_multiplier_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/matcop.v</spirit:name>
@@ -1062,7 +1064,6 @@
         <spirit:name>src/global_macro.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/aux_ex.v</spirit:name>
@@ -1178,11 +1179,13 @@
         <spirit:name>src/div_gen_0/div_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_dvm_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/mult_gen_0/mult_gen_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_matcop_0/inst/u_multiplier_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/matcop.v</spirit:name>
@@ -1247,8 +1250,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>bluex_v_3_1</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-01-06T15:26:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-01-07T04:31:18Z</xilinx:coreCreationDateTime>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.RAM_CLK.PHASE" xilinx:valuePermission="bd"/>
@@ -1265,7 +1268,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="028a5098"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d5782cea"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2dd3ed39"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f17e52cf"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="22c70dc6"/>
     </xilinx:packagingInfo>

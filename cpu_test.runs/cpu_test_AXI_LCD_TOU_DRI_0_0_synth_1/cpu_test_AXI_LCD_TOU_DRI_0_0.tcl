@@ -70,6 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "cpu_test_AXI_LCD_TOU_DRI_0_0_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
+set_msg_config  -id {17-179}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-2
@@ -89,7 +93,7 @@ set_property ip_output_repo e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/ip/cpu_test_AXI_LCD_TOU_DRI_0_0/cpu_test_AXI_LCD_TOU_DRI_0_0.xci
+read_ip -quiet E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/cpu_test.srcs/sources_1/bd/cpu_test/ip/cpu_test_AXI_LCD_TOU_DRI_0_0/cpu_test_AXI_LCD_TOU_DRI_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -338,7 +338,7 @@
             "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -392,7 +392,7 @@
             "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "100000000"
+            "value": "10000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -428,7 +428,7 @@
             "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "10"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -1835,7 +1835,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "10000000",
                 "value_src": "user_prop"
               },
               "ID_WIDTH": {
@@ -2063,7 +2063,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "10000000",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -2824,7 +2824,7 @@
       },
       "bluex_v_3_1_0": {
         "vlnv": "xilinx.com:user:bluex_v_3_1:3.1",
-        "ip_revision": "5",
+        "ip_revision": "9",
         "xci_name": "cpu_test_bluex_v_3_1_0_0",
         "xci_path": "ip\\cpu_test_bluex_v_3_1_0_0\\cpu_test_bluex_v_3_1_0_0.xci",
         "inst_hier_path": "bluex_v_3_1_0"

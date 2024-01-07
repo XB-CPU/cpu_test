@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:bluex_v_3_1:3.1
-// IP Revision: 5
+// IP Revision: 9
 
 (* X_CORE_INFO = "bluex_v_2_1,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "cpu_test_bluex_v_3_1_0_0,bluex_v_2_1,{}" *)
-(* CORE_GENERATION_INFO = "cpu_test_bluex_v_3_1_0_0,bluex_v_2_1,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=bluex_v_3_1,x_ipVersion=3.1,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "cpu_test_bluex_v_3_1_0_0,bluex_v_2_1,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=bluex_v_3_1,x_ipVersion=3.1,x_ipCoreRevision=9,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "IPI" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module cpu_test_bluex_v_3_1_0_0 (
@@ -95,7 +95,7 @@ output wire ROM_en;
 output wire ROM_rst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_PORT WE" *)
 output wire ROM_we;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_RESET rst, FREQ_HZ 111111115, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, FREQ_TOLERANCE_HZ 0, PHASE 0.0, ASSOCIATED_RESET rst, FREQ_HZ 50000000, CLK_DOMAIN cpu_test_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *)
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 ROM_PORT ADDR" *)

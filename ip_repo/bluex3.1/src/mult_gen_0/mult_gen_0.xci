@@ -2,6 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "mult_gen_0",
+    "cell_name": "matcop_0/inst/u_multiplier_0",
     "component_reference": "xilinx.com:ip:mult_gen:12.0",
     "ip_revision": "19",
     "gen_directory": "../../../../../../../../../xilinx/fpga_prjs/dzy/cpu_test/cpu_test/cpu_test.tmp/bluex_v_3_1_v3_1_project/bluex_v_3_1_v3_1_project.gen/sources_1/ip/mult_gen_0",
