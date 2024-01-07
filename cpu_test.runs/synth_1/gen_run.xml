@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1704602620" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cpu_test_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1704606200" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cpu_test_wrapper.dcp">
   <File Type="PA-TCL" Name="cpu_test_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="cpu_test_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cpu_test_wrapper_reports.tcl"/>
@@ -164,7 +164,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_test_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_axi_gpio_1_0"/>
@@ -173,7 +172,4 @@
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_axi_wr_bram_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_axi_wr_bram_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="cpu_test_bluex_v_3_1_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_test_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_test_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="cpu_test_auto_pc_2"/>
 </GenRun>

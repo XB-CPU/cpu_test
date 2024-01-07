@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e2ba/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/a29c/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ae90/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/0e59/hdl/verilog" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/9ac7/src" \
+verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/ec67/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/6b2b/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/7fb4/hdl" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/c2c6" --include "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/9ac7/src" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_processing_system7_0_0/sim/cpu_test_processing_system7_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_v_axi4s_vid_out_0_0/sim/cpu_test_v_axi4s_vid_out_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/031e/src/rgb2lcd.v" \
@@ -11,7 +11,6 @@ verilog xil_defaultlib --include "E:/Xilinx/Vivado/2023.2/data/xilinx_vip/includ
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_PS_to_CPU_controller_0_0/sim/cpu_test_PS_to_CPU_controller_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_blk_mem_gen_1_0/sim/cpu_test_blk_mem_gen_1_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_blk_mem_gen_2_0/sim/cpu_test_blk_mem_gen_2_0.v" \
-"../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_ila_0_0/sim/cpu_test_ila_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xlconcat_0_0/sim/cpu_test_xlconcat_0_0.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ip/cpu_test_xbar_1/sim/cpu_test_xbar_1.v" \
 "../../../../cpu_test.gen/sources_1/bd/cpu_test/ipshared/e574/hdl/AXI_LCD_TOU_DRI_v1_0_S0_AXI.v" \

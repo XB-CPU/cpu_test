@@ -40,7 +40,6 @@
       "rom": "",
       "mem": "",
       "proc_sys_reset_0": "",
-      "ila_0": "",
       "axi_gpio_1": "",
       "xlconcat_0": "",
       "axi_interconnect_0": {
@@ -338,7 +337,7 @@
             "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "100.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -392,7 +391,7 @@
             "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "100000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
@@ -428,7 +427,7 @@
             "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10"
+            "value": "100"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -1835,7 +1834,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "10000000",
+                "value": "100000000",
                 "value_src": "user_prop"
               },
               "ID_WIDTH": {
@@ -2063,7 +2062,7 @@
                 "value_src": "constant"
               },
               "FREQ_HZ": {
-                "value": "10000000",
+                "value": "100000000",
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
@@ -2150,36 +2149,6 @@
         "xci_name": "cpu_test_proc_sys_reset_0_0",
         "xci_path": "ip\\cpu_test_proc_sys_reset_0_0\\cpu_test_proc_sys_reset_0_0.xci",
         "inst_hier_path": "proc_sys_reset_0"
-      },
-      "ila_0": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "ip_revision": "14",
-        "xci_name": "cpu_test_ila_0_0",
-        "xci_path": "ip\\cpu_test_ila_0_0\\cpu_test_ila_0_0.xci",
-        "inst_hier_path": "ila_0",
-        "parameters": {
-          "C_MONITOR_TYPE": {
-            "value": "Native"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "7"
-          },
-          "C_PROBE1_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE3_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE4_WIDTH": {
-            "value": "7"
-          },
-          "C_PROBE5_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE6_WIDTH": {
-            "value": "32"
-          }
-        }
       },
       "axi_gpio_1": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
@@ -2897,6 +2866,12 @@
           "rom/BRAM_PORTA"
         ]
       },
+      "bluex_v_3_1_0_MEM_PORT": {
+        "interface_ports": [
+          "bluex_v_3_1_0/MEM_PORT",
+          "mem/BRAM_PORTA"
+        ]
+      },
       "bluex_v_3_1_0_REG_PORT": {
         "interface_ports": [
           "bluex_v_3_1_0/REG_PORT",
@@ -3016,31 +2991,15 @@
           "axi_gpio_1/s_axi_aclk"
         ]
       },
-      "Net1": {
-        "ports": [
-          "bluex_v_3_1_0/write_mem_addr",
-          "ila_0/probe4",
-          "mem/addra"
-        ]
-      },
-      "Net2": {
-        "ports": [
-          "bluex_v_3_1_0/write_mem_data",
-          "mem/dina",
-          "ila_0/probe6"
-        ]
-      },
       "PS_to_CPU_controller_0_CPU_done": {
         "ports": [
           "PS_to_CPU_controller_0/CPU_done",
-          "ila_0/probe2",
           "xlconcat_0/In0"
         ]
       },
       "PS_to_CPU_controller_0_enable_CPU": {
         "ports": [
           "PS_to_CPU_controller_0/enable_CPU",
-          "ila_0/probe0",
           "bluex_v_3_1_0/enable_CPU"
         ]
       },
@@ -3053,7 +3012,6 @@
       "blk_mem_gen_1_doutb": {
         "ports": [
           "rom/doutb",
-          "ila_0/probe3",
           "bluex_v_3_1_0/isc"
         ]
       },
@@ -3061,8 +3019,7 @@
         "ports": [
           "bluex_v_3_1_0/current_addr",
           "PS_to_CPU_controller_0/PC_cnt",
-          "rom/addrb",
-          "ila_0/probe1"
+          "rom/addrb"
         ]
       },
       "bluex_v_3_1_0_CPU_error": {
@@ -3083,37 +3040,12 @@
           "rom/enb"
         ]
       },
-      "bluex_v_3_1_0_write_mem_clk": {
-        "ports": [
-          "bluex_v_3_1_0/write_mem_clk",
-          "mem/clka"
-        ]
-      },
-      "bluex_v_3_1_0_write_mem_en": {
-        "ports": [
-          "bluex_v_3_1_0/write_mem_en",
-          "mem/ena"
-        ]
-      },
-      "bluex_v_3_1_0_write_mem_we": {
-        "ports": [
-          "bluex_v_3_1_0/write_mem_we",
-          "mem/wea"
-        ]
-      },
       "clk_wiz_0_clk_out1": {
         "ports": [
           "clk_wiz_0/clk_out1",
           "v_tc_0/clk",
           "v_axi4s_vid_out_0/vid_io_out_clk",
           "rgb2lcd_0/pixel_clk"
-        ]
-      },
-      "mem_douta": {
-        "ports": [
-          "mem/douta",
-          "ila_0/probe5",
-          "bluex_v_3_1_0/read_mem_out_inw"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -3142,7 +3074,6 @@
         "ports": [
           "processing_system7_0/FCLK_CLK1",
           "proc_sys_reset_0/slowest_sync_clk",
-          "ila_0/clk",
           "axi_interconnect_0/ACLK",
           "PS_to_CPU_controller_0/S_AXI_ACLK",
           "AXI_LCD_TOU_DRI_0/s0_axi_aclk",

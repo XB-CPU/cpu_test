@@ -54,9 +54,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_bl
 # IP: bd/cpu_test/ip/cpu_test_proc_sys_reset_0_0/cpu_test_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_proc_sys_reset_0_0 || ORIG_REF_NAME==cpu_test_proc_sys_reset_0_0} -quiet] -quiet
 
-# IP: bd/cpu_test/ip/cpu_test_ila_0_0/cpu_test_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_ila_0_0 || ORIG_REF_NAME==cpu_test_ila_0_0} -quiet] -quiet
-
 # IP: bd/cpu_test/ip/cpu_test_axi_gpio_1_0/cpu_test_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==cpu_test_axi_gpio_1_0 || ORIG_REF_NAME==cpu_test_axi_gpio_1_0} -quiet] -quiet
 

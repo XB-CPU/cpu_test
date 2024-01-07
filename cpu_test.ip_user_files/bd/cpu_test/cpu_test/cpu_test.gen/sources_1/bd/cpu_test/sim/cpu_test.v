@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sun Jan  7 12:40:24 2024
+//Date        : Sun Jan  7 13:41:29 2024
 //Host        : xyh running 64-bit major release  (build 9200)
 //Command     : generate_target cpu_test.bd
 //Design      : cpu_test
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "cpu_test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu_test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=25,numNonXlnxBlks=1,numHierBlks=15,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=5,da_board_cnt=2,da_bram_cntlr_cnt=4,da_clkrst_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "cpu_test.hwdef" *) 
+(* CORE_GENERATION_INFO = "cpu_test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=cpu_test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=39,numReposBlks=24,numNonXlnxBlks=1,numHierBlks=15,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=5,da_board_cnt=2,da_bram_cntlr_cnt=4,da_clkrst_cnt=4,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "cpu_test.hwdef" *) 
 module cpu_test
    (CPU_error_LED,
     DDR_addr,
@@ -79,8 +79,6 @@ module cpu_test
 
   wire [0:0]AXI_LCD_TOU_DRI_0_out_con_wout;
   wire Net;
-  wire [15:0]Net1;
-  wire [31:0]Net2;
   wire PS_to_CPU_controller_0_CPU_done;
   wire PS_to_CPU_controller_0_enable_CPU;
   wire [11:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
@@ -216,6 +214,12 @@ module cpu_test
   wire [31:0]blk_mem_gen_1_doutb;
   wire [15:0]bluex_0_current_addr;
   wire bluex_v_3_1_0_CPU_error;
+  wire [15:0]bluex_v_3_1_0_MEM_PORT_ADDR;
+  wire bluex_v_3_1_0_MEM_PORT_CLK;
+  wire [31:0]bluex_v_3_1_0_MEM_PORT_DIN;
+  wire [31:0]bluex_v_3_1_0_MEM_PORT_DOUT;
+  wire bluex_v_3_1_0_MEM_PORT_EN;
+  wire bluex_v_3_1_0_MEM_PORT_WE;
   wire [31:0]bluex_v_3_1_0_REG_PORT_ADDR;
   wire bluex_v_3_1_0_REG_PORT_CLK;
   wire [31:0]bluex_v_3_1_0_REG_PORT_DIN;
@@ -225,11 +229,7 @@ module cpu_test
   wire [3:0]bluex_v_3_1_0_REG_PORT_WE;
   wire bluex_v_3_1_0_ROM_clk;
   wire bluex_v_3_1_0_ROM_en;
-  wire bluex_v_3_1_0_write_mem_clk;
-  wire bluex_v_3_1_0_write_mem_en;
-  wire bluex_v_3_1_0_write_mem_we;
   wire clk_wiz_0_clk_out1;
-  wire [31:0]mem_douta;
   wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [0:0]proc_sys_reset_0_peripheral_reset;
   wire [14:0]processing_system7_0_DDR_ADDR;
@@ -826,15 +826,15 @@ module cpu_test
         .ram_rst(bluex_v_3_1_0_REG_PORT_RST),
         .ram_we(bluex_v_3_1_0_REG_PORT_WE),
         .ram_wr_data(bluex_v_3_1_0_REG_PORT_DIN),
-        .read_mem_out_inw(mem_douta),
+        .read_mem_out_inw(bluex_v_3_1_0_MEM_PORT_DOUT),
         .rst(proc_sys_reset_0_peripheral_reset),
         .rst_n(proc_sys_reset_0_peripheral_aresetn),
         .wr_en_i(AXI_LCD_TOU_DRI_0_out_con_wout),
-        .write_mem_addr(Net1),
-        .write_mem_clk(bluex_v_3_1_0_write_mem_clk),
-        .write_mem_data(Net2),
-        .write_mem_en(bluex_v_3_1_0_write_mem_en),
-        .write_mem_we(bluex_v_3_1_0_write_mem_we));
+        .write_mem_addr(bluex_v_3_1_0_MEM_PORT_ADDR),
+        .write_mem_clk(bluex_v_3_1_0_MEM_PORT_CLK),
+        .write_mem_data(bluex_v_3_1_0_MEM_PORT_DIN),
+        .write_mem_en(bluex_v_3_1_0_MEM_PORT_EN),
+        .write_mem_we(bluex_v_3_1_0_MEM_PORT_WE));
   cpu_test_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(Net),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -857,27 +857,18 @@ module cpu_test
         .s_axi_wready(ps7_0_axi_periph_M02_AXI_WREADY),
         .s_axi_wstrb(ps7_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M02_AXI_WVALID));
-  cpu_test_ila_0_0 ila_0
-       (.clk(processing_system7_0_FCLK_CLK1),
-        .probe0(PS_to_CPU_controller_0_enable_CPU),
-        .probe1({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,bluex_0_current_addr}),
-        .probe2(PS_to_CPU_controller_0_CPU_done),
-        .probe3(blk_mem_gen_1_doutb),
-        .probe4(Net1[6:0]),
-        .probe5(mem_douta),
-        .probe6(Net2));
   cpu_test_blk_mem_gen_2_0 mem
-       (.addra(Net1[6:0]),
+       (.addra(bluex_v_3_1_0_MEM_PORT_ADDR[6:0]),
         .addrb(axi_wr_bram_0_BRAM_PORT_ADDR[6:0]),
-        .clka(bluex_v_3_1_0_write_mem_clk),
+        .clka(bluex_v_3_1_0_MEM_PORT_CLK),
         .clkb(axi_wr_bram_0_BRAM_PORT_CLK),
-        .dina(Net2),
+        .dina(bluex_v_3_1_0_MEM_PORT_DIN),
         .dinb(axi_wr_bram_0_BRAM_PORT_DIN),
-        .douta(mem_douta),
+        .douta(bluex_v_3_1_0_MEM_PORT_DOUT),
         .doutb(axi_wr_bram_0_BRAM_PORT_DOUT),
-        .ena(bluex_v_3_1_0_write_mem_en),
+        .ena(bluex_v_3_1_0_MEM_PORT_EN),
         .enb(axi_wr_bram_0_BRAM_PORT_EN),
-        .wea(bluex_v_3_1_0_write_mem_we),
+        .wea(bluex_v_3_1_0_MEM_PORT_WE),
         .web(axi_wr_bram_0_BRAM_PORT_WE));
   cpu_test_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),

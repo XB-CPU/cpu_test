@@ -94,3 +94,5 @@ platform generate
 platform active {cpu_test_wrapper}
 platform config -updatehw {E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper.xsa}
 platform generate -domains 
+platform config -updatehw {E:/Xilinx/FPGA_Prjs/dzy/cpu_test/cpu_test/vitis/cpu_test_wrapper.xsa}
+platform generate -domains 

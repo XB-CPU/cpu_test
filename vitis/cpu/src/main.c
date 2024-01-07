@@ -58,6 +58,7 @@ u8 lcd_update_flag = 1;
 u8 page_num = 0;
 u8 pic_num = 0;
 u32 current_color = OLD_LACE;
+u8 cpu_done_puse = 0;
 
 static void CPU_done_handler(void* data);
 static void counter_update_handler(void* data);
@@ -99,8 +100,10 @@ int main(void)
 	while(1)
     {
     	// wait for interrupt
-		if(cpu_done_flag){
+		if(cpu_done_puse){
 			//PLÐ´Ê¹ÄÜ
+			cpu_done_puse = 0;
+			lcd_update_flag=1;
 			AXI_LCD_TOU_DRI_mWriteReg(XPAR_AXI_LCD_TOU_DRI_0_S0_AXI_BASEADDR,AXI_LCD_TOU_DRI_S0_AXI_SLV_REG1_OFFSET,0x01);
 			usleep(1000*100);
 			LCD_rd_reg();
@@ -108,9 +111,11 @@ int main(void)
 		}
 		if(butt_flag){
 			if(butt_flag == 1){
+
 				switch (pic_num){
 					case 0:
-						LCD_reset_back();
+						LCD_load_sd_bmp("mmc.bmp");
+						current_color = PURPLE;
 						break;
 					case 1:
 						LCD_load_sd_bmp("fnn.bmp");
@@ -121,8 +126,8 @@ int main(void)
 						current_color = OLD_LACE;
 						break;
 					case 3:
-						LCD_load_sd_bmp("mmc.bmp");
-						current_color = PURPLE;
+						LCD_reset_back();
+						current_color = OLD_LACE;
 						break;
 				}
 				lcd_update_flag = 1;
@@ -231,7 +236,7 @@ static void CPU_done_handler(void* data)
 		XScuTimer_DisableInterrupt(scut);
 //		DESIGN_mWriteReg(DESIGN_S00_BASEADDR, DESIGN_S00_AXI_SLV_REG0_OFFSET, 0);
 		cpu_done_flag = 1;
-		lcd_update_flag = 1;
+		cpu_done_puse = 1;
 	}
 
 }
