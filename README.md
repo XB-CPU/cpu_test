@@ -1,10 +1,10 @@
 # 简介
-恰逢龙芯高端处理器出世之时，BirB和Calx对于制作CPU的尝试也应运而生。本项目是两人合作完成的计算机组成原理课设大作业，在正点原子的ZYNQ 7020开发板上实现了一个基于MIPS指令集的32位CPU，并且带有非常炫酷的显示功能。显示模块、PS大部分逻辑和CPU部分逻辑由Calx完成，汇编器、CPU大部分逻辑和PS部分逻辑由BirB完成。
+恰逢龙芯高端处理器出世之时，BirB和Calx对于制作CPU的尝试也应运而生。本项目是两人合作完成的计算机组成原理课设大作业，是在正点原子的ZYNQ 7020开发板上实现的一个基于MIPS指令集的32位CPU，并且带有非常炫酷的显示功能。显示模块、PS大部分逻辑和CPU的部分逻辑由Calx完成，汇编器、CPU大部分逻辑和PS部分逻辑由BirB完成。
 
 # 说明
-XB-CPU是两人合作的组织，bluex是两人对于本CPU的称呼。
+XB-CPU是两人合作的组织，bluex是两人对于本CPU的称呼。仓库主体代码在2024年1月7日之后应该没有更新了，所以有些bug可能已经找到原因，但是本仓库仍然未更新。
 ## 仓库结构
-本仓库包含将全部模块（CPU与显示），而bluex仓库和bluex update是CPU的仓库。bluex本身包含bluex 1版本（异步），而bluex update包含bluex 2、bluex 3.0、bluex 3.1版本（同步）。
+本仓库（cpu_test）包含将全部模块（CPU与显示），而bluex仓库和bluex update是CPU的仓库。bluex本身包含bluex 1版本（异步复位），而bluex update包含bluex 2、bluex 3.0、bluex 3.1版本（同步复位）。主要的PL部分代码存放在`cpu_test.srcs/sources_1/new`目录下，包含汇编器（python），CPU（Verilog）；主要的PS部分代码存放在`vitis/cpu/src`中，包含显示模块、中断配置等等。
 ## CPU
 ### 功能（仿真结果）
 1. 加减乘除（支持操作数都是寄存器或有一个操作数为立即数且在后的运算，但是乘除法要求操作数是16位的补码）
